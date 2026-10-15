@@ -357,6 +357,57 @@
       "milestoneSummary": "Widespread public exhaustion with corporate speedups forces federal politicians to introduce the Emergency Fair Hours Act.",
       "milestoneIcon": "⚖️",
       "defaultObjective": "Celebrate the legislative breakthrough with community organizers."
+    },
+    {
+      "id": "scene_act8_retail_schedule",
+      "name": "Oakridge Liquors - Restructured Department Board",
+      "chapterTitle": "Act VIII: The 32nd Hour (Years 16–18)",
+      "backgroundAsset": "story/template_scene_alt.jpg",
+      "initialNodeId": "act8_node_01",
+      "ambientDescription": "A clean, newly printed 4-day shift rotation is posted on the breakroom board. The mood is calm, confident, and rested.",
+      "musicAsset": "audio/music/bgm_exploration.ogg",
+      "chapterIndex": 21,
+      "actNumber": 8,
+      "actTitle": "Act VIII: The 32nd Hour",
+      "milestoneTitle": "The 4-Day Floor",
+      "milestoneLocation": "Retail Annex",
+      "milestoneSummary": "The federal 32-hour workweek takes effect; Adriana expands her permanent team and promotes long-time part-timers into stable full-rate jobs.",
+      "milestoneIcon": "📅",
+      "defaultObjective": "Roll out the permanent 32-hour rotation schedule to the department staff."
+    },
+    {
+      "id": "scene_act8_garage_apprentices",
+      "name": "Pete & Todd's Auto Care - Apprentice Bay",
+      "chapterTitle": "Act VIII: The New Apprentice Line",
+      "backgroundAsset": "story/template_scene.jpg",
+      "initialNodeId": "act8_garage_01",
+      "ambientDescription": "Pete's name is joined by Todd's on the newly painted shop sign. Two twenty-year-old vocational apprentices watch Todd demonstrate an analog diagnostic probe.",
+      "musicAsset": "audio/music/bgm_exploration.ogg",
+      "chapterIndex": 22,
+      "actNumber": 8,
+      "actTitle": "Act VIII: The 32nd Hour",
+      "milestoneTitle": "Passing the Wrench",
+      "milestoneLocation": "Shop Bay 1",
+      "milestoneSummary": "Todd trains the next generation in diagnostic intuition, rebuilding the manual mentorship chain broken during the early automation rush.",
+      "milestoneIcon": "🛠️",
+      "defaultObjective": "Teach apprentice Maya how to verify crankshaft sensor waveform."
+    },
+    {
+      "id": "scene_act9_patio_finale",
+      "name": "Todd & Adriana's Backyard - Friday Afternoon",
+      "chapterTitle": "Act IX: The Human Baseline (Years 19–20)",
+      "backgroundAsset": "story/template_scene.jpg",
+      "initialNodeId": "act9_node_01",
+      "ambientDescription": "Golden sunlight washes over the quiet patio. It's Friday at 3:00 PM—the new universal weekend. Friends, apprentices, and family gather in peace.",
+      "musicAsset": "audio/music/bgm_exploration.ogg",
+      "chapterIndex": 23,
+      "actNumber": 9,
+      "actTitle": "Act IX: The Human Baseline",
+      "milestoneTitle": "Clocking Out",
+      "milestoneLocation": "Backyard Patio",
+      "milestoneSummary": "Two decades after the squeeze began, society has settled into a dignified human baseline. Work is honest, time is reclaimed, and the future is steady.",
+      "milestoneIcon": "🌅",
+      "defaultObjective": "Celebrate the 20-year journey with Adriana, Marcus, and the community."
     }
   ]
 }

@@ -859,7 +859,119 @@
       "id": "act7_finale",
       "speakerId": "narrator",
       "side": "CENTER_NARRATOR",
-      "text": "End of Act VII: The Breaking Point & The Pushback. The legislative breakthrough is won. Ahead lies Act VIII: The 32nd Hour."
+      "text": "End of Act VII: The Breaking Point & The Pushback. The legislative breakthrough is won. Ahead lies Act VIII: The 32nd Hour.",
+      "changeSceneId": "scene_act8_retail_schedule"
+    },
+    {
+      "id": "act8_node_01",
+      "speakerId": "narrator",
+      "side": "CENTER_NARRATOR",
+      "text": "Year Seventeen. A crisp autumn morning at Oakridge Liquors. Adriana pins a freshly printed schedule to the corkboard. The four-day rotation is bold, clear, and fully compliant with federal labor law: four eight-hour days, thirty-two total hours per week, with full baseline compensation.",
+      "nextNodeId": "act8_node_02"
+    },
+    {
+      "id": "act8_node_02",
+      "speakerId": "adriana",
+      "side": "RIGHT",
+      "text": "Sam, Chloe... come look. You're both promoted to permanent full-rate department coordinators. Thirty-two hours a week, full health benefits, three-day weekends guaranteed. No more shaved minutes.",
+      "nextNodeId": "act8_node_03"
+    },
+    {
+      "id": "act8_node_03",
+      "speakerId": "narrator",
+      "side": "CENTER_NARRATOR",
+      "text": "Because corporations could no longer work skeleton crews sixty hours under metric speed-ups, they were forced to hire. Foot traffic is steady, workers have real time to spend with their families, and customer smiles have returned to the aisles.",
+      "changeSceneId": "scene_act8_garage_apprentices"
+    },
+    {
+      "id": "act8_garage_01",
+      "speakerId": "narrator",
+      "side": "CENTER_NARRATOR",
+      "text": "Saturday morning at the newly rechristened 'Pete & Todd's Auto Care.' Three bays hum with active work. Under the hood of a modern hybrid truck, Todd stands beside Maya, a twenty-year-old vocational apprentice holding an oscilloscope probe.",
+      "nextNodeId": "act8_garage_02"
+    },
+    {
+      "id": "act8_garage_02",
+      "speakerId": "todd",
+      "side": "LEFT",
+      "text": "Look at the square wave on channel two, Maya. That's your Hall-effect sensor trigger. The automated shop scanner says 'replace entire transaxle.' But what does your waveform tell you?",
+      "nextNodeId": "act8_garage_03"
+    },
+    {
+      "id": "act8_garage_03",
+      "speakerId": "narrator",
+      "side": "CENTER_NARRATOR",
+      "text": "Maya leans in with intense focus, adjusting the time base on the scope: 'The wave drops voltage on the falling edge. It's just a corroded ground pin on the harness plug!'",
+      "nextNodeId": "act8_garage_04"
+    },
+    {
+      "id": "act8_garage_04",
+      "speakerId": "todd",
+      "side": "LEFT",
+      "text": "Bingo. That's a three-dollar brass terminal pin instead of an eight-thousand-dollar replacement. Never let an algorithm do your thinking for you. The machine has tolerances; a real technician has intuition.",
+      "nextNodeId": "act8_garage_05"
+    },
+    {
+      "id": "act8_garage_05",
+      "speakerId": "narrator",
+      "side": "CENTER_NARRATOR",
+      "text": "Pete, now retired from daily wrenching and managing front-office finances with Marcus, watches from the doorway with an affectionate smile. The generational bridge has been rebuilt.",
+      "changeSceneId": "scene_act9_patio_finale"
+    },
+    {
+      "id": "act9_node_01",
+      "speakerId": "narrator",
+      "side": "CENTER_NARRATOR",
+      "text": "Year Twenty. Friday, 3:30 PM. The warm afternoon sun bathes Todd and Adriana's backyard patio in amber light. It is Friday, but nobody is rushing through traffic. Across the nation, Friday is now part of the universal three-day weekend.",
+      "nextNodeId": "act9_node_02"
+    },
+    {
+      "id": "act9_node_02",
+      "speakerId": "narrator",
+      "side": "CENTER_NARRATOR",
+      "text": "The grill sizzles with burgers. Lawn chairs are circled around the deck. Marcus, now thirty-nine and thriving as a senior data systems manager for the municipal water district, laughs as he hands an iced tea to Adriana's mother, who sits comfortably in her sun hat on the ramped deck.",
+      "nextNodeId": "act9_node_03"
+    },
+    {
+      "id": "act9_node_03",
+      "speakerId": "marcus",
+      "side": "RIGHT",
+      "text": "Twenty years, you guys. Remember that night in Year Zero when we sat right here and I bragged that coding tools would make us never work overtime?",
+      "nextNodeId": "act9_node_04"
+    },
+    {
+      "id": "act9_node_04",
+      "speakerId": "adriana",
+      "side": "RIGHT",
+      "text": "And remember when corporate told me an algorithm could run my stockroom? It took fifteen years of fighting, but look at where we landed. Honest hours, real community, and time to actually live.",
+      "nextNodeId": "act9_node_05"
+    },
+    {
+      "id": "act9_node_05",
+      "speakerId": "todd",
+      "side": "LEFT",
+      "text": "The world didn't end. And it didn't turn into a science-fiction fairytale. It took a hell of a lot of torque to break that frozen bolt loose, but once the pressure cracked, the rotation smoothed out.",
+      "nextNodeId": "act9_node_06"
+    },
+    {
+      "id": "act9_node_06",
+      "speakerId": "narrator",
+      "side": "CENTER_NARRATOR",
+      "text": "Todd wraps his arm around Adriana's shoulder as they look out over their neighborhood. Down the street, children ride bicycles, neighbors weed community gardens, and quiet breezes rustle through the maple trees.",
+      "nextNodeId": "act9_node_07"
+    },
+    {
+      "id": "act9_node_07",
+      "speakerId": "narrator",
+      "side": "CENTER_NARRATOR",
+      "text": "Technology took over the rote, repetitive noise of civilization, but human hands, human care, and human persistence reclaimed the life that mattered. Humanity found its true baseline—and at long last, clocked out on its own terms.",
+      "nextNodeId": "act9_finale"
+    },
+    {
+      "id": "act9_finale",
+      "speakerId": "narrator",
+      "side": "CENTER_NARRATOR",
+      "text": "THE END. Thank you for experiencing The Human Baseline."
     }
   ]
 }
