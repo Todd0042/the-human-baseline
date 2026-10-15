@@ -5,6 +5,7 @@
   "name": "Sam",
   "title": "Corporate Auditor",
   "portraitAsset": "portraits/portrait_sam.jpg",
+  "spriteAsset": "sprites/sam_sprite.png",
   "themeColor": "#5C6BC0",
   "ttsPitch": 0.98,
   "samplePhrase": "The model runs the compliance check in three seconds. What used to take four junior associates all week is now just a green checkmark.",
