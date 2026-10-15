@@ -63,3 +63,61 @@ All assets are authored in the grounded, cinematic 35mm film aesthetic (raw huma
 - **Setting:** State Capitol Senate Hearing Room.
 - **Visual Description:** Formal legislative committee chamber. Rich mahogany wood-paneled walls, brass seal on the back wall, green leather spectator benches, witness table in the center equipped with classic gooseneck microphones.
 - **Lighting & Atmosphere:** Dignified architectural lighting, soft recessed ceiling warm lights, shallow depth of field behind the witness podium.
+
+---
+
+## 3. Batch 2: Expanded Ensemble Portraits & News Studio Plate
+
+### Asset 11: `portrait_news_anchor.jpg`
+- **Subject:** Diane Sterling (Age ~38–45, lead broadcast television news anchor).
+- **Visual Description:** Poised, articulate woman with shoulder-length dark chestnut hair styled in a neat broadcast blow-dry. Composed, intelligent expression, observant hazel-green eyes with calm authority. Wearing a sharp tailored deep burgundy blazer over a silk cream blouse, subtle silver stud earrings, microphone lavalier clip on lapel.
+- **Lighting & Lens:** 35mm broadcast studio portrait, soft three-point studio lighting, warm rim light, natural skin texture with realistic fine lines around eyes, soft-focus newsroom broadcast monitors in background.
+- **Aspect Ratio:** 3:4 portrait.
+
+### Asset 12: `portrait_pete.jpg`
+- **Subject:** Pete (Age ~55–62, veteran master technician & auto shop owner).
+- **Visual Description:** Weathered, muscular older technician with salt-and-pepper hair, thick silver mustache, and honest, crinkled brown eyes. Gruff warmth and decades of mechanical wisdom. Wearing a dark grey mechanic work shirt with 'PETE' embroidered in red over the chest pocket, forearms showing faint burn scars from hot exhaust manifolds, reading glasses resting on a cord around his neck.
+- **Lighting & Lens:** 35mm naturalistic portrait, warm shop incandescent lighting mixed with soft daylight from bay door. Honest skin texture, deep laugh lines, authentic workshop grit.
+- **Aspect Ratio:** 3:4 portrait.
+
+### Asset 13: `portrait_chloe.jpg`
+- **Subject:** Chloe (Age ~25–29, registered nurse / cookout friend).
+- **Visual Description:** Compassionate, sharp young healthcare professional with dark blonde/light brown hair tied back in a secure surgical clip with loose strands. Alert, empathetic hazel eyes with quiet resilience from long ER shifts. Wearing fitted teal-blue medical scrubs with a hospital ID badge and stethoscope draped around her neck, simple wedding band.
+- **Lighting & Lens:** 35mm documentary-style portrait, soft diffused natural daylight mixed with hospital interior ambient lighting, realistic skin texture, zero airbrushing.
+- **Aspect Ratio:** 3:4 portrait.
+
+### Asset 14: `portrait_sam.jpg`
+- **Subject:** Sam (Age ~26–30, corporate senior auditor / cookout friend).
+- **Visual Description:** Pragmatic young professional with neatly parted light brown hair, clean-shaven, thoughtful blue-grey eyes behind classic tortoiseshell reading glasses. Wearing a crisp sky-blue Oxford button-down shirt with sleeves rolled up to elbows, leather watch strap. A posture reflecting analytical precision and quiet weariness.
+- **Lighting & Lens:** 35mm portrait, soft ambient office daylight, natural skin tones and textures, shallow depth of field.
+- **Aspect Ratio:** 3:4 portrait.
+
+### Asset 15: `portrait_kendra.jpg`
+- **Subject:** Kendra (Age ~20–23, college student & retail sales clerk).
+- **Visual Description:** Spirited, energetic young college woman with curly dark hair tied in a loose high ponytail. Expressive, determined brown eyes, subtle silver nose stud, warm natural smile. Wearing an olive-green store polo shirt with an Oakridge employee name badge, a lanyard holding register keys around her neck.
+- **Lighting & Lens:** 35mm candid portrait, commercial retail lighting with soft warm fill, realistic skin pores and texture, natural film grain.
+- **Aspect Ratio:** 3:4 portrait.
+
+### Asset 16: `portrait_elena.jpg`
+- **Subject:** Elena (Age ~30–35, independent gig delivery courier).
+- **Visual Description:** Hardworking Latina mother in her early 30s with dark wavy hair in a quick ponytail, tired but intensely determined dark eyes, warm olive skin tone with faint freckles. Wearing a worn black weatherproof fleece vest over a hooded sweatshirt, delivery app smartphone lanyard in hand.
+- **Lighting & Lens:** 35mm portrait, soft overcast daylight reflecting off car windshield, authentic working-class grit, realistic skin texture.
+- **Aspect Ratio:** 3:4 portrait.
+
+### Asset 17: `portrait_senator_vance.jpg`
+- **Subject:** Senator Vance (Age ~60–68, State Senate Commerce Committee Chairman).
+- **Visual Description:** Distinguished older statesman with neatly combed silver hair, wire-rimmed glasses, and piercing, attentive grey eyes. Serious, judicious expression. Wearing a tailored charcoal wool suit, burgundy silk tie, and state senate lapel pin.
+- **Lighting & Lens:** 35mm formal portrait, warm legislative committee room lighting, rich wood tones in soft-focus background, detailed skin textures.
+- **Aspect Ratio:** 3:4 portrait.
+
+### Asset 18: `portrait_maya.jpg`
+- **Subject:** Maya (Age ~19–22, vocational automotive apprentice).
+- **Visual Description:** Focused, eager young trade apprentice with dark hair secured beneath a backward black shop cap. Intense, observant dark eyes with a streak of motor grease along her temple. Wearing heavy denim work overalls over a charcoal thermal shirt, mechanic work gloves tucked into a pocket.
+- **Lighting & Lens:** 35mm industrial portrait, directional garage trouble-light key, warm tungsten fill, sharp realistic skin texture and youthful focus.
+- **Aspect Ratio:** 3:4 portrait.
+
+### Asset 19: `bg_news_studio.jpg`
+- **Setting:** Public Action News Regional Broadcast Studio.
+- **Visual Description:** High-definition television newsroom broadcast set. Sleek curved curved anchor desk made of dark wood and brushed aluminum, dual broadcast condenser microphones. In the background is a large curved soft-lit video wall displaying subtle blue and amber economic charts and regional map graphics. Overhead studio lighting grid softly out of focus. Completely empty of people (background plate).
+- **Lighting & Atmosphere:** Professional television studio lighting, cool indigo key light balanced by warm amber backlighting and architectural neon accents. Horizontal landscape (16:9 aspect ratio).
+
