@@ -4,7 +4,7 @@
   "role": "npc",
   "name": "Kendra",
   "title": "Retail Clerk",
-  "portraitAsset": "portraits/template_hero.jpg",
+  "portraitAsset": "portraits/portrait_kendra.jpg",
   "spriteAsset": "sprites/hero_sprite.png",
   "themeColor": "#FFA726",
   "ttsPitch": 1.15,
