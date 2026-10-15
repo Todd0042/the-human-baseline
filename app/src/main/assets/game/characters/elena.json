@@ -4,7 +4,7 @@
   "role": "npc",
   "name": "Elena",
   "title": "Delivery Courier",
-  "portraitAsset": "portraits/template_hero.jpg",
+  "portraitAsset": "portraits/portrait_elena.jpg",
   "spriteAsset": "sprites/hero_sprite.png",
   "themeColor": "#7E57C2",
   "ttsPitch": 1.02,
