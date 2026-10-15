@@ -51,6 +51,57 @@
       "milestoneSummary": "Marcus, Todd, and Adriana share dinner, recounting their week and talking about future career plans before the shift begins.",
       "milestoneIcon": "🍔",
       "defaultObjective": "Enjoy the weekend cookout with Marcus and Adriana."
+    },
+    {
+      "id": "scene_act2_retail_breakroom",
+      "name": "Oakridge Liquors - Employee Breakroom",
+      "chapterTitle": "Act II: The First Tremors (Years 1–2)",
+      "backgroundAsset": "story/template_scene_alt.jpg",
+      "initialNodeId": "act2_node_01",
+      "ambientDescription": "A humming refrigerator and a newly installed wall tablet flashing scheduling alerts cast a sterile LED glare across the corkboard.",
+      "musicAsset": "audio/music/bgm_exploration.ogg",
+      "chapterIndex": 3,
+      "actNumber": 2,
+      "actTitle": "Act II: The First Tremors",
+      "milestoneTitle": "The 8-Minute Cut",
+      "milestoneLocation": "Store Breakroom",
+      "milestoneSummary": "Corporate Workforce Management software rolls out, automatically shaving minutes from clerk shifts and tightening floor coverage.",
+      "milestoneIcon": "⏱️",
+      "defaultObjective": "Navigate the new automated scheduling mandates with the floor crew."
+    },
+    {
+      "id": "scene_act2_garage_tuesday",
+      "name": "Pete's Auto Care - Quick Bay",
+      "chapterTitle": "Act II: Tuesday Morning Lube Service",
+      "backgroundAsset": "story/template_scene.jpg",
+      "initialNodeId": "act2_garage_01",
+      "ambientDescription": "The morning sun cuts through high bay windows. Marcus's compact sedan is up on the center lift for a scheduled oil service.",
+      "musicAsset": "audio/music/bgm_exploration.ogg",
+      "chapterIndex": 4,
+      "actNumber": 2,
+      "actTitle": "Act II: The First Tremors",
+      "milestoneTitle": "Scaffolding",
+      "milestoneLocation": "Shop Bay 1",
+      "milestoneSummary": "Marcus stops in for service, enthusiastically discussing automated code assistants while unaware of corporate hiring freezes.",
+      "milestoneIcon": "🚗",
+      "defaultObjective": "Complete lube service on Marcus's vehicle and hear about his firm's new tech rollout."
+    },
+    {
+      "id": "scene_act2_kitchen",
+      "name": "Todd & Adriana's Kitchen Table",
+      "chapterTitle": "Act II: Tuesday Night Ledger",
+      "backgroundAsset": "story/template_scene.jpg",
+      "initialNodeId": "act2_kitchen_01",
+      "ambientDescription": "Grocery receipts and utility statements rest beside two warm mugs of tea under the gentle amber glow of the pendant lamp.",
+      "musicAsset": "audio/music/bgm_exploration.ogg",
+      "chapterIndex": 5,
+      "actNumber": 2,
+      "actTitle": "Act II: The First Tremors",
+      "milestoneTitle": "Quiet Realignment",
+      "milestoneLocation": "Kitchen Table",
+      "milestoneSummary": "Todd and Adriana cross-reference their days, recognizing that while their jobs are safe, the broader economic ground is shifting.",
+      "milestoneIcon": "☕",
+      "defaultObjective": "Review the month's expenses and discuss the workplace shifts over evening tea."
     }
   ]
 }

@@ -124,7 +124,140 @@
       "id": "act1_finale",
       "speakerId": "narrator",
       "side": "CENTER_NARRATOR",
-      "text": "End of Act I: The Warm Engine. This was the baseline: a world of steady hours, predictable ladders, and honest wages. The shift begins in Act II."
+      "text": "End of Act I: The Warm Engine. This was the baseline: a world of steady hours, predictable ladders, and honest wages.",
+      "changeSceneId": "scene_act2_retail_breakroom"
+    },
+    {
+      "id": "act2_node_01",
+      "speakerId": "narrator",
+      "side": "CENTER_NARRATOR",
+      "text": "Eighteen months later. Inside the Oakridge Liquors breakroom, the paper schedule on the corkboard has been replaced by a sleek, wall-mounted corporate tablet. A small blinking digital indicator reads: 'WFM OPTIMIZATION ACTIVE - REVISION 4.12.'",
+      "nextNodeId": "act2_node_02"
+    },
+    {
+      "id": "act2_node_02",
+      "speakerId": "adriana",
+      "side": "RIGHT",
+      "text": "Chloe, let me look at your phone. Did your schedule ping change again?",
+      "nextNodeId": "act2_node_03"
+    },
+    {
+      "id": "act2_node_03",
+      "speakerId": "narrator",
+      "side": "CENTER_NARRATOR",
+      "text": "Chloe, a college junior balancing tuition payments, holds up her cracked screen with a strained look. Her Tuesday shift—historically a clean four hours from 2:00 to 6:00 PM—has been shaved down to 2:00 to 5:48 PM. Twelve minutes trimmed.",
+      "nextNodeId": "act2_node_04"
+    },
+    {
+      "id": "act2_node_04",
+      "speakerId": "adriana",
+      "side": "RIGHT",
+      "text": "Twelve minutes. Corporate says the dynamic foot-traffic algorithm predicts an 8% drop in customer density between 5:45 and 6:00. Across forty regional stores, that trims eighty thousand dollars in operating payroll a quarter.",
+      "nextNodeId": "act2_node_05"
+    },
+    {
+      "id": "act2_node_05",
+      "speakerId": "narrator",
+      "side": "CENTER_NARRATOR",
+      "text": "Nobody gets fired. No WARN notices are triggered. But Chloe's paycheck is thirty dollars lighter this week, and the grocery distributor's delivery truck doesn't care about dynamic foot traffic—the pallets still arrive at 5:30.",
+      "nextNodeId": "act2_node_06"
+    },
+    {
+      "id": "act2_node_06",
+      "speakerId": "adriana",
+      "side": "RIGHT",
+      "text": "Don't sweat the twelve minutes today, Chloe. Clock out when the tablet says so. I'll haul the last two pallets of vodka into the cooler myself.",
+      "changeSceneId": "scene_act2_garage_tuesday"
+    },
+    {
+      "id": "act2_garage_01",
+      "speakerId": "narrator",
+      "side": "CENTER_NARRATOR",
+      "text": "Tuesday, 11:30 AM at Pete's Auto Care. Todd is under the hood of a dark grey hatchback, checking the oil cap and running a fluid inspection. The bell rings as Marcus steps out of the customer waiting room into the bay.",
+      "nextNodeId": "act2_garage_02"
+    },
+    {
+      "id": "act2_garage_02",
+      "speakerId": "todd",
+      "side": "LEFT",
+      "text": "Filter's replaced, Marcus. Synthetic 0W-20 topped off. Tires look good for another ten thousand miles. You're set.",
+      "nextNodeId": "act2_garage_03"
+    },
+    {
+      "id": "act2_garage_03",
+      "speakerId": "marcus",
+      "side": "RIGHT",
+      "text": "Thanks, Todd. Man, it's nice to step away from the screen for an hour. Our new automated engineering scaffolding went live last month, and it is insane. It generates our database schemas and write-ups in seconds.",
+      "nextNodeId": "act2_garage_04"
+    },
+    {
+      "id": "act2_garage_04",
+      "speakerId": "todd",
+      "side": "LEFT",
+      "text": "Sounds like smooth sailing then. You guys still expanding the team?",
+      "nextNodeId": "act2_garage_05"
+    },
+    {
+      "id": "act2_garage_05",
+      "speakerId": "marcus",
+      "side": "RIGHT",
+      "text": "That's the weird part. Our junior recruiter was reassigned last week. We had three open junior software requisitions listed on our portal, and they all just disappeared. Leadership said our current team can handle double the velocity now without backfilling.",
+      "nextNodeId": "act2_garage_06"
+    },
+    {
+      "id": "act2_garage_06",
+      "speakerId": "todd",
+      "side": "LEFT",
+      "text": "If two mechanics with a hydraulic lift can suddenly change eight sets of tires an hour, Pete doesn't hire a third guy. He pocketed the efficiency. Just keep your eye on the ladder, Marcus.",
+      "changeSceneId": "scene_act2_kitchen"
+    },
+    {
+      "id": "act2_kitchen_01",
+      "speakerId": "narrator",
+      "side": "CENTER_NARRATOR",
+      "text": "Tuesday night, 8:45 PM. Two steaming mugs of chamomile tea sit on the laminate kitchen table between Todd and Adriana. The local news murmurs quietly from the television in the background, reporting on tech sector hiring pauses and suburban retail performance.",
+      "nextNodeId": "act2_kitchen_02"
+    },
+    {
+      "id": "act2_kitchen_02",
+      "speakerId": "adriana",
+      "side": "RIGHT",
+      "text": "My shoulders are burning. Corporate trimmed thirty-six total clerk hours off our weekly department budget. My clerks are stressed about making rent, and I'm the one who has to explain why the machine took their shift time.",
+      "nextNodeId": "act2_kitchen_03"
+    },
+    {
+      "id": "act2_kitchen_03",
+      "speakerId": "todd",
+      "side": "LEFT",
+      "text": "Marcus came by for an oil change today. His company froze junior hiring. Said the automated software writes their boilerplate code now.",
+      "nextNodeId": "act2_kitchen_04"
+    },
+    {
+      "id": "act2_kitchen_04",
+      "speakerId": "adriana",
+      "side": "RIGHT",
+      "text": "Look at this grocery receipt from yesterday, Todd. Eggs, chicken breast, coffee—up another 12%. If people's hours are getting shaved and junior salaries aren't getting paid, who is going to keep buying the groceries?",
+      "nextNodeId": "act2_kitchen_05"
+    },
+    {
+      "id": "act2_kitchen_05",
+      "speakerId": "todd",
+      "side": "LEFT",
+      "text": "People still need their cars to run, and they still need your shelves stocked. Our hands do real work, Ade. We just have to stay tight on the margins and watch each other's backs.",
+      "nextNodeId": "act2_kitchen_06"
+    },
+    {
+      "id": "act2_kitchen_06",
+      "speakerId": "narrator",
+      "side": "CENTER_NARRATOR",
+      "text": "Adriana leans back and smiles faintly, her hand resting over Todd's calloused fingers. The household is solvent and their work ethic is unshakeable. But outside in the suburban dark, the quiet tremors of the economic realignment have begun.",
+      "nextNodeId": "act2_finale"
+    },
+    {
+      "id": "act2_finale",
+      "speakerId": "narrator",
+      "side": "CENTER_NARRATOR",
+      "text": "End of Act II: The First Tremors. The efficiency algorithms have taken root. Ahead lies Act III: The Severed Ladder."
     }
   ]
 }
