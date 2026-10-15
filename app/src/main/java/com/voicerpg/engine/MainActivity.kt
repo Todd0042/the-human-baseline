@@ -101,9 +101,16 @@ class MainActivity : ComponentActivity() {
                                 saveSummary = storyState.saveSummary,
                                 saveSlots = storyState.saveSlots,
                                 currentSlot = storyState.currentSlot,
-                                onStartStory = { storyViewModel.startNewStory(storyState.currentSlot) },
-                                onContinueStory = { storyViewModel.continueStory(storyState.currentSlot) },
-                                onAutoPlay = { storyViewModel.startNewStory(storyState.currentSlot, startInAutoPlay = true) },
+                                onPlay = {
+                                    if (storyState.hasExistingSave) {
+                                        storyViewModel.continueStory(storyState.currentSlot, startInAutoPlay = true)
+                                    } else {
+                                        storyViewModel.startNewStory(storyState.currentSlot, startInAutoPlay = true)
+                                    }
+                                },
+                                onStartNewStory = {
+                                    storyViewModel.startNewStory(storyState.currentSlot, startInAutoPlay = true)
+                                },
                                 onSelectChapter = { storyViewModel.openChapterSelect() },
                                 onOptions = { storyViewModel.openOptions() },
                                 onSelectSlot = { slot -> storyViewModel.selectSlot(slot) }

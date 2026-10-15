@@ -35,6 +35,7 @@ import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.MenuBook
 import androidx.compose.material.icons.filled.FastForward
+import androidx.compose.material.icons.filled.History
 import androidx.compose.material.icons.filled.Pause
 import androidx.compose.material.icons.filled.PlayArrow
 import androidx.compose.material.icons.filled.Settings
@@ -220,7 +221,7 @@ fun StoryScreen(
             }
         }
 
-        // 4. Top Header Bar (Chapter & Scene Info + Quick Buttons)
+        // 4. Top Header Action Bar (Quick Actions in Top Right)
         Row(
             modifier = Modifier
                 .fillMaxWidth()
@@ -231,27 +232,35 @@ fun StoryScreen(
                 )
                 .padding(horizontal = 16.dp, vertical = 8.dp)
                 .align(Alignment.TopCenter),
-            horizontalArrangement = Arrangement.SpaceBetween,
+            horizontalArrangement = Arrangement.End,
             verticalAlignment = Alignment.CenterVertically
         ) {
-            // Chapter and Scene indicator
-            Surface(
-                color = RetroBlack.copy(alpha = 0.80f),
-                shape = RoundedCornerShape(8.dp),
-                border = androidx.compose.foundation.BorderStroke(1.dp, RetroBorderGold.copy(alpha = 0.6f))
+            Row(
+                horizontalArrangement = Arrangement.spacedBy(8.dp),
+                verticalAlignment = Alignment.CenterVertically
             ) {
-                Text(
-                    text = "${currentScene.chapterTitle} • ${currentScene.name}",
-                    color = LogosGold,
-                    fontSize = 13.sp,
-                    fontFamily = FontFamily.Monospace,
-                    fontWeight = FontWeight.Bold,
-                    modifier = Modifier.padding(horizontal = 12.dp, vertical = 6.dp)
-                )
-            }
+                // Dialogue Log button
+                Button(
+                    onClick = { storyViewModel.openBacklog() },
+                    colors = ButtonDefaults.buttonColors(
+                        containerColor = RetroBlack.copy(alpha = 0.85f),
+                        contentColor = Color.White
+                    ),
+                    shape = RoundedCornerShape(18.dp),
+                    border = androidx.compose.foundation.BorderStroke(1.dp, RetroBorder),
+                    contentPadding = androidx.compose.foundation.layout.PaddingValues(horizontal = 12.dp, vertical = 0.dp),
+                    modifier = Modifier.height(36.dp)
+                ) {
+                    Icon(
+                        imageVector = Icons.Default.History,
+                        contentDescription = "Dialogue Log",
+                        tint = Color.White,
+                        modifier = Modifier.size(16.dp)
+                    )
+                    Spacer(Modifier.width(4.dp))
+                    Text("Log", fontSize = 12.sp, fontWeight = FontWeight.SemiBold)
+                }
 
-            // Quick actions
-            Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
                 // Chapters
                 IconButton(
                     onClick = { storyViewModel.openChapterSelect() },
@@ -475,19 +484,6 @@ fun StoryScreen(
                             Spacer(Modifier.width(4.dp))
                             Text("Auto", fontSize = 12.sp)
                         }
-                    }
-
-                    // Right button: Backlog Transcript
-                    Button(
-                        onClick = { storyViewModel.openBacklog() },
-                        colors = ButtonDefaults.buttonColors(
-                            containerColor = Color(0xFF1E293B),
-                            contentColor = Color.White
-                        ),
-                        shape = RoundedCornerShape(6.dp),
-                        modifier = Modifier.height(38.dp)
-                    ) {
-                        Text("Log", fontSize = 12.sp)
                     }
                 }
             }
