@@ -255,6 +255,57 @@
       "milestoneSummary": "Pete and Todd reject a national corporate chain takeover, choosing to keep the garage independent and double down on legacy vehicles.",
       "milestoneIcon": "🤝",
       "defaultObjective": "Decide the future of Pete's Auto Care with Pete."
+    },
+    {
+      "id": "scene_act6_facility_tour",
+      "name": "Shady Pines Assisted Living - Intake Office",
+      "chapterTitle": "Act VI: The Great Caregiving Crucible (Years 10–12)",
+      "backgroundAsset": "story/template_scene_alt.jpg",
+      "initialNodeId": "act6_node_01",
+      "ambientDescription": "A glossy brochure detailing a $9,200 monthly memory-care rate sits on an imitation cherrywood desk. Call lights chime relentlessly from the hall.",
+      "musicAsset": "audio/music/bgm_exploration.ogg",
+      "chapterIndex": 15,
+      "actNumber": 6,
+      "actTitle": "Act VI: The Great Caregiving Crucible",
+      "milestoneTitle": "The Care Dilemma",
+      "milestoneLocation": "Assisted Living Facility",
+      "milestoneSummary": "Private-equity-owned care facilities price gouge at $9,000/month with severe staff shortages as the Boomer generation reaches their late 80s.",
+      "milestoneIcon": "🏥",
+      "defaultObjective": "Review elder-care costs and staffing realities with the admissions director."
+    },
+    {
+      "id": "scene_act6_home_retrofit",
+      "name": "Todd & Adriana's Home - Converted Bedroom",
+      "chapterTitle": "Act VI: The Home Caregiving Crucible",
+      "backgroundAsset": "story/template_scene.jpg",
+      "initialNodeId": "act6_home_01",
+      "ambientDescription": "The smell of rubbing alcohol and clean laundry. Todd tightens heavy lag bolts securing a stainless steel transfer grab bar into wall studs.",
+      "musicAsset": "audio/music/bgm_exploration.ogg",
+      "chapterIndex": 16,
+      "actNumber": 6,
+      "actTitle": "Act VI: The Great Caregiving Crucible",
+      "milestoneTitle": "Family Mutual Aid",
+      "milestoneLocation": "Home Care Room",
+      "milestoneSummary": "Todd and Adriana retrofit their guest room to care for an aging parent at home, balancing exhausting shifts with physical transfers and medications.",
+      "milestoneIcon": "🛏️",
+      "defaultObjective": "Complete safety retrofit of the ground-floor bedroom."
+    },
+    {
+      "id": "scene_act6_kitchen_midnight",
+      "name": "Todd & Adriana's Kitchen - 2:00 AM",
+      "chapterTitle": "Act VI: Midnight Watch",
+      "backgroundAsset": "story/template_scene.jpg",
+      "initialNodeId": "act6_midnight_01",
+      "ambientDescription": "The hum of the refrigerator in the pitch dark. A single kitchen nightlight illuminates a pill organizer and a glass of water.",
+      "musicAsset": "audio/music/bgm_exploration.ogg",
+      "chapterIndex": 17,
+      "actNumber": 6,
+      "actTitle": "Act VI: The Great Caregiving Crucible",
+      "milestoneTitle": "Unbreakable Bond",
+      "milestoneLocation": "Midnight Kitchen",
+      "milestoneSummary": "Through bone-deep exhaustion, Todd and Adriana's resilience and shared sacrifice turn a grueling generational crisis into unbreakable solidarity.",
+      "milestoneIcon": "🌙",
+      "defaultObjective": "Manage 2 AM medication schedule and check on each other."
     }
   ]
 }

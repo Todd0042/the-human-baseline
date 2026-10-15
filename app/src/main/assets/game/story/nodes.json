@@ -649,7 +649,112 @@
       "id": "act5_finale",
       "speakerId": "narrator",
       "side": "CENTER_NARRATOR",
-      "text": "End of Act V: The Middle-Age Squeeze. The independent ground held firm. Next comes the heaviest trial yet—Act VI: The Great Caregiving Crucible."
+      "text": "End of Act V: The Middle-Age Squeeze. The independent ground held firm. Next comes the heaviest trial yet—Act VI: The Great Caregiving Crucible.",
+      "changeSceneId": "scene_act6_facility_tour"
+    },
+    {
+      "id": "act6_node_01",
+      "speakerId": "narrator",
+      "side": "CENTER_NARRATOR",
+      "text": "Year Eleven. The intake office of 'Golden Horizons Memory Care.' Down the carpeted hallway, call lights chime in relentless syncopation. Adriana sits across from a harried admissions coordinator holding a printed cost schedule.",
+      "nextNodeId": "act6_node_02"
+    },
+    {
+      "id": "act6_node_02",
+      "speakerId": "adriana",
+      "side": "RIGHT",
+      "text": "Nine thousand two hundred dollars a month. And that doesn't include physical therapy, prescription handling, or mobility escort to meals.",
+      "nextNodeId": "act6_node_03"
+    },
+    {
+      "id": "act6_node_03",
+      "speakerId": "narrator",
+      "side": "CENTER_NARRATOR",
+      "text": "The massive Baby Boomer generation has reached their late eighties and early nineties. The demographic peak has hit with the force of an avalanche. Facilities bought out by private equity firms charge predatory rates while running on skeleton crews of burned-out aides paid nineteen dollars an hour.",
+      "nextNodeId": "act6_node_04"
+    },
+    {
+      "id": "act6_node_04",
+      "speakerId": "adriana",
+      "side": "RIGHT",
+      "text": "I walked past Room 108. One aide trying to feed four residents who can't hold a spoon. They would burn through my mom's entire life savings in eighteen months, and she'd spend twenty hours a day staring at drywall. We are not doing this to her.",
+      "changeSceneId": "scene_act6_home_retrofit"
+    },
+    {
+      "id": "act6_home_01",
+      "speakerId": "narrator",
+      "side": "CENTER_NARRATOR",
+      "text": "Saturday morning. Todd has stripped the guest bedroom down to its subfloor. The smell of sawdust and primer hangs in the air as his impact driver sinks three-inch lag bolts into wall studs, mounting a reinforced stainless-steel grab bar beside an adjustable medical bed.",
+      "nextNodeId": "act6_home_02"
+    },
+    {
+      "id": "act6_home_02",
+      "speakerId": "todd",
+      "side": "LEFT",
+      "text": "Solid into the oak framing. Rated for four hundred pounds. I'm building a low-incline treated lumber ramp over the back patio steps tomorrow so the wheelchair doesn't bind.",
+      "nextNodeId": "act6_home_03"
+    },
+    {
+      "id": "act6_home_03",
+      "speakerId": "adriana",
+      "side": "RIGHT",
+      "text": "You worked fifty hours at the shop this week, Todd. Your knuckles are bruised from rebuilding that transaxle.",
+      "nextNodeId": "act6_home_04"
+    },
+    {
+      "id": "act6_home_04",
+      "speakerId": "todd",
+      "side": "LEFT",
+      "text": "And you spent twenty hours coordinating pharmacy orders and managing a retail floor with six broken kiosks. My hands know how to frame a wall and build a ramp, Ade. We take care of our own.",
+      "changeSceneId": "scene_act6_kitchen_midnight"
+    },
+    {
+      "id": "act6_midnight_01",
+      "speakerId": "narrator",
+      "side": "CENTER_NARRATOR",
+      "text": "Tuesday, 2:15 AM. A solitary amber nightlight glows in the quiet kitchen. Adriana stands at the counter in her flannel robe, methodically filling a seven-day pill organizer with heart medications, blood pressure regulators, and joint pain capsules.",
+      "nextNodeId": "act6_midnight_02"
+    },
+    {
+      "id": "act6_midnight_02",
+      "speakerId": "narrator",
+      "side": "CENTER_NARRATOR",
+      "text": "Soft footsteps behind her. Todd steps into the kitchen, his curly hair rumpled, carrying an extra quilt and setting a warm mug of water beside her hand.",
+      "nextNodeId": "act6_midnight_03"
+    },
+    {
+      "id": "act6_midnight_03",
+      "speakerId": "todd",
+      "side": "LEFT",
+      "text": "She's asleep, Ade. Breathing steady. I helped her transfer to the bed thirty minutes ago.",
+      "nextNodeId": "act6_midnight_04"
+    },
+    {
+      "id": "act6_midnight_04",
+      "speakerId": "adriana",
+      "side": "RIGHT",
+      "text": "I'm so tired my teeth hurt, Todd. Sometimes I feel like the whole world is being squeezed through a pinhole. Corporate trimming every minute, prices climbing, our parents aging...",
+      "nextNodeId": "act6_midnight_05"
+    },
+    {
+      "id": "act6_midnight_05",
+      "speakerId": "todd",
+      "side": "LEFT",
+      "text": "Look at me. We haven't folded. Not once. The world is changing fast, but our lives aren't run by their algorithms. We're here, we're working, and we're keeping this family whole. Come back to bed.",
+      "nextNodeId": "act6_midnight_06"
+    },
+    {
+      "id": "act6_midnight_06",
+      "speakerId": "narrator",
+      "side": "CENTER_NARRATOR",
+      "text": "Adriana leans her head against his chest, feeling the deep, steady cadence of his heartbeat. Out of the crucible of exhausting caregiving and unyielding labor, their partnership has forged an unbreakable resolve.",
+      "nextNodeId": "act6_finale"
+    },
+    {
+      "id": "act6_finale",
+      "speakerId": "narrator",
+      "side": "CENTER_NARRATOR",
+      "text": "End of Act VI: The Great Caregiving Crucible. The personal storm was weathered with dignity. Ahead lies the public turning point—Act VII: The Breaking Point & The Pushback."
     }
   ]
 }
