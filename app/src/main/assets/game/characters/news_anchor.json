@@ -4,7 +4,7 @@
   "role": "npc",
   "name": "Diane Sterling",
   "title": "Broadcast News Anchor",
-  "portraitAsset": "portraits/template_narrator.jpg",
+  "portraitAsset": "portraits/portrait_news_anchor.jpg",
   "spriteAsset": "sprites/hero_sprite.png",
   "themeColor": "#E53935",
   "ttsPitch": 1.05,
