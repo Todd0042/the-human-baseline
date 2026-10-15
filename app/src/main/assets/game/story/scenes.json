@@ -204,6 +204,57 @@
       "milestoneSummary": "Automated self-checkout triggers record product shrinkage, leading corporate to lock basic goods behind glass cases while blaming floor staff.",
       "milestoneIcon": "🔒",
       "defaultObjective": "Manage frustrated shoppers and unlock high-theft inventory cases."
+    },
+    {
+      "id": "scene_act5_livingroom_taxes",
+      "name": "Todd & Adriana's Living Room - Evening",
+      "chapterTitle": "Act V: The Middle-Age Squeeze (Years 7–9)",
+      "backgroundAsset": "story/template_scene.jpg",
+      "initialNodeId": "act5_node_01",
+      "ambientDescription": "County tax reassessment notices and utility surcharges cover the coffee table. Rain taps against the window glass.",
+      "musicAsset": "audio/music/bgm_exploration.ogg",
+      "chapterIndex": 12,
+      "actNumber": 5,
+      "actTitle": "Act V: The Middle-Age Squeeze",
+      "milestoneTitle": "The Municipal Shortfall",
+      "milestoneLocation": "Home Living Room",
+      "milestoneSummary": "Downtown commercial real estate vacancies trigger an 18% residential property tax hike to offset lost municipal revenue.",
+      "milestoneIcon": "📬",
+      "defaultObjective": "Review the county property tax reassessment and utility surcharges."
+    },
+    {
+      "id": "scene_act5_marcus_clinic",
+      "name": "Suburban Physical Therapy Clinic",
+      "chapterTitle": "Act V: The Retraining Wall",
+      "backgroundAsset": "story/template_scene_alt.jpg",
+      "initialNodeId": "act5_clinic_01",
+      "ambientDescription": "The smell of menthol rub and heating pads fills the waiting room. Marcus wears an elastic lumbar support belt over his work shirt.",
+      "musicAsset": "audio/music/bgm_exploration.ogg",
+      "chapterIndex": 13,
+      "actNumber": 5,
+      "actTitle": "Act V: The Middle-Age Squeeze",
+      "milestoneTitle": "Biological Limits",
+      "milestoneLocation": "Physical Therapy Clinic",
+      "milestoneSummary": "Marcus faces the biological reality of manual trades at 31 after suffering an L5 disc herniation pulling commercial wire as an apprentice.",
+      "milestoneIcon": "🩺",
+      "defaultObjective": "Check in on Marcus after his physical therapy appointment."
+    },
+    {
+      "id": "scene_act5_garage_franchise",
+      "name": "Pete's Auto Care - Main Office",
+      "chapterTitle": "Act V: The Corporate Buyout Offer",
+      "backgroundAsset": "story/template_scene.jpg",
+      "initialNodeId": "act5_garage_01",
+      "ambientDescription": "A glossy corporate franchise buyout prospectus sits on Pete's desk, promising subscription cloud tools in exchange for store surrender.",
+      "musicAsset": "audio/music/bgm_exploration.ogg",
+      "chapterIndex": 14,
+      "actNumber": 5,
+      "actTitle": "Act V: The Middle-Age Squeeze",
+      "milestoneTitle": "Independent Ground",
+      "milestoneLocation": "Shop Office",
+      "milestoneSummary": "Pete and Todd reject a national corporate chain takeover, choosing to keep the garage independent and double down on legacy vehicles.",
+      "milestoneIcon": "🤝",
+      "defaultObjective": "Decide the future of Pete's Auto Care with Pete."
     }
   ]
 }

@@ -523,7 +523,133 @@
       "id": "act4_finale",
       "speakerId": "narrator",
       "side": "CENTER_NARRATOR",
-      "text": "End of Act IV: The Commuter Drain. Mechanical volume has dropped and storefront friction has tightened. Ahead lies Act V: The Middle-Age Squeeze."
+      "text": "End of Act IV: The Commuter Drain. Mechanical volume has dropped and storefront friction has tightened. Ahead lies Act V: The Middle-Age Squeeze.",
+      "changeSceneId": "scene_act5_livingroom_taxes"
+    },
+    {
+      "id": "act5_node_01",
+      "speakerId": "narrator",
+      "side": "CENTER_NARRATOR",
+      "text": "Year Eight. A rainy Thursday night. Spread across Todd and Adriana's living room coffee table is a crisp white envelope from the County Property Appraiser's Office, marked with an official blue seal: 'NOTICE OF PROPERTY VALUE & TAX REASSESSMENT.'",
+      "nextNodeId": "act5_node_02"
+    },
+    {
+      "id": "act5_node_02",
+      "speakerId": "todd",
+      "side": "LEFT",
+      "text": "Eighteen and a half percent, Adriana. Our residential property assessment jumped nearly twenty percent in a single year.",
+      "nextNodeId": "act5_node_03"
+    },
+    {
+      "id": "act5_node_03",
+      "speakerId": "adriana",
+      "side": "RIGHT",
+      "text": "The downtown commercial office parks are forty percent vacant. The banks defaulted on three massive commercial towers last spring. The city's corporate tax base evaporated, so the county commissioners shifted the shortfall onto suburban homeowners.",
+      "nextNodeId": "act5_node_04"
+    },
+    {
+      "id": "act5_node_04",
+      "speakerId": "narrator",
+      "side": "CENTER_NARRATOR",
+      "text": "The cost of basic living continues to compound. Software bots don't pay property taxes or local payroll assessments, but roads still develop potholes and water mains still rupture. To balance the ledger, the municipal government turns to the only solvent citizens left: working homeowners.",
+      "nextNodeId": "act5_node_05"
+    },
+    {
+      "id": "act5_node_05",
+      "speakerId": "todd",
+      "side": "LEFT",
+      "text": "We'll manage it. I took on four fleet maintenance contracts for independent plumbing vans this month. But Marcus... Marcus is in real trouble.",
+      "changeSceneId": "scene_act5_marcus_clinic"
+    },
+    {
+      "id": "act5_clinic_01",
+      "speakerId": "narrator",
+      "side": "CENTER_NARRATOR",
+      "text": "Friday afternoon in the waiting area of a local physical therapy clinic. Marcus sits stiffly, wearing an elastic lumbar support belt. He holds an ice pack against his lower back, his face tight with chronic pain.",
+      "nextNodeId": "act5_clinic_02"
+    },
+    {
+      "id": "act5_clinic_02",
+      "speakerId": "todd",
+      "side": "LEFT",
+      "text": "How's the back feeling today, man? Doctor give you the MRI results?",
+      "nextNodeId": "act5_clinic_03"
+    },
+    {
+      "id": "act5_clinic_03",
+      "speakerId": "marcus",
+      "side": "RIGHT",
+      "text": "L5-S1 disc herniation, Todd. Pundits on TV kept saying: 'Just learn a trade! Go be an electrician or a plumber!' Nobody tells you that after sitting in an ergonomic office chair for eight years, your core can't handle pulling eighty-pound commercial wire through a wet concrete conduit at age thirty-one.",
+      "nextNodeId": "act5_clinic_04"
+    },
+    {
+      "id": "act5_clinic_04",
+      "speakerId": "narrator",
+      "side": "CENTER_NARRATOR",
+      "text": "The myth of frictionless retraining has collided with human biology. The physical trades are demanding, unforgiving crafts that require years of conditioned muscle memory and anatomical resilience. An untrained middle-aged body breaks under the sudden shock of industrial labor.",
+      "nextNodeId": "act5_clinic_05"
+    },
+    {
+      "id": "act5_clinic_05",
+      "speakerId": "todd",
+      "side": "LEFT",
+      "text": "Don't push it, Marcus. You're staying off the heavy ladders for six weeks. Pete and I need someone to manage our parts logistics and customer intake database at the front desk. It's clean work, it's hourly, and it keeps your back in one piece.",
+      "nextNodeId": "act5_clinic_06"
+    },
+    {
+      "id": "act5_clinic_06",
+      "speakerId": "marcus",
+      "side": "RIGHT",
+      "text": "Todd... I don't know what I would do without you guys.",
+      "changeSceneId": "scene_act5_garage_franchise"
+    },
+    {
+      "id": "act5_garage_01",
+      "speakerId": "narrator",
+      "side": "CENTER_NARRATOR",
+      "text": "Saturday morning in Pete's small back office. Pete sits behind his metal desk, tapping his pipe against an ashtray. Between them lies a thick bound proposal from 'Apex Auto Mobility Partners'—a nationwide corporate franchise chain.",
+      "nextNodeId": "act5_garage_02"
+    },
+    {
+      "id": "act5_garage_02",
+      "speakerId": "todd",
+      "side": "LEFT",
+      "text": "They want to buy the building, Pete. Turn the bays into standardized franchise pods running automated subscription diagnostic scanners.",
+      "nextNodeId": "act5_garage_03"
+    },
+    {
+      "id": "act5_garage_03",
+      "speakerId": "narrator",
+      "side": "CENTER_NARRATOR",
+      "text": "The contract offers guaranteed corporate payouts, but with severe conditions: all independent diagnostics forbidden, customer data routed to corporate telemetry servers, and technicians restricted to replacing whole sealed modular sub-assemblies rather than repairing components.",
+      "nextNodeId": "act5_garage_04"
+    },
+    {
+      "id": "act5_garage_04",
+      "speakerId": "todd",
+      "side": "LEFT",
+      "text": "You sign this, Pete, and we become part-swappers in blue uniforms following tablet prompts. We can't help people like Elena. We can't solder an open circuit for Marcus. We become cogs in their cloud subscription trap.",
+      "nextNodeId": "act5_garage_05"
+    },
+    {
+      "id": "act5_garage_05",
+      "speakerId": "narrator",
+      "side": "CENTER_NARRATOR",
+      "text": "Pete looks at the contract, then looks through the window at Todd's tool chest, the oil-stained workbenches, and the customer cars parked outside. With a dry grin, he picks up the glossy proposal and drops it into the metal wastebasket.",
+      "nextNodeId": "act5_garage_06"
+    },
+    {
+      "id": "act5_garage_06",
+      "speakerId": "todd",
+      "side": "LEFT",
+      "text": "Independent to the bone. That's how we started, and that's how we're finishing.",
+      "nextNodeId": "act5_finale"
+    },
+    {
+      "id": "act5_finale",
+      "speakerId": "narrator",
+      "side": "CENTER_NARRATOR",
+      "text": "End of Act V: The Middle-Age Squeeze. The independent ground held firm. Next comes the heaviest trial yet—Act VI: The Great Caregiving Crucible."
     }
   ]
 }
