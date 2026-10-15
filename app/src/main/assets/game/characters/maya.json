@@ -4,7 +4,7 @@
   "role": "npc",
   "name": "Maya",
   "title": "Vocational Apprentice",
-  "portraitAsset": "portraits/template_hero.jpg",
+  "portraitAsset": "portraits/portrait_maya.jpg",
   "spriteAsset": "sprites/hero_sprite.png",
   "themeColor": "#66BB6A",
   "ttsPitch": 1.08,
