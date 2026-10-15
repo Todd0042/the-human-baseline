@@ -5,7 +5,6 @@
   "name": "Marcus",
   "title": "Junior Developer",
   "portraitAsset": "portraits/portrait_marcus.jpg",
-  "spriteAsset": "sprites/hero_sprite.png",
   "themeColor": "#AB47BC",
   "ttsPitch": 1.0,
   "samplePhrase": "We just closed out our two-week sprint early. The automated scaffolding is doing all the boilerplate heavy lifting.",

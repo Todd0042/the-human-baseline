@@ -5,7 +5,6 @@
   "name": "Diane Sterling",
   "title": "Broadcast News Anchor",
   "portraitAsset": "portraits/portrait_news_anchor.jpg",
-  "spriteAsset": "sprites/hero_sprite.png",
   "themeColor": "#E53935",
   "ttsPitch": 1.05,
   "samplePhrase": "Good evening. Tonight on Public Action News: corporate workforce restructuring accelerates across the region.",

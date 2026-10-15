@@ -5,7 +5,6 @@
   "name": "Senator Vance",
   "title": "Commerce Committee Chair",
   "portraitAsset": "portraits/portrait_senator_vance.jpg",
-  "spriteAsset": "sprites/hero_sprite.png",
   "themeColor": "#37474F",
   "ttsPitch": 0.88,
   "samplePhrase": "Mr. Todd, are you asserting under oath that manufacturer diagnostic locks represent an anti-competitive restraint of trade?",

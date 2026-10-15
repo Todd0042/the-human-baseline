@@ -5,7 +5,6 @@
   "name": "Todd",
   "title": "Lead Diagnostic Technician",
   "portraitAsset": "portraits/portrait_todd.jpg",
-  "spriteAsset": "sprites/hero_sprite.png",
   "themeColor": "#29B6F6",
   "ttsPitch": 0.95,
   "samplePhrase": "Listen to the engine. Metal doesn't lie; you just have to know how to read the tolerances.",

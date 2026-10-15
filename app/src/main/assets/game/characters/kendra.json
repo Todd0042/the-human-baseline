@@ -5,7 +5,6 @@
   "name": "Kendra",
   "title": "Retail Clerk",
   "portraitAsset": "portraits/portrait_kendra.jpg",
-  "spriteAsset": "sprites/hero_sprite.png",
   "themeColor": "#FFA726",
   "ttsPitch": 1.15,
   "samplePhrase": "My shift got trimmed by eight minutes yesterday and eleven today. How am I supposed to pay campus housing on dynamic scheduling?",

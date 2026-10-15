@@ -300,51 +300,83 @@ fun StoryScreen(
                     )
                     .padding(horizontal = 20.dp, vertical = 16.dp)
             ) {
-                Column {
-                    // Speaker Nameplate
-                    val speakerName = if (speaker.isNarrator) "NARRATOR" else speaker.name.uppercase()
-                    Row(
-                        verticalAlignment = Alignment.CenterVertically,
-                        horizontalArrangement = Arrangement.spacedBy(8.dp)
-                    ) {
-                        Surface(
-                            color = speaker.themeColor.copy(alpha = 0.15f),
-                            shape = RoundedCornerShape(6.dp),
-                            border = androidx.compose.foundation.BorderStroke(1.dp, speaker.themeColor.copy(alpha = 0.5f))
-                        ) {
-                            Text(
-                                text = speakerName,
-                                color = speaker.themeColor,
-                                fontSize = 14.sp,
-                                fontFamily = FontFamily.Monospace,
-                                fontWeight = FontWeight.Bold,
-                                modifier = Modifier.padding(horizontal = 10.dp, vertical = 4.dp)
-                            )
-                        }
+                val portraitAsset = speaker.portraitAsset
+                val portraitBitmap = remember(portraitAsset) {
+                    if (!portraitAsset.isNullOrBlank()) {
+                        StoryAssetLoader.loadBitmap(context, portraitAsset)
+                    } else null
+                }
 
-                        if (!speaker.title.isNullOrBlank()) {
-                            Text(
-                                text = speaker.title,
-                                color = Color.LightGray,
-                                fontSize = 12.sp,
-                                fontFamily = FontFamily.Serif
+                Row(
+                    modifier = Modifier.fillMaxWidth(),
+                    horizontalArrangement = Arrangement.spacedBy(14.dp),
+                    verticalAlignment = Alignment.Top
+                ) {
+                    // Character Portrait Badge in Dialogue Card
+                    if (!speaker.isNarrator && portraitBitmap != null) {
+                        Surface(
+                            shape = RoundedCornerShape(8.dp),
+                            border = androidx.compose.foundation.BorderStroke(1.5.dp, speaker.themeColor),
+                            color = Color.Black.copy(alpha = 0.6f),
+                            modifier = Modifier
+                                .size(if (isLandscape) 64.dp else 52.dp)
+                                .shadow(8.dp, RoundedCornerShape(8.dp))
+                        ) {
+                            Image(
+                                bitmap = portraitBitmap,
+                                contentDescription = speaker.name,
+                                contentScale = ContentScale.Crop,
+                                modifier = Modifier.fillMaxSize()
                             )
                         }
                     }
 
-                    Spacer(modifier = Modifier.height(10.dp))
+                    Column(modifier = Modifier.weight(1f)) {
+                        // Speaker Nameplate
+                        val speakerName = if (speaker.isNarrator) "NARRATOR" else speaker.name.uppercase()
+                        Row(
+                            verticalAlignment = Alignment.CenterVertically,
+                            horizontalArrangement = Arrangement.spacedBy(8.dp)
+                        ) {
+                            Surface(
+                                color = speaker.themeColor.copy(alpha = 0.15f),
+                                shape = RoundedCornerShape(6.dp),
+                                border = androidx.compose.foundation.BorderStroke(1.dp, speaker.themeColor.copy(alpha = 0.5f))
+                            ) {
+                                Text(
+                                    text = speakerName,
+                                    color = speaker.themeColor,
+                                    fontSize = 14.sp,
+                                    fontFamily = FontFamily.Monospace,
+                                    fontWeight = FontWeight.Bold,
+                                    modifier = Modifier.padding(horizontal = 10.dp, vertical = 4.dp)
+                                )
+                            }
 
-                    // Dialogue Text
-                    Text(
-                        text = currentNode.text,
-                        color = Color.White,
-                        fontSize = if (isLandscape) 17.sp else 16.sp,
-                        lineHeight = 24.sp,
-                        fontFamily = FontFamily.Serif,
-                        modifier = Modifier
-                            .fillMaxWidth()
-                            .heightIn(min = 60.dp)
-                    )
+                            if (!speaker.title.isNullOrBlank()) {
+                                Text(
+                                    text = speaker.title,
+                                    color = Color.LightGray,
+                                    fontSize = 12.sp,
+                                    fontFamily = FontFamily.Serif
+                                )
+                            }
+                        }
+
+                        Spacer(modifier = Modifier.height(10.dp))
+
+                        // Dialogue Text
+                        Text(
+                            text = currentNode.text,
+                            color = Color.White,
+                            fontSize = if (isLandscape) 17.sp else 16.sp,
+                            lineHeight = 24.sp,
+                            fontFamily = FontFamily.Serif,
+                            modifier = Modifier
+                                .fillMaxWidth()
+                                .heightIn(min = 60.dp)
+                        )
+                    }
                 }
             }
 

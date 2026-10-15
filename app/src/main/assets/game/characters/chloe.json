@@ -5,7 +5,6 @@
   "name": "Chloe",
   "title": "Registered Nurse",
   "portraitAsset": "portraits/portrait_chloe.jpg",
-  "spriteAsset": "sprites/hero_sprite.png",
   "themeColor": "#26A69A",
   "ttsPitch": 1.10,
   "samplePhrase": "They think an iPad replaces two triage nurses. All it does is queue thirty furious patients in the waiting room.",

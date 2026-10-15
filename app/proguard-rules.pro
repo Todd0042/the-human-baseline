@@ -22,6 +22,12 @@
     <methods>;
 }
 
+# Keep all content pack DTOs and loaders for Gson reflection deserialization
+-keep class com.voicerpg.engine.content.** {
+    <fields>;
+    <methods>;
+}
+
 # Keep enum definitions and their built-in value methods
 -keepclassmembers enum com.voicerpg.engine.model.** {
     public static **[] values();
