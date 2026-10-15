@@ -306,6 +306,57 @@
       "milestoneSummary": "Through bone-deep exhaustion, Todd and Adriana's resilience and shared sacrifice turn a grueling generational crisis into unbreakable solidarity.",
       "milestoneIcon": "🌙",
       "defaultObjective": "Manage 2 AM medication schedule and check on each other."
+    },
+    {
+      "id": "scene_act7_strike_picket",
+      "name": "Regional Logistics Hub - Picket Line",
+      "chapterTitle": "Act VII: The Breaking Point & The Pushback (Years 13–15)",
+      "backgroundAsset": "story/template_scene_alt.jpg",
+      "initialNodeId": "act7_node_01",
+      "ambientDescription": "Steam plumes rise from burn barrels in the chilly pre-dawn air. Hundreds of warehouse workers and delivery drivers hold strike signs under floodlights.",
+      "musicAsset": "audio/music/bgm_exploration.ogg",
+      "chapterIndex": 18,
+      "actNumber": 7,
+      "actTitle": "Act VII: The Breaking Point & The Pushback",
+      "milestoneTitle": "The Picket Line",
+      "milestoneLocation": "Logistics Hub Gate",
+      "milestoneSummary": "Warehouse workers strike against biometric pacing software and inhuman pick quotas, triggering a nationwide labor mobilization.",
+      "milestoneIcon": "🪧",
+      "defaultObjective": "Stand in solidarity with warehouse and retail workers at the distribution gate."
+    },
+    {
+      "id": "scene_act7_capitol_hearing",
+      "name": "State Senate Committee Room 304",
+      "chapterTitle": "Act VII: The Right to Repair Testimony",
+      "backgroundAsset": "story/template_scene.jpg",
+      "initialNodeId": "act7_hearing_01",
+      "ambientDescription": "Carved mahogany panels and microphone stands. Todd stands before the Commerce Committee in his cleanest technician shirt with Pete beside him.",
+      "musicAsset": "audio/music/bgm_exploration.ogg",
+      "chapterIndex": 19,
+      "actNumber": 7,
+      "actTitle": "Act VII: The Breaking Point & The Pushback",
+      "milestoneTitle": "Testimony on the Record",
+      "milestoneLocation": "State Capitol",
+      "milestoneSummary": "Todd delivers fiery, grounded testimony holding a seized OBD-II telemetry lock, forcing lawmakers to confront automaker software monopolies.",
+      "milestoneIcon": "🏛️",
+      "defaultObjective": "Testify on the record against manufacturer software locks."
+    },
+    {
+      "id": "scene_act7_unionhall_vote",
+      "name": "Local Machinists & Clerks Union Hall",
+      "chapterTitle": "Act VII: The Turning Tide",
+      "backgroundAsset": "story/template_scene.jpg",
+      "initialNodeId": "act7_union_01",
+      "ambientDescription": "Fold-out metal chairs packed wall-to-wall under buzzing fluorescent tubes. A live news broadcast on the projection screen announces legislative debate.",
+      "musicAsset": "audio/music/bgm_exploration.ogg",
+      "chapterIndex": 20,
+      "actNumber": 7,
+      "actTitle": "Act VII: The Breaking Point & The Pushback",
+      "milestoneTitle": "The Public Mandate",
+      "milestoneLocation": "Union Hall",
+      "milestoneSummary": "Widespread public exhaustion with corporate speedups forces federal politicians to introduce the Emergency Fair Hours Act.",
+      "milestoneIcon": "⚖️",
+      "defaultObjective": "Celebrate the legislative breakthrough with community organizers."
     }
   ]
 }

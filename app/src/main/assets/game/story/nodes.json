@@ -754,7 +754,112 @@
       "id": "act6_finale",
       "speakerId": "narrator",
       "side": "CENTER_NARRATOR",
-      "text": "End of Act VI: The Great Caregiving Crucible. The personal storm was weathered with dignity. Ahead lies the public turning point—Act VII: The Breaking Point & The Pushback."
+      "text": "End of Act VI: The Great Caregiving Crucible. The personal storm was weathered with dignity. Ahead lies the public turning point—Act VII: The Breaking Point & The Pushback.",
+      "changeSceneId": "scene_act7_strike_picket"
+    },
+    {
+      "id": "act7_node_01",
+      "speakerId": "narrator",
+      "side": "CENTER_NARRATOR",
+      "text": "Year Fourteen. Pre-dawn chill at the south gates of the regional distribution hub. Orange flames flicker inside steel burn barrels, casting long shadows across hundreds of warehouse selectors, forklift operators, and delivery drivers holding picket signs: 'WE ARE HUMANS, NOT ALGORITHMS.'",
+      "nextNodeId": "act7_node_02"
+    },
+    {
+      "id": "act7_node_02",
+      "speakerId": "adriana",
+      "side": "RIGHT",
+      "text": "Look at this turnout. Corporate tried to introduce optical pacing cameras in our store last month to track how many seconds it takes to stock a carton. My clerks walked out, and the warehouse crews walked out right behind us.",
+      "nextNodeId": "act7_node_03"
+    },
+    {
+      "id": "act7_node_03",
+      "speakerId": "narrator",
+      "side": "CENTER_NARRATOR",
+      "text": "The pushback isn't theoretical—it's visceral. After a decade of silent hour-shaving, algorithmic speed-ups, and biometric surveillance, working people across every physical sector have reached their limit. The supply chain has ground to an absolute standstill.",
+      "nextNodeId": "act7_node_04"
+    },
+    {
+      "id": "act7_node_04",
+      "speakerId": "todd",
+      "side": "LEFT",
+      "text": "They thought people would just take the squeeze forever. When you treat the human body like an operating expense to minimize, sooner or later the machine runs out of fuel.",
+      "changeSceneId": "scene_act7_capitol_hearing"
+    },
+    {
+      "id": "act7_hearing_01",
+      "speakerId": "narrator",
+      "side": "CENTER_NARRATOR",
+      "text": "Thursday morning. State Senate Committee Room 304. The room is packed with independent mechanics, trade unionists, and corporate lobbyists in three-thousand-dollar suits. Todd sits at the witness table before a bank of microphones, holding a heavy cast-aluminum automotive telemetry module.",
+      "nextNodeId": "act7_hearing_02"
+    },
+    {
+      "id": "act7_hearing_02",
+      "speakerId": "todd",
+      "side": "LEFT",
+      "text": "Senators, this module costs forty dollars to manufacture. It sits inside every commuter vehicle built after 2028. The automaker encrypted the logic so that an independent garage cannot read a wheel-speed sensor fault without paying a recurring eighteen-hundred-dollar annual software seat license.",
+      "nextNodeId": "act7_hearing_03"
+    },
+    {
+      "id": "act7_hearing_03",
+      "speakerId": "narrator",
+      "side": "CENTER_NARRATOR",
+      "text": "Todd taps the metal casing on the mahogany dais. The sound resonates through the silent chamber.",
+      "nextNodeId": "act7_hearing_04"
+    },
+    {
+      "id": "act7_hearing_04",
+      "speakerId": "todd",
+      "side": "LEFT",
+      "text": "A mother delivering groceries to pay rent doesn't have five hundred dollars to pay a dealership for an encrypted software handshake. When you strip the right to repair a machine, you strip the dignity of the person who owns it. Pass this legislation, or watch our transportation infrastructure rot.",
+      "nextNodeId": "act7_hearing_05"
+    },
+    {
+      "id": "act7_hearing_05",
+      "speakerId": "narrator",
+      "side": "CENTER_NARRATOR",
+      "text": "Applause erupts from the gallery as the committee chairman gavels for order. For the first time in fifteen years, the regulatory tide is shifting away from corporate monopoly extraction.",
+      "changeSceneId": "scene_act7_unionhall_vote"
+    },
+    {
+      "id": "act7_union_01",
+      "speakerId": "narrator",
+      "side": "CENTER_NARRATOR",
+      "text": "Friday evening inside the packed Machinists & Clerks Union Hall. Above the stage, a live television news feed flickers. The news anchor's voice booms over the speakers: 'In a historic bipartisan breakthrough, the Emergency Fair Labor and Automation Standards Act has passed both houses of Congress.'",
+      "nextNodeId": "act7_union_02"
+    },
+    {
+      "id": "act7_union_02",
+      "speakerId": "marcus",
+      "side": "RIGHT",
+      "text": "Todd! Adriana! Look at the crawl! Compute taxation on automated enterprise workflows, strict human-in-the-loop liability... and a federal thirty-two-hour standard workweek with wage protection!",
+      "nextNodeId": "act7_union_03"
+    },
+    {
+      "id": "act7_union_03",
+      "speakerId": "adriana",
+      "side": "RIGHT",
+      "text": "A four-day workweek. Thirty-two hours of work for forty hours of baseline pay. Companies have to hire real people back to cover the fifth day.",
+      "nextNodeId": "act7_union_04"
+    },
+    {
+      "id": "act7_union_04",
+      "speakerId": "todd",
+      "side": "LEFT",
+      "text": "Just like Ford back in 1926. The machines got so fast they almost killed their own customer base. Society finally forced the brakes on.",
+      "nextNodeId": "act7_union_05"
+    },
+    {
+      "id": "act7_union_05",
+      "speakerId": "narrator",
+      "side": "CENTER_NARRATOR",
+      "text": "Cheers and embraces ripple across the hall. The breaking point has passed. The long institutional friction has yielded, opening the door to Act VIII: The 32nd Hour.",
+      "nextNodeId": "act7_finale"
+    },
+    {
+      "id": "act7_finale",
+      "speakerId": "narrator",
+      "side": "CENTER_NARRATOR",
+      "text": "End of Act VII: The Breaking Point & The Pushback. The legislative breakthrough is won. Ahead lies Act VIII: The 32nd Hour."
     }
   ]
 }
