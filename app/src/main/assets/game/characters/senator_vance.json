@@ -1,0 +1,16 @@
+{
+  "_doc": "Senator Vance - State Senate Commerce Committee Chairman.",
+  "id": "senator_vance",
+  "role": "npc",
+  "name": "Senator Vance",
+  "title": "Commerce Committee Chair",
+  "portraitAsset": "portraits/template_narrator.jpg",
+  "spriteAsset": "sprites/hero_sprite.png",
+  "themeColor": "#37474F",
+  "ttsPitch": 0.88,
+  "samplePhrase": "Mr. Todd, are you asserting under oath that manufacturer diagnostic locks represent an anti-competitive restraint of trade?",
+  "gender": "male",
+  "allowedVoiceRegions": [
+    "US"
+  ]
+}

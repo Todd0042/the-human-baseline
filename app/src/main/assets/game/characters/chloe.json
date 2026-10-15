@@ -1,0 +1,16 @@
+{
+  "_doc": "Chloe - Registered Nurse and close longtime friend of Todd and Adriana.",
+  "id": "chloe",
+  "role": "npc",
+  "name": "Chloe",
+  "title": "Registered Nurse",
+  "portraitAsset": "portraits/template_hero.jpg",
+  "spriteAsset": "sprites/hero_sprite.png",
+  "themeColor": "#26A69A",
+  "ttsPitch": 1.10,
+  "samplePhrase": "They think an iPad replaces two triage nurses. All it does is queue thirty furious patients in the waiting room.",
+  "gender": "female",
+  "allowedVoiceRegions": [
+    "US"
+  ]
+}

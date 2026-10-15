@@ -1,0 +1,16 @@
+{
+  "_doc": "Sam - Corporate Senior Auditor and close cookout friend.",
+  "id": "sam",
+  "role": "npc",
+  "name": "Sam",
+  "title": "Corporate Auditor",
+  "portraitAsset": "portraits/template_hero.jpg",
+  "spriteAsset": "sprites/hero_sprite.png",
+  "themeColor": "#5C6BC0",
+  "ttsPitch": 0.98,
+  "samplePhrase": "The model runs the compliance check in three seconds. What used to take four junior associates all week is now just a green checkmark.",
+  "gender": "male",
+  "allowedVoiceRegions": [
+    "US"
+  ]
+}

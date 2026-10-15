@@ -1,0 +1,16 @@
+{
+  "_doc": "Diane Sterling - Prime-time TV and Radio Broadcast News Anchor.",
+  "id": "news_anchor",
+  "role": "npc",
+  "name": "Diane Sterling",
+  "title": "Broadcast News Anchor",
+  "portraitAsset": "portraits/template_narrator.jpg",
+  "spriteAsset": "sprites/hero_sprite.png",
+  "themeColor": "#E53935",
+  "ttsPitch": 1.05,
+  "samplePhrase": "Good evening. Tonight on Public Action News: corporate workforce restructuring accelerates across the region.",
+  "gender": "female",
+  "allowedVoiceRegions": [
+    "US"
+  ]
+}

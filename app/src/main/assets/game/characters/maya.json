@@ -1,0 +1,16 @@
+{
+  "_doc": "Maya - Vocational Automotive Apprentice under Todd.",
+  "id": "maya",
+  "role": "npc",
+  "name": "Maya",
+  "title": "Vocational Apprentice",
+  "portraitAsset": "portraits/template_hero.jpg",
+  "spriteAsset": "sprites/hero_sprite.png",
+  "themeColor": "#66BB6A",
+  "ttsPitch": 1.08,
+  "samplePhrase": "The digital scanner says error code zero, but the engine is shaking on idle. Show me how to read the oscilloscope wave again, Todd.",
+  "gender": "female",
+  "allowedVoiceRegions": [
+    "US"
+  ]
+}

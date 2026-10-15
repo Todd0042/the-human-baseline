@@ -1,5 +1,5 @@
 {
-  "_doc": "The Human Baseline - Linear Narrative Dialogue Nodes Graph (No branching, pure storytelling).",
+  "_doc": "The Human Baseline - Complete 9-Act Linear Narrative Dialogue Graph with full expanded ensemble cast.",
   "nodes": [
     {
       "id": "act1_node_01",
@@ -12,966 +12,882 @@
       "id": "act1_node_02",
       "speakerId": "todd",
       "side": "LEFT",
-      "text": "Hand me that three-eighths torque wrench, Pete. Setting tension on this timing belt tensioner pulley. Forty-two foot-pounds, exactly where she wants to sit.",
+      "text": "Hand me that three-eighths torque wrench, Pete. Setting tension on this timing belt pulley. Forty-two foot-pounds, right where the service manual calls for it.",
       "nextNodeId": "act1_node_03"
     },
     {
       "id": "act1_node_03",
-      "speakerId": "narrator",
-      "side": "CENTER_NARRATOR",
-      "text": "Pete slides the calibrated wrench across the rolling cart. Across the bay, three customer invoices sit neatly in the pickup rack, each marked 'PAID - PICKUP BY 5:30.' In Year Zero, when an engine rolls into the bay, people have the money to fix it.",
+      "speakerId": "pete",
+      "side": "RIGHT",
+      "text": "Here you go, kid. Calibrated yesterday. Don't go stripping the aluminum threads on Pete's watch\u2014though God knows you've got better feel for bolt tolerances than half the dealership mechanics in this county.",
       "nextNodeId": "act1_node_04"
     },
     {
       "id": "act1_node_04",
-      "speakerId": "todd",
-      "side": "LEFT",
-      "text": "Click. Perfect. She's lined up TDC. Another hundred thousand miles on this engine if they don't neglect their coolant flushes.",
+      "speakerId": "narrator",
+      "side": "CENTER_NARRATOR",
+      "text": "A click sounds as the torque clicks true. Across the service desk, three customer invoices sit neatly in the pickup rack, each stamped 'PAID - CASH/CARD'. In Year Zero, when an engine rolls into the shop, families have the steady income to keep it running.",
       "nextNodeId": "act1_node_05"
     },
     {
       "id": "act1_node_05",
-      "speakerId": "todd",
-      "side": "LEFT",
-      "text": "Phone buzzes on the tool chest. Text from Adriana: 'Truck arrived on time. Five pallets cleared, displays built, all four clerks showed up with energy. We're locking the registers at 7. Don't burn the burgers tonight.'",
+      "speakerId": "news_anchor",
+      "side": "RIGHT",
+      "text": "Good evening, this is Diane Sterling with the 5:00 Business Pulse. State employment figures reached a four-year high this afternoon as regional manufacturing and retail outpace seasonal estimates, driven by steady consumer demand.",
       "nextNodeId": "act1_node_06"
     },
     {
       "id": "act1_node_06",
+      "speakerId": "pete",
+      "side": "RIGHT",
+      "text": "Enjoy the numbers while they're green, Todd. When the suits on the television start bragging about peak efficiency, it usually means someone in an office tower is planning a merger.",
+      "nextNodeId": "act1_node_07"
+    },
+    {
+      "id": "act1_node_07",
+      "speakerId": "todd",
+      "side": "LEFT",
+      "text": "Phone buzzes on the tool chest. Text from Adriana: 'Truck arrived on time. Five pallets cleared, displays built, all four clerks showed up with energy. We're locking the registers at 7. Don't burn the burgers tonight.'",
+      "nextNodeId": "act1_node_08"
+    },
+    {
+      "id": "act1_node_08",
       "speakerId": "narrator",
       "side": "CENTER_NARRATOR",
-      "text": "Todd wipes his hands on a clean red shop rag, rolls down the bay door, and clocks out on the analog punch clock. Outside, the early autumn breeze is clean. Across town at Oakridge Liquors, Adriana is wrapping up her shift.",
+      "text": "Todd wipes his hands on a clean red shop rag, rolls down the middle bay door, and clocks out on the analog punch clock. Outside, the early autumn breeze is clean. Across town at Oakridge Liquors, Adriana is wrapping up her floor shift.",
       "changeSceneId": "scene_act1_retail"
     },
     {
       "id": "act1_retail_01",
       "speakerId": "narrator",
       "side": "CENTER_NARRATOR",
-      "text": "Inside the bright, orderly aisles of Oakridge Liquors, the shelves are neatly fronted and faced. Warm amber bottles of Kentucky bourbon gleam under recessed halogen lights. Two young college students, Sam and Chloe, are chatting cheerfully behind register one.",
+      "text": "Inside the bright, orderly aisles of Oakridge Liquors, the shelves are neatly fronted and faced. Warm amber bottles of Kentucky bourbon gleam under recessed halogen lights as delivery carts roll smoothly over the threshold.",
       "nextNodeId": "act1_retail_02"
     },
     {
       "id": "act1_retail_02",
-      "speakerId": "adriana",
+      "speakerId": "kendra",
       "side": "RIGHT",
-      "text": "Great job clearing the delivery skids today, you two. Take your full thirty-minute lunch breaks—no rushing. The weekend promotional endcap looks sharp.",
+      "text": "Last case of single barrel stacked on the endcap, boss! Floor is swept, weekend signage is up, and register one is balanced.",
       "nextNodeId": "act1_retail_03"
     },
     {
       "id": "act1_retail_03",
-      "speakerId": "narrator",
-      "side": "CENTER_NARRATOR",
-      "text": "There are no automated cameras counting Chloe's keystrokes. No algorithm shaving twelve minutes from Sam's timecard to appease an executive dashboard. Labor hours are managed with human trust, common sense, and mutual respect.",
+      "speakerId": "adriana",
+      "side": "RIGHT",
+      "text": "Sharp work, Kendra. Take your full thirty-minute break before you head out. Don't let campus classes run you ragged this semester\u2014steady hours, steady sleep.",
       "nextNodeId": "act1_retail_04"
     },
     {
       "id": "act1_retail_04",
-      "speakerId": "adriana",
+      "speakerId": "kendra",
       "side": "RIGHT",
-      "text": "Drawer count balances down to the penny. Alarm set, doors locked. Time to head home for the cookout.",
+      "text": "Thanks, Adriana. You're the only department manager in the whole supermarket chain who doesn't breathe down our necks with stopwatches. See you Monday!",
+      "nextNodeId": "act1_retail_05"
+    },
+    {
+      "id": "act1_retail_05",
+      "speakerId": "narrator",
+      "side": "CENTER_NARRATOR",
+      "text": "There are no automated cameras tracking Kendra's keystrokes or algorithms shaving minutes off her timecard. Labor is managed with human trust, clear expectations, and mutual respect. Adriana sets the safe alarm, locks the glass entrance, and heads home to the backyard cookout.",
       "changeSceneId": "scene_act1_cookout"
     },
     {
       "id": "act1_cookout_01",
       "speakerId": "narrator",
       "side": "CENTER_NARRATOR",
-      "text": "Twilight settles over Todd and Adriana's suburban patio. The charcoal kettle grill fills the backyard with the aroma of caramelized beef, toasted brioche buns, and charred peppers. Ice clinks in a cooler beside the deck table.",
+      "text": "The backyard deck smells of hickory charcoal, sizzling beef, and fresh cedar planks. Twilight paints the sky in shades of amber and indigo as bistro string lights glow above the lawn table.",
       "nextNodeId": "act1_cookout_02"
     },
     {
       "id": "act1_cookout_02",
-      "speakerId": "marcus",
-      "side": "RIGHT",
-      "text": "Guys, I'm telling you, our senior vice president dropped by our standup today. He said if we hit our Q4 deliverables, the entire junior engineering cohort is getting bumped up to full mid-level salaries. Full health benefits, four percent 401(k) match, the works!",
+      "speakerId": "todd",
+      "side": "LEFT",
+      "text": "Burgers are off the grates. Sharp cheddar for Marcus, pepper jack for Sam, and Chloe gets the grilled vegetable skewers.",
       "nextNodeId": "act1_cookout_03"
     },
     {
       "id": "act1_cookout_03",
-      "speakerId": "todd",
-      "side": "LEFT",
-      "text": "That's huge, Marcus. You busted your tail on that degree, and it's paying off. Drink to that.",
+      "speakerId": "marcus",
+      "side": "RIGHT",
+      "text": "Man, Todd, you're a miracle worker. Speaking of miracles\u2014we just finished our sprint two days ahead of schedule at the tech firm. The new code generators write our entire boilerplate API scaffolding automatically. I'm on track for a promotion by winter.",
       "nextNodeId": "act1_cookout_04"
     },
     {
       "id": "act1_cookout_04",
-      "speakerId": "adriana",
+      "speakerId": "sam",
       "side": "RIGHT",
-      "text": "Just don't start buying imported scotch until the contract is signed in ink, Marcus. I see guys in my store celebrate early all the time.",
+      "text": "Same thing in auditing. The automated reconciliation scripts run four hundred ledger accounts before I finish my morning coffee. Our regional director says we'll be handling thirty percent more client volume without adding overhead.",
       "nextNodeId": "act1_cookout_05"
     },
     {
       "id": "act1_cookout_05",
-      "speakerId": "marcus",
+      "speakerId": "chloe",
       "side": "RIGHT",
-      "text": "Haha, deal! Though our lead architect did mention they're testing out some new automated syntax assistants next month. Says it's going to make us so productive we might never have to work overtime again.",
+      "text": "I wish hospital management had magic software. We had forty-two admissions in ER triage today. Every executive wants to cut nursing ratios, but an algorithm can't start a pediatric IV on a dehydrated toddler with rolling veins.",
       "nextNodeId": "act1_cookout_06"
     },
     {
       "id": "act1_cookout_06",
-      "speakerId": "todd",
-      "side": "LEFT",
-      "text": "Careful with tools that promise to do the thinking for you. In the shop, an automated diagnostic scanner is only as smart as the technician holding the test probe.",
+      "speakerId": "adriana",
+      "side": "RIGHT",
+      "text": "Preach, Chloe. A machine doesn't calm an angry customer down when a case of wine arrives smashed on the pallet either. Human work takes human presence.",
       "nextNodeId": "act1_cookout_07"
     },
     {
       "id": "act1_cookout_07",
-      "speakerId": "narrator",
-      "side": "CENTER_NARRATOR",
-      "text": "Laughter ripples around the patio table as the stars begin to emerge over quiet rooftops. Glasses clink. The future feels linear, stable, and welcoming—unaware of the silent algorithmic tremors already preparing to ripple beneath the economy.",
-      "nextNodeId": "act1_finale"
+      "speakerId": "todd",
+      "side": "LEFT",
+      "text": "Here's to steady work, honest pay, and having Friday night with the people who matter.",
+      "nextNodeId": "act1_cookout_08"
     },
     {
-      "id": "act1_finale",
+      "id": "act1_cookout_08",
       "speakerId": "narrator",
       "side": "CENTER_NARRATOR",
-      "text": "End of Act I: The Warm Engine. This was the baseline: a world of steady hours, predictable ladders, and honest wages.",
+      "text": "Glasses clink under the soft yellow lights. In Year Zero, the future looks like a straight, reassuring line: rising careers, predictable mortgages, and weekend gatherings that never feel stolen.",
       "changeSceneId": "scene_act2_retail_breakroom"
     },
     {
       "id": "act2_node_01",
       "speakerId": "narrator",
       "side": "CENTER_NARRATOR",
-      "text": "Eighteen months later. Inside the Oakridge Liquors breakroom, the paper schedule on the corkboard has been replaced by a sleek, wall-mounted corporate tablet. A small blinking digital indicator reads: 'WFM OPTIMIZATION ACTIVE - REVISION 4.12.'",
+      "text": "Year Two. Inside the employee breakroom at Oakridge Liquors, a newly mounted digital touchscreen tablet glows with a cold, persistent blue LED ring beside the bulletin board.",
       "nextNodeId": "act2_node_02"
     },
     {
       "id": "act2_node_02",
-      "speakerId": "adriana",
+      "speakerId": "kendra",
       "side": "RIGHT",
-      "text": "Chloe, let me look at your phone. Did your schedule ping change again?",
+      "text": "Adriana, look at this. The tablet recalculated my shift. It trimmed eight minutes from yesterday, eleven minutes from today, and pushed my start time back thirty-five minutes tomorrow. I'm down to twenty-seven hours this week!",
       "nextNodeId": "act2_node_03"
     },
     {
       "id": "act2_node_03",
-      "speakerId": "narrator",
-      "side": "CENTER_NARRATOR",
-      "text": "Chloe, a college junior balancing tuition payments, holds up her cracked screen with a strained look. Her Tuesday shift—historically a clean four hours from 2:00 to 6:00 PM—has been shaved down to 2:00 to 5:48 PM. Twelve minutes trimmed.",
+      "speakerId": "adriana",
+      "side": "RIGHT",
+      "text": "I saw the memo from district headquarters. Corporate rolled out a dynamic 'Workforce Optimization Algorithm'. It monitors register transactions per minute and trims staffing dynamically to cut wage drag.",
       "nextNodeId": "act2_node_04"
     },
     {
       "id": "act2_node_04",
-      "speakerId": "adriana",
+      "speakerId": "kendra",
       "side": "RIGHT",
-      "text": "Twelve minutes. Corporate says the dynamic foot-traffic algorithm predicts an 8% drop in customer density between 5:45 and 6:00. Across forty regional stores, that trims eighty thousand dollars in operating payroll a quarter.",
+      "text": "How am I supposed to pay rent when the computer cuts my paycheck by eighty dollars every two weeks with zero warning?",
       "nextNodeId": "act2_node_05"
     },
     {
       "id": "act2_node_05",
-      "speakerId": "narrator",
-      "side": "CENTER_NARRATOR",
-      "text": "Nobody gets fired. No WARN notices are triggered. But Chloe's paycheck is thirty dollars lighter this week, and the grocery distributor's delivery truck doesn't care about dynamic foot traffic—the pallets still arrive at 5:30.",
+      "speakerId": "adriana",
+      "side": "RIGHT",
+      "text": "I'm scheduling you for manual inventory shelf resets in the backroom, Kendra. The algorithm only tracks front registers. As long as I'm manager here, I'll protect your hours where the software can't reach.",
       "nextNodeId": "act2_node_06"
     },
     {
       "id": "act2_node_06",
-      "speakerId": "adriana",
-      "side": "RIGHT",
-      "text": "Don't sweat the twelve minutes today, Chloe. Clock out when the tablet says so. I'll haul the last two pallets of vodka into the cooler myself.",
+      "speakerId": "narrator",
+      "side": "CENTER_NARRATOR",
+      "text": "Adriana signs the paper schedule with firm strokes of her pen. But behind her, the wall tablet chimes with an alert: 'SHIFT OVERLAP DETECTED - 14 EXCESS MINUTES IDENTIFIED.' The subtle squeeze has begun.",
       "changeSceneId": "scene_act2_garage_tuesday"
     },
     {
       "id": "act2_garage_01",
       "speakerId": "narrator",
       "side": "CENTER_NARRATOR",
-      "text": "Tuesday, 11:30 AM at Pete's Auto Care. Todd is under the hood of a dark grey hatchback, checking the oil cap and running a fluid inspection. The bell rings as Marcus steps out of the customer waiting room into the bay.",
+      "text": "Tuesday morning at Pete's Auto Care. Marcus's compact sedan sits on Lift 1, draining warm synthetic oil into the rolling collector drum.",
       "nextNodeId": "act2_garage_02"
     },
     {
       "id": "act2_garage_02",
-      "speakerId": "todd",
-      "side": "LEFT",
-      "text": "Filter's replaced, Marcus. Synthetic 0W-20 topped off. Tires look good for another ten thousand miles. You're set.",
+      "speakerId": "marcus",
+      "side": "RIGHT",
+      "text": "Hey Todd! Just dropping by for the 40,000-mile lube service. Still loving our company's new AI code tools. We don't even write unit tests anymore\u2014the model does it instantly.",
       "nextNodeId": "act2_garage_03"
     },
     {
       "id": "act2_garage_03",
-      "speakerId": "marcus",
-      "side": "RIGHT",
-      "text": "Thanks, Todd. Man, it's nice to step away from the screen for an hour. Our new automated engineering scaffolding went live last month, and it is insane. It generates our database schemas and write-ups in seconds.",
+      "speakerId": "todd",
+      "side": "LEFT",
+      "text": "Sounds slick, Marcus. But who checks if the model's tests are actually catching edge cases, or just rubber-stamping its own syntax?",
       "nextNodeId": "act2_garage_04"
     },
     {
       "id": "act2_garage_04",
-      "speakerId": "todd",
-      "side": "LEFT",
-      "text": "Sounds like smooth sailing then. You guys still expanding the team?",
+      "speakerId": "pete",
+      "side": "RIGHT",
+      "text": "More importantly, Marcus\u2014who are they hiring to replace the junior guys who leave? I saw on the morning wire that your tech firm froze all entry-level hiring across the state.",
       "nextNodeId": "act2_garage_05"
     },
     {
       "id": "act2_garage_05",
-      "speakerId": "marcus",
+      "speakerId": "news_anchor",
       "side": "RIGHT",
-      "text": "That's the weird part. Our junior recruiter was reassigned last week. We had three open junior software requisitions listed on our portal, and they all just disappeared. Leadership said our current team can handle double the velocity now without backfilling.",
+      "text": "Reporting on regional commerce: mid-tier software and corporate accounting firms announced a 14% decline in entry-level hiring this quarter, citing internal generative tooling gains and reduced associate onboarding requirements.",
       "nextNodeId": "act2_garage_06"
     },
     {
       "id": "act2_garage_06",
+      "speakerId": "marcus",
+      "side": "RIGHT",
+      "text": "Well... our VP said it's just a temporary pause while they restructure teams. I'm sure it'll pick back up by spring.",
+      "nextNodeId": "act2_garage_07"
+    },
+    {
+      "id": "act2_garage_07",
       "speakerId": "todd",
       "side": "LEFT",
-      "text": "If two mechanics with a hydraulic lift can suddenly change eight sets of tires an hour, Pete doesn't hire a third guy. He pocketed the efficiency. Just keep your eye on the ladder, Marcus.",
+      "text": "Tires are rotated, Marcus. Synthetic 0W-20 is fresh. Keep an eye on your bank account, man. When the people at the top stop training juniors, they're usually getting ready to prune the tree.",
       "changeSceneId": "scene_act2_kitchen"
     },
     {
       "id": "act2_kitchen_01",
       "speakerId": "narrator",
       "side": "CENTER_NARRATOR",
-      "text": "Tuesday night, 8:45 PM. Two steaming mugs of chamomile tea sit on the laminate kitchen table between Todd and Adriana. The local news murmurs quietly from the television in the background, reporting on tech sector hiring pauses and suburban retail performance.",
+      "text": "Late Tuesday evening. Two ceramic mugs of chamomile tea steam gently on Todd and Adriana's kitchen table beside the monthly utility statements and grocery receipts.",
       "nextNodeId": "act2_kitchen_02"
     },
     {
       "id": "act2_kitchen_02",
       "speakerId": "adriana",
       "side": "RIGHT",
-      "text": "My shoulders are burning. Corporate trimmed thirty-six total clerk hours off our weekly department budget. My clerks are stressed about making rent, and I'm the one who has to explain why the machine took their shift time.",
+      "text": "The scheduling algorithm shaved eighty dollars off Kendra's check this week, Todd. I had to create dummy stockroom work orders just to keep her rent money intact. It feels like wrestling a machine that doesn't blink.",
       "nextNodeId": "act2_kitchen_03"
     },
     {
       "id": "act2_kitchen_03",
       "speakerId": "todd",
       "side": "LEFT",
-      "text": "Marcus came by for an oil change today. His company froze junior hiring. Said the automated software writes their boilerplate code now.",
+      "text": "Marcus came by the shop today. He's talking like everything is fine, but Pete and I saw the news. His firm froze entry-level hiring. He thinks he's indispensable because he can prompt the code generator, but he doesn't see the ceiling closing in.",
       "nextNodeId": "act2_kitchen_04"
     },
     {
       "id": "act2_kitchen_04",
       "speakerId": "adriana",
       "side": "RIGHT",
-      "text": "Look at this grocery receipt from yesterday, Todd. Eggs, chicken breast, coffee—up another 12%. If people's hours are getting shaved and junior salaries aren't getting paid, who is going to keep buying the groceries?",
+      "text": "We're safe in our careers, Todd. People will always need their cars fixed and their retail stores run by someone who knows how to handle people. But the margin for error for everyone else is getting razor-thin.",
       "nextNodeId": "act2_kitchen_05"
     },
     {
       "id": "act2_kitchen_05",
       "speakerId": "todd",
       "side": "LEFT",
-      "text": "People still need their cars to run, and they still need your shelves stocked. Our hands do real work, Ade. We just have to stay tight on the margins and watch each other's backs.",
-      "nextNodeId": "act2_kitchen_06"
-    },
-    {
-      "id": "act2_kitchen_06",
-      "speakerId": "narrator",
-      "side": "CENTER_NARRATOR",
-      "text": "Adriana leans back and smiles faintly, her hand resting over Todd's calloused fingers. The household is solvent and their work ethic is unshakeable. But outside in the suburban dark, the quiet tremors of the economic realignment have begun.",
-      "nextNodeId": "act2_finale"
-    },
-    {
-      "id": "act2_finale",
-      "speakerId": "narrator",
-      "side": "CENTER_NARRATOR",
-      "text": "End of Act II: The First Tremors. The efficiency algorithms have taken root. Ahead lies Act III: The Severed Ladder.",
+      "text": "Then we stay disciplined. Pay off the truck note early. Keep our tools sharp, our savings stocked, and our eyes open.",
       "changeSceneId": "scene_act3_patio_afternoon"
     },
     {
       "id": "act3_node_01",
       "speakerId": "narrator",
       "side": "CENTER_NARRATOR",
-      "text": "Two years later. Sunday afternoon on the back patio. Marcus sits in a fold-out lawn chair, staring down at a blank laptop screen with dark circles under his eyes. A stack of printed resume drafts rests weighted down by an empty mug.",
+      "text": "Year Four. A brisk Sunday afternoon on Todd and Adriana's backyard patio. Dry autumn leaves skitter across the wooden deck as Marcus sits motionless, staring into an untouched can of soda.",
       "nextNodeId": "act3_node_02"
     },
     {
       "id": "act3_node_02",
-      "speakerId": "todd",
-      "side": "LEFT",
-      "text": "Drink some water, Marcus. You've been staring at that portal for three hours straight.",
+      "speakerId": "marcus",
+      "side": "RIGHT",
+      "text": "They cut forty-two of us on Thursday morning. A ten-minute video call where our manager's camera was turned off. He read from a legal script about 'headcount rationalization through autonomous workflows.'",
       "nextNodeId": "act3_node_03"
     },
     {
       "id": "act3_node_03",
-      "speakerId": "marcus",
+      "speakerId": "sam",
       "side": "RIGHT",
-      "text": "Four hundred and eighteen, Todd. That's the count. Four hundred and eighteen applications submitted over five months. Junior developer, QA tester, IT support, technical documentation—everything. Two screening calls, and then an automated rejection email forty-eight hours later.",
+      "text": "Same thing happened in my accounting division, Marcus. Our firm let go fourteen junior analysts last month. The senior partners didn't even replace them\u2014they just run the audit automation scripts themselves.",
       "nextNodeId": "act3_node_04"
     },
     {
       "id": "act3_node_04",
-      "speakerId": "narrator",
-      "side": "CENTER_NARRATOR",
-      "text": "Marcus wasn't laid off because he failed. His firm had thirty engineers; with generative software scaffolding, eight senior architects now do the output of thirty. The junior tier wasn't trimmed—it was systematically erased.",
+      "speakerId": "marcus",
+      "side": "RIGHT",
+      "text": "I've submitted three hundred and twenty applications in three weeks. Every single rejection arrives within ten seconds from automated ATS screening algorithms. You can't even get a human being to read a cover letter.",
       "nextNodeId": "act3_node_05"
     },
     {
       "id": "act3_node_05",
-      "speakerId": "todd",
-      "side": "LEFT",
-      "text": "The student loans don't pause while the algorithms optimize, do they?",
+      "speakerId": "adriana",
+      "side": "RIGHT",
+      "text": "Eat the sandwich Todd made, Marcus. You're not an algorithm, and you're not a line item on an executive spreadsheet. You have skills, you have dignity, and we are going to help you through this.",
       "nextNodeId": "act3_node_06"
     },
     {
       "id": "act3_node_06",
-      "speakerId": "marcus",
-      "side": "RIGHT",
-      "text": "Seven hundred and forty dollars a month. Every single month. My emergency fund runs out in thirty days. If I don't land something that pays hourly by the first of next month, I have to give up my apartment and move into my parents' basement.",
+      "speakerId": "todd",
+      "side": "LEFT",
+      "text": "The corporate ladder broke, Marcus. But your hands and your brain still work. We'll find real ground.",
       "changeSceneId": "scene_act3_retail_hiring"
     },
     {
       "id": "act3_retail_01",
       "speakerId": "narrator",
       "side": "CENTER_NARRATOR",
-      "text": "Monday morning inside Adriana's tiny back office at Oakridge Liquors. The metal desk is overflowing with paper job applications. A corporate hiring directive sits on her clipboard.",
+      "text": "Inside Adriana's cramped department office at Oakridge Liquors, stacks of white copy paper cover every inch of the laminate desk.",
       "nextNodeId": "act3_retail_02"
     },
     {
       "id": "act3_retail_02",
-      "speakerId": "adriana",
+      "speakerId": "kendra",
       "side": "RIGHT",
-      "text": "Look at this stack. One part-time stocking position. Sixteen hours a week at fifteen dollars an hour. Forty-two applications in forty-eight hours.",
+      "text": "Adriana... I printed the applicant batch for that single 16-hour part-time stocker posting. There are forty-eight applications in twenty-four hours.",
       "nextNodeId": "act3_retail_03"
     },
     {
       "id": "act3_retail_03",
-      "speakerId": "narrator",
-      "side": "CENTER_NARRATOR",
-      "text": "Adriana flips through the pages. Two years ago, these applications came from local community college kids looking for spending cash. Today, she's holding resumes from a 29-year-old former commercial copywriter, a 34-year-old corporate paralegal, and a junior accountant whose firm automated audit reviews.",
+      "speakerId": "adriana",
+      "side": "RIGHT",
+      "text": "Let me see the top five. A former commercial copywriter with nine years of agency experience. A junior corporate paralegal. A graphic designer with an MFA.",
       "nextNodeId": "act3_retail_04"
     },
     {
       "id": "act3_retail_04",
-      "speakerId": "adriana",
+      "speakerId": "kendra",
       "side": "RIGHT",
-      "text": "They all say the same thing in the cover letter: 'Fast learner, reliable, physically capable, willing to take any shifts.' People with master's degrees asking if they can please unload Miller Lite cases on Saturday nights.",
+      "text": "People with ten years of professional experience fighting college kids for fifteen dollars an hour to unload bourbon boxes at six in the morning. It feels wrong, Adriana.",
       "nextNodeId": "act3_retail_05"
     },
     {
       "id": "act3_retail_05",
-      "speakerId": "narrator",
-      "side": "CENTER_NARRATOR",
-      "text": "The desk-job economy has begun spilling directly into physical retail, not out of passion, but out of sheer survival desperation to service debt and buy groceries.",
+      "speakerId": "adriana",
+      "side": "RIGHT",
+      "text": "It is wrong, Kendra. The white-collar ladder broke, and everyone is landing on the service floor. We treat every applicant with respect, but we protect our permanent crew.",
       "changeSceneId": "scene_act3_garage_lockout"
     },
     {
       "id": "act3_garage_01",
       "speakerId": "narrator",
       "side": "CENTER_NARRATOR",
-      "text": "Tuesday afternoon at Pete's Auto Care. Marcus's compact hatchback sits in Bay 3 with its hood propped. The engine idles with a rough, shuddering shake, and the instrument cluster glows with an urgent amber 'SERVICE REQUIRED' alert.",
+      "text": "Pete's Auto Care, Bay 3. Marcus's car idles with a rough shudder, the check engine light glowing steadily amber on the instrument cluster.",
       "nextNodeId": "act3_garage_02"
     },
     {
       "id": "act3_garage_02",
-      "speakerId": "marcus",
-      "side": "RIGHT",
-      "text": "I took it by the dealership on my way here, Todd. The service advisor told me they couldn't even tell me what the code meant without charging a three-hundred-and-eighty-dollar diagnostic cloud gateway access fee. I don't have three hundred and eighty dollars.",
+      "speakerId": "todd",
+      "side": "LEFT",
+      "text": "Plugging the scan tool into the OBD-II port... and look at that. Screen flashes red: 'ENCRYPTED TELEMETRY GATEWAY - REQUIRES DEALER CLOUD SUBSCRIPTION TOKEN: $400/YEAR.'",
       "nextNodeId": "act3_garage_03"
     },
     {
       "id": "act3_garage_03",
-      "speakerId": "todd",
-      "side": "LEFT",
-      "text": "That's their new trick. They locked the CAN-bus architecture behind an encrypted telematics gateway. They want independent garages locked out so customers are forced to pay corporate subscription rates to clear a sensor fault.",
+      "speakerId": "marcus",
+      "side": "RIGHT",
+      "text": "Four hundred dollars just to tell me which spark plug is misfiring? Todd, I'm down to my last month of emergency savings. I can't pay a four-hundred-dollar software subscription!",
       "nextNodeId": "act3_garage_04"
     },
     {
       "id": "act3_garage_04",
-      "speakerId": "narrator",
-      "side": "CENTER_NARRATOR",
-      "text": "Todd reaches into his rolling tool cart and pulls out a custom OBD-II breakout harness he soldered himself, paired with an open-source oscilloscope tablet running community right-to-repair firmware.",
+      "speakerId": "pete",
+      "side": "RIGHT",
+      "text": "Automaker lobbyists pushed the bill through the state capital last winter under the guise of 'cybersecurity'. They want to kill independent repair shops and force every working stiff into five-hundred-dollar dealer diagnostic bays.",
       "nextNodeId": "act3_garage_05"
     },
     {
       "id": "act3_garage_05",
-      "speakerId": "todd",
-      "side": "LEFT",
-      "text": "Pins 6 and 14 probed directly. Bypassing their cloud paywall. There she is: Bank 1 upstream O2 sensor heater circuit open. It's not a dead engine, Marcus. It's a sixty-dollar Bosch sensor.",
+      "speakerId": "news_anchor",
+      "side": "RIGHT",
+      "text": "The State Independent Automotive Alliance has filed an emergency petition, alleging automaker proprietary software paywalls constitute an unlawful anti-competitive restraint on independent mechanics and vehicle owners.",
       "nextNodeId": "act3_garage_06"
     },
     {
       "id": "act3_garage_06",
-      "speakerId": "marcus",
-      "side": "RIGHT",
-      "text": "Man... Todd, thank you. Seriously. Without this car, I can't even drive to do gig deliveries if things fall through.",
+      "speakerId": "todd",
+      "side": "LEFT",
+      "text": "Hand me that breadboard jumper and the open-source pin bridge, Pete. We don't bow to software paywalls in this shop. We'll read the raw analog waveform directly off the crankshaft sensor with the oscilloscope.",
       "nextNodeId": "act3_garage_07"
     },
     {
       "id": "act3_garage_07",
-      "speakerId": "todd",
-      "side": "LEFT",
-      "text": "Pay me for the part whenever you land your next gig, Marcus. We're keeping this car on the road. The machines only lock us out if we let them.",
-      "nextNodeId": "act3_garage_08"
-    },
-    {
-      "id": "act3_garage_08",
       "speakerId": "narrator",
       "side": "CENTER_NARRATOR",
-      "text": "Todd ratchets the new oxygen sensor into the exhaust manifold with a clean, satisfying turn of his wrench. The check engine light goes dark. The engine purrs with steady, honest compression.",
-      "nextNodeId": "act3_finale"
-    },
-    {
-      "id": "act3_finale",
-      "speakerId": "narrator",
-      "side": "CENTER_NARRATOR",
-      "text": "End of Act III: The Severed Ladder. The junior corporate rungs have shattered. Next lies Act IV: The Commuter Drain.",
+      "text": "Todd taps into the wire loom with grounded precision. The green oscilloscope wave leaps to life on the vintage CRT monitor: Cylinder 3 ignition coil breakdown. Forty-five dollars for a replacement coil, and Marcus's engine purrs like a kitten. Human craft beats the paywall.",
       "changeSceneId": "scene_act4_garage_quiet"
     },
     {
       "id": "act4_node_01",
       "speakerId": "narrator",
       "side": "CENTER_NARRATOR",
-      "text": "Year Five. Wednesday, 10:00 AM at Pete's Auto Care. The shop is unnervingly quiet. Bay 2 and Bay 3 stand empty, their concrete floors freshly mopped and dry. The daily roar of highway traffic along the commercial bypass has subdued into a sparse hum.",
+      "text": "Year Six. Wednesday mid-morning at Pete & Todd's Auto Care. Bay 2 and Bay 3 stand empty, their polished concrete floors reflecting the pale grey light of an overcast autumn sky.",
       "nextNodeId": "act4_node_02"
     },
     {
       "id": "act4_node_02",
-      "speakerId": "todd",
-      "side": "LEFT",
-      "text": "Only three cars on the board today, Pete. Two oil changes and a tire patch. We used to have eight vehicles stacked up outside by nine in the morning.",
+      "speakerId": "pete",
+      "side": "RIGHT",
+      "text": "County transit report came out this morning, Todd. Vehicle miles traveled down twenty-two percent across the region. Former office commuters aren't driving into the glass towers anymore\u2014they're either remote or delivering food bags on bald tires.",
       "nextNodeId": "act4_node_03"
     },
     {
       "id": "act4_node_03",
-      "speakerId": "narrator",
-      "side": "CENTER_NARRATOR",
-      "text": "Pete leans against the service counter, reviewing the monthly car counts. When the office towers downtown emptied and middle-management jobs were absorbed by cloud software, suburban Vehicle Miles Traveled collapsed by 26%. Cars sit idle in driveways. Oil change intervals stretch from four months to fourteen.",
+      "speakerId": "todd",
+      "side": "LEFT",
+      "text": "Nobody does the 60,000-mile preventative transmission flushes or timing belts anymore, Pete. They wait until the belt snaps on the highway or the metal-on-metal squeal can be heard from two blocks away.",
       "nextNodeId": "act4_node_04"
     },
     {
       "id": "act4_node_04",
-      "speakerId": "todd",
-      "side": "LEFT",
-      "text": "People aren't driving forty miles a day into the city anymore. And when they do need work, they're driving on bald tires and ignoring brake squeals because groceries and rent eat everything.",
+      "speakerId": "pete",
+      "side": "RIGHT",
+      "text": "That's why we don't gouge, kid. When the big chain shops start pushing four-hundred-dollar fuel injector cleans to make up their quotas, we stick to honest diagnostics. Trust is the only commodity that doesn't depreciate.",
       "changeSceneId": "scene_act4_garage_triage"
     },
     {
       "id": "act4_triage_01",
       "speakerId": "narrator",
       "side": "CENTER_NARRATOR",
-      "text": "A screeching grinding sound echoes off the pavement outside as an older compact crossover pulls into Bay 1. Elena, a 38-year-old mother working sixteen-hour days between two package delivery apps, steps out wincing.",
+      "text": "A battered silver crossover limps into Bay 1, its front wheel wells screeching with every rotation. Elena, a gig-delivery courier, steps out holding a courier thermal bag, looking exhausted.",
       "nextNodeId": "act4_triage_02"
     },
     {
       "id": "act4_triage_02",
-      "speakerId": "todd",
-      "side": "LEFT",
-      "text": "Elena, step back for a second. Let me pull the front driver wheel. I heard that rotor from two blocks away.",
+      "speakerId": "elena",
+      "side": "RIGHT",
+      "text": "Todd, please tell me you can fix it today. If I'm not online for the evening rush, the delivery algorithm drops my dispatch tier. I've got two kids and rent due on the first.",
       "nextNodeId": "act4_triage_03"
     },
     {
       "id": "act4_triage_03",
-      "speakerId": "narrator",
-      "side": "CENTER_NARRATOR",
-      "text": "Todd pulls the caliper. The friction material is completely gone; the steel brake backing plate has gouged deep, jagged trenches into the cast iron rotor. Metal shavings glisten on the shop floor.",
+      "speakerId": "todd",
+      "side": "LEFT",
+      "text": "Pads are down to the steel backing plate, Elena. It's scored into the front rotors. You were about three hard stops away from losing your hydraulic piston.",
       "nextNodeId": "act4_triage_04"
     },
     {
       "id": "act4_triage_04",
-      "speakerId": "todd",
-      "side": "LEFT",
-      "text": "Elena, the dealership or a franchise chain would quote you seven hundred dollars to replace all four corners with dealer OEM parts.",
+      "speakerId": "elena",
+      "side": "RIGHT",
+      "text": "How much? Just... give it to me straight. The corporate chain shop down the boulevard quoted me seven hundred and fifty dollars.",
       "nextNodeId": "act4_triage_05"
     },
     {
       "id": "act4_triage_05",
-      "speakerId": "narrator",
-      "side": "CENTER_NARRATOR",
-      "text": "Elena's voice shakes: 'Todd, please. If this car doesn't pass inspection by Friday, the delivery app deactivates my account. I have eighty-five dollars in checking until my direct deposit hits Sunday night.'",
+      "speakerId": "todd",
+      "side": "LEFT",
+      "text": "I can turn the rotors on our vintage lathe instead of replacing them, and put on ceramic pads for sixty-five dollars wholesale. Labor is on the house, Elena. You keep your dispatch tier.",
       "nextNodeId": "act4_triage_06"
     },
     {
       "id": "act4_triage_06",
-      "speakerId": "todd",
-      "side": "LEFT",
-      "text": "Listen to me. I've got two resurfaced commercial rotors on the back shelf that fit this hub, and a clean set of ceramic pads Pete wholesale-ordered last week. You pay me fifty bucks for the pads today. I'm waiving the labor. You keep driving, and you keep feeding your kids.",
-      "nextNodeId": "act4_triage_07"
-    },
-    {
-      "id": "act4_triage_07",
-      "speakerId": "narrator",
-      "side": "CENTER_NARRATOR",
-      "text": "Elena wipes her eyes as Todd's impact wrench zips the lug nuts back on. The trade is surviving not on corporate volume, but on community trust and mutual preservation. Across town, Adriana is battling the corporate retail response.",
+      "speakerId": "elena",
+      "side": "RIGHT",
+      "text": "Todd... I don't know what to say. If it weren't for this shop, people like me couldn't survive out here.",
       "changeSceneId": "scene_act4_retail_shrink"
     },
     {
       "id": "act4_retail_01",
       "speakerId": "narrator",
       "side": "CENTER_NARRATOR",
-      "text": "Friday, 5:30 PM at Oakridge Liquors. The four traditional cashier lanes have been ripped out, replaced by six automated self-checkout kiosks under blinding overhead cameras. Four of the six kiosks are frozen with blinking red overhead lights: 'ATTENDANT ASSISTANCE REQUIRED.'",
+      "text": "Oakridge Liquors front concourse. Four unstaffed self-checkout kiosks flash red override beacons simultaneously, emitting high-pitched warning chimes as long lines of customers grow irritated.",
       "nextNodeId": "act4_retail_02"
     },
     {
       "id": "act4_retail_02",
-      "speakerId": "adriana",
+      "speakerId": "kendra",
       "side": "RIGHT",
-      "text": "Key override on kiosk three. Scanning ID on kiosk five. Folks, I apologize for the wait, I am the only floor manager authorized to clear age-verification lockouts right now.",
+      "text": "Adriana! Kiosk two froze on an ID verification, kiosk four flagged a false weight error on a beer pack, and someone just walked past the sensory gate with two bottles of Scotch while I was rebooting the terminal!",
       "nextNodeId": "act4_retail_03"
     },
     {
       "id": "act4_retail_03",
-      "speakerId": "narrator",
-      "side": "CENTER_NARRATOR",
-      "text": "Corporate promised the self-checkout grid would save 25% on store labor. Instead, it created chaos. Desperation-driven shoplifting skyrocketed; bottles of mid-tier tequila and whiskey walked out unnoticed during peak rush hours.",
+      "speakerId": "adriana",
+      "side": "RIGHT",
+      "text": "Override code entered. Line cleared. Corporate replaced three trained cashiers with four unstaffed automated kiosks to save twelve dollars an hour in wages, and our inventory shrinkage spiked by four hundred percent in six months.",
       "nextNodeId": "act4_retail_04"
     },
     {
       "id": "act4_retail_04",
-      "speakerId": "adriana",
+      "speakerId": "news_anchor",
       "side": "RIGHT",
-      "text": "Corporate's solution wasn't to hire cashiers back. Their solution was to order sixty plexiglass lock-boxes. Now even twenty-dollar vodka is locked behind keyed glass. Every single customer has to ring a buzzer and wait for me to unlock a five-dollar item.",
+      "text": "Retail industry earnings reports confirm nationwide rollbacks of automated self-checkout technology, with major chains reporting multi-billion dollar losses due to shrinkage, technical failure, and customer dissatisfaction.",
       "nextNodeId": "act4_retail_05"
     },
     {
       "id": "act4_retail_05",
-      "speakerId": "narrator",
-      "side": "CENTER_NARRATOR",
-      "text": "Shoppers grumble and abandon carts in the aisles. The friction of unstaffed automation has made shopping a frustrating ordeal, yet corporate district managers issue memos blaming store staff for declining customer satisfaction scores.",
-      "nextNodeId": "act4_retail_06"
-    },
-    {
-      "id": "act4_retail_06",
       "speakerId": "adriana",
       "side": "RIGHT",
-      "text": "They want the profit of a machine, but the accountability of a human. As long as I'm holding these keys, they're not breaking my floor crew.",
-      "nextNodeId": "act4_finale"
-    },
-    {
-      "id": "act4_finale",
-      "speakerId": "narrator",
-      "side": "CENTER_NARRATOR",
-      "text": "End of Act IV: The Commuter Drain. Mechanical volume has dropped and storefront friction has tightened. Ahead lies Act V: The Middle-Age Squeeze.",
+      "text": "Turns out a cold touchscreen can't look a customer in the eyes, build rapport, or protect merchandise. Human presence is the only real security.",
       "changeSceneId": "scene_act5_livingroom_taxes"
     },
     {
       "id": "act5_node_01",
       "speakerId": "narrator",
       "side": "CENTER_NARRATOR",
-      "text": "Year Eight. A rainy Thursday night. Spread across Todd and Adriana's living room coffee table is a crisp white envelope from the County Property Appraiser's Office, marked with an official blue seal: 'NOTICE OF PROPERTY VALUE & TAX REASSESSMENT.'",
+      "text": "Year Eight. Outside, an autumn rain pelts the living room window. Inside, Sam and Chloe sit around the coffee table with Todd and Adriana, reviewing county tax reassessment forms.",
       "nextNodeId": "act5_node_02"
     },
     {
       "id": "act5_node_02",
-      "speakerId": "todd",
-      "side": "LEFT",
-      "text": "Eighteen and a half percent, Adriana. Our residential property assessment jumped nearly twenty percent in a single year.",
+      "speakerId": "sam",
+      "side": "RIGHT",
+      "text": "Look at the municipal budget breakdown. The downtown commercial real estate vacancies wiped out forty-five million in commercial property tax revenue. So what did the county commissioners do? They raised residential property assessments by nineteen percent.",
       "nextNodeId": "act5_node_03"
     },
     {
       "id": "act5_node_03",
-      "speakerId": "adriana",
+      "speakerId": "chloe",
       "side": "RIGHT",
-      "text": "The downtown commercial office parks are forty percent vacant. The banks defaulted on three massive commercial towers last spring. The city's corporate tax base evaporated, so the county commissioners shifted the shortfall onto suburban homeowners.",
+      "text": "And city transit cut bus lines by a third. The hospital nurse-to-patient ratio went from one-to-four up to one-to-eight. The hospital tried installing an AI telemetry monitor to replace nurses, but the false alarm rate was so high that three RNs walked out in protest.",
       "nextNodeId": "act5_node_04"
     },
     {
       "id": "act5_node_04",
-      "speakerId": "narrator",
-      "side": "CENTER_NARRATOR",
-      "text": "The cost of basic living continues to compound. Software bots don't pay property taxes or local payroll assessments, but roads still develop potholes and water mains still rupture. To balance the ledger, the municipal government turns to the only solvent citizens left: working homeowners.",
+      "speakerId": "adriana",
+      "side": "RIGHT",
+      "text": "The public infrastructure is degrading because the corporations automated away the wage base that paid the municipal taxes. Everyone in town feels the pinch.",
       "nextNodeId": "act5_node_05"
     },
     {
       "id": "act5_node_05",
       "speakerId": "todd",
       "side": "LEFT",
-      "text": "We'll manage it. I took on four fleet maintenance contracts for independent plumbing vans this month. But Marcus... Marcus is in real trouble.",
+      "text": "We absorb the tax hike, we maintain our home ourselves, and we keep Marcus on his feet. We don't break.",
       "changeSceneId": "scene_act5_marcus_clinic"
     },
     {
       "id": "act5_clinic_01",
       "speakerId": "narrator",
       "side": "CENTER_NARRATOR",
-      "text": "Friday afternoon in the waiting area of a local physical therapy clinic. Marcus sits stiffly, wearing an elastic lumbar support belt. He holds an ice pack against his lower back, his face tight with chronic pain.",
+      "text": "A suburban physical therapy clinic. The smell of menthol rub and heating packs fills the clinical room. Marcus sits on an examination table wearing an elastic lumbar support brace, his face pale with pain.",
       "nextNodeId": "act5_clinic_02"
     },
     {
       "id": "act5_clinic_02",
-      "speakerId": "todd",
-      "side": "LEFT",
-      "text": "How's the back feeling today, man? Doctor give you the MRI results?",
+      "speakerId": "marcus",
+      "side": "RIGHT",
+      "text": "Everyone online said: 'Just retrain in the trades! Learn to be an electrician!' Nobody warned me that hauling five-hundred-MCM copper feeder wire through commercial conduit at thirty-one years old would herniate an L5 disc in eight weeks.",
       "nextNodeId": "act5_clinic_03"
     },
     {
       "id": "act5_clinic_03",
-      "speakerId": "marcus",
+      "speakerId": "chloe",
       "side": "RIGHT",
-      "text": "L5-S1 disc herniation, Todd. Pundits on TV kept saying: 'Just learn a trade! Go be an electrician or a plumber!' Nobody tells you that after sitting in an ergonomic office chair for eight years, your core can't handle pulling eighty-pound commercial wire through a wet concrete conduit at age thirty-one.",
+      "text": "Manual trade labor is elite physical athletics, Marcus. If your musculoskeletal system didn't spend its twenties building tendon and bone density for it, sudden heavy vocational work will blow out a lumbar disc. Biology doesn't care about career advice threads.",
       "nextNodeId": "act5_clinic_04"
     },
     {
       "id": "act5_clinic_04",
-      "speakerId": "narrator",
-      "side": "CENTER_NARRATOR",
-      "text": "The myth of frictionless retraining has collided with human biology. The physical trades are demanding, unforgiving crafts that require years of conditioned muscle memory and anatomical resilience. An untrained middle-aged body breaks under the sudden shock of industrial labor.",
-      "nextNodeId": "act5_clinic_05"
-    },
-    {
-      "id": "act5_clinic_05",
       "speakerId": "todd",
       "side": "LEFT",
-      "text": "Don't push it, Marcus. You're staying off the heavy ladders for six weeks. Pete and I need someone to manage our parts logistics and customer intake database at the front desk. It's clean work, it's hourly, and it keeps your back in one piece.",
-      "nextNodeId": "act5_clinic_06"
-    },
-    {
-      "id": "act5_clinic_06",
-      "speakerId": "marcus",
-      "side": "RIGHT",
-      "text": "Todd... I don't know what I would do without you guys.",
+      "text": "Don't beat yourself up, Marcus. You gave it an honest try. Now you heal up. I'm talking to the county water and power utility\u2014they need people who understand both software logic and physical telemetry systems. That's your sweet spot.",
       "changeSceneId": "scene_act5_garage_franchise"
     },
     {
       "id": "act5_garage_01",
       "speakerId": "narrator",
       "side": "CENTER_NARRATOR",
-      "text": "Saturday morning in Pete's small back office. Pete sits behind his metal desk, tapping his pipe against an ashtray. Between them lies a thick bound proposal from 'Apex Auto Mobility Partners'—a nationwide corporate franchise chain.",
+      "text": "Pete's Auto Care office. On the desk sits a heavy, glossy bound prospectus embossed with the logo of 'AutoFleet National Solutions'.",
       "nextNodeId": "act5_garage_02"
     },
     {
       "id": "act5_garage_02",
-      "speakerId": "todd",
-      "side": "LEFT",
-      "text": "They want to buy the building, Pete. Turn the bays into standardized franchise pods running automated subscription diagnostic scanners.",
+      "speakerId": "pete",
+      "side": "RIGHT",
+      "text": "Corporate rep spent forty-five minutes in here today, Todd. Offered us three hundred thousand dollars to buy the deed, keep us on as salaried supervisors, and re-skin the shop into an automated corporate subscription hub.",
       "nextNodeId": "act5_garage_03"
     },
     {
       "id": "act5_garage_03",
-      "speakerId": "narrator",
-      "side": "CENTER_NARRATOR",
-      "text": "The contract offers guaranteed corporate payouts, but with severe conditions: all independent diagnostics forbidden, customer data routed to corporate telemetry servers, and technicians restricted to replacing whole sealed modular sub-assemblies rather than repairing components.",
+      "speakerId": "todd",
+      "side": "LEFT",
+      "text": "Mandatory corporate cloud scanners, proprietary markups on remanufactured parts, and locking Elena out of her brakes if her app account lapses. What did you tell him, Pete?",
       "nextNodeId": "act5_garage_04"
     },
     {
       "id": "act5_garage_04",
-      "speakerId": "todd",
-      "side": "LEFT",
-      "text": "You sign this, Pete, and we become part-swappers in blue uniforms following tablet prompts. We can't help people like Elena. We can't solder an open circuit for Marcus. We become cogs in their cloud subscription trap.",
-      "nextNodeId": "act5_garage_05"
-    },
-    {
-      "id": "act5_garage_05",
-      "speakerId": "narrator",
-      "side": "CENTER_NARRATOR",
-      "text": "Pete looks at the contract, then looks through the window at Todd's tool chest, the oil-stained workbenches, and the customer cars parked outside. With a dry grin, he picks up the glossy proposal and drops it into the metal wastebasket.",
-      "nextNodeId": "act5_garage_06"
-    },
-    {
-      "id": "act5_garage_06",
-      "speakerId": "todd",
-      "side": "LEFT",
-      "text": "Independent to the bone. That's how we started, and that's how we're finishing.",
-      "nextNodeId": "act5_finale"
-    },
-    {
-      "id": "act5_finale",
-      "speakerId": "narrator",
-      "side": "CENTER_NARRATOR",
-      "text": "End of Act V: The Middle-Age Squeeze. The independent ground held firm. Next comes the heaviest trial yet—Act VI: The Great Caregiving Crucible.",
+      "speakerId": "pete",
+      "side": "RIGHT",
+      "text": "I told him Pete's Auto Care doesn't answer to algorithms, and I threw his contract in the scrap metal bin. This shop belongs to us, Todd. Next year, your name goes on the building sign beside mine.",
       "changeSceneId": "scene_act6_facility_tour"
     },
     {
       "id": "act6_node_01",
       "speakerId": "narrator",
       "side": "CENTER_NARRATOR",
-      "text": "Year Eleven. The intake office of 'Golden Horizons Memory Care.' Down the carpeted hallway, call lights chime in relentless syncopation. Adriana sits across from a harried admissions coordinator holding a printed cost schedule.",
+      "text": "Year Eleven. The peak of the demographic caregiving wave. Inside the lobby of 'Shady Pines Memory Care', Todd, Adriana, and Chloe look at an intake rate card on the reception counter.",
       "nextNodeId": "act6_node_02"
     },
     {
       "id": "act6_node_02",
       "speakerId": "adriana",
       "side": "RIGHT",
-      "text": "Nine thousand two hundred dollars a month. And that doesn't include physical therapy, prescription handling, or mobility escort to meals.",
+      "text": "Nine thousand four hundred dollars a month. And that's just the baseline rate\u2014medication management is an additional six hundred. And listen to that hallway: call lights chiming with not a single aide in sight.",
       "nextNodeId": "act6_node_03"
     },
     {
       "id": "act6_node_03",
-      "speakerId": "narrator",
-      "side": "CENTER_NARRATOR",
-      "text": "The massive Baby Boomer generation has reached their late eighties and early nineties. The demographic peak has hit with the force of an avalanche. Facilities bought out by private equity firms charge predatory rates while running on skeleton crews of burned-out aides paid nineteen dollars an hour.",
+      "speakerId": "chloe",
+      "side": "RIGHT",
+      "text": "A private equity syndicate bought this entire facility network two years ago. They laid off half the certified nursing assistants and installed infrared mattress motion sensors. When an eighty-five-year-old falls, the sensor logs the data, but there's no human there to catch them.",
       "nextNodeId": "act6_node_04"
     },
     {
       "id": "act6_node_04",
-      "speakerId": "adriana",
-      "side": "RIGHT",
-      "text": "I walked past Room 108. One aide trying to feed four residents who can't hold a spoon. They would burn through my mom's entire life savings in eighteen months, and she'd spend twenty hours a day staring at drywall. We are not doing this to her.",
+      "speakerId": "todd",
+      "side": "LEFT",
+      "text": "We're not putting your mother in here, Adriana. She raised you with love, and she comes to live with us. We have the hands, and we have the will.",
       "changeSceneId": "scene_act6_home_retrofit"
     },
     {
       "id": "act6_home_01",
       "speakerId": "narrator",
       "side": "CENTER_NARRATOR",
-      "text": "Saturday morning. Todd has stripped the guest bedroom down to its subfloor. The smell of sawdust and primer hangs in the air as his impact driver sinks three-inch lag bolts into wall studs, mounting a reinforced stainless-steel grab bar beside an adjustable medical bed.",
+      "text": "Todd and Adriana's home. The ground-floor spare bedroom is filled with tools, clean lumber, and stainless steel grab bars. Pete arrives carrying an impact driver and a box of galvanized structural lag bolts.",
       "nextNodeId": "act6_home_02"
     },
     {
       "id": "act6_home_02",
-      "speakerId": "todd",
-      "side": "LEFT",
-      "text": "Solid into the oak framing. Rated for four hundred pounds. I'm building a low-incline treated lumber ramp over the back patio steps tomorrow so the wheelchair doesn't bind.",
+      "speakerId": "pete",
+      "side": "RIGHT",
+      "text": "Brought the four-inch industrial lags from the shop, Todd. When an aging parent puts their full weight on a transfer rail, drywall anchors won't hold. You drive these straight into the centerline of the fir wall studs.",
       "nextNodeId": "act6_home_03"
     },
     {
       "id": "act6_home_03",
       "speakerId": "adriana",
       "side": "RIGHT",
-      "text": "You worked fifty hours at the shop this week, Todd. Your knuckles are bruised from rebuilding that transaxle.",
+      "text": "Thank you, Pete. In a world full of corporate private-equity care facilities gouging families, having friends with real trade skills who show up on a Saturday is everything.",
       "nextNodeId": "act6_home_04"
     },
     {
       "id": "act6_home_04",
       "speakerId": "todd",
       "side": "LEFT",
-      "text": "And you spent twenty hours coordinating pharmacy orders and managing a retail floor with six broken kiosks. My hands know how to frame a wall and build a ramp, Ade. We take care of our own.",
+      "text": "Lag driven true. Zero deflection. This room is a fortress of safety now. Let's get Mom settled in.",
       "changeSceneId": "scene_act6_kitchen_midnight"
     },
     {
       "id": "act6_midnight_01",
       "speakerId": "narrator",
       "side": "CENTER_NARRATOR",
-      "text": "Tuesday, 2:15 AM. A solitary amber nightlight glows in the quiet kitchen. Adriana stands at the counter in her flannel robe, methodically filling a seven-day pill organizer with heart medications, blood pressure regulators, and joint pain capsules.",
+      "text": "2:15 AM in the dark kitchen. A gentle amber nightlight illuminates a handwritten medication schedule and two warm mugs of herbal tea.",
       "nextNodeId": "act6_midnight_02"
     },
     {
       "id": "act6_midnight_02",
-      "speakerId": "narrator",
-      "side": "CENTER_NARRATOR",
-      "text": "Soft footsteps behind her. Todd steps into the kitchen, his curly hair rumpled, carrying an extra quilt and setting a warm mug of water beside her hand.",
+      "speakerId": "todd",
+      "side": "LEFT",
+      "text": "How is she resting, Addie?",
       "nextNodeId": "act6_midnight_03"
     },
     {
       "id": "act6_midnight_03",
-      "speakerId": "todd",
-      "side": "LEFT",
-      "text": "She's asleep, Ade. Breathing steady. I helped her transfer to the bed thirty minutes ago.",
+      "speakerId": "adriana",
+      "side": "RIGHT",
+      "text": "Fever broke. Sleeping soundly. Todd... my shoulders ache from the lifting, and my eyes burn from the shifts. But being here with her, in our own home, giving her dignity... it's the most honest thing we've ever done.",
       "nextNodeId": "act6_midnight_04"
     },
     {
       "id": "act6_midnight_04",
-      "speakerId": "adriana",
-      "side": "RIGHT",
-      "text": "I'm so tired my teeth hurt, Todd. Sometimes I feel like the whole world is being squeezed through a pinhole. Corporate trimming every minute, prices climbing, our parents aging...",
-      "nextNodeId": "act6_midnight_05"
-    },
-    {
-      "id": "act6_midnight_05",
       "speakerId": "todd",
       "side": "LEFT",
-      "text": "Look at me. We haven't folded. Not once. The world is changing fast, but our lives aren't run by their algorithms. We're here, we're working, and we're keeping this family whole. Come back to bed.",
-      "nextNodeId": "act6_midnight_06"
-    },
-    {
-      "id": "act6_midnight_06",
-      "speakerId": "narrator",
-      "side": "CENTER_NARRATOR",
-      "text": "Adriana leans her head against his chest, feeling the deep, steady cadence of his heartbeat. Out of the crucible of exhausting caregiving and unyielding labor, their partnership has forged an unbreakable resolve.",
-      "nextNodeId": "act6_finale"
-    },
-    {
-      "id": "act6_finale",
-      "speakerId": "narrator",
-      "side": "CENTER_NARRATOR",
-      "text": "End of Act VI: The Great Caregiving Crucible. The personal storm was weathered with dignity. Ahead lies the public turning point—Act VII: The Breaking Point & The Pushback.",
+      "text": "We hold the line together, Addie. We're stronger than any economic storm they can throw at us.",
       "changeSceneId": "scene_act7_strike_picket"
     },
     {
       "id": "act7_node_01",
       "speakerId": "narrator",
       "side": "CENTER_NARRATOR",
-      "text": "Year Fourteen. Pre-dawn chill at the south gates of the regional distribution hub. Orange flames flicker inside steel burn barrels, casting long shadows across hundreds of warehouse selectors, forklift operators, and delivery drivers holding picket signs: 'WE ARE HUMANS, NOT ALGORITHMS.'",
+      "text": "Year Fourteen. 5:00 AM outside the massive regional logistics distribution terminal. Steel 55-gallon burn barrels glow fiercely orange against damp pre-dawn ground mist under blinding stadium floodlights.",
       "nextNodeId": "act7_node_02"
     },
     {
       "id": "act7_node_02",
-      "speakerId": "adriana",
+      "speakerId": "kendra",
       "side": "RIGHT",
-      "text": "Look at this turnout. Corporate tried to introduce optical pacing cameras in our store last month to track how many seconds it takes to stock a carton. My clerks walked out, and the warehouse crews walked out right behind us.",
+      "text": "Look at this line, Adriana! Over six hundred warehouse workers, retail clerks, and freight drivers! They tried imposing biometric wristbands that dock wages if pickers pause for thirty seconds to wipe sweat!",
       "nextNodeId": "act7_node_03"
     },
     {
       "id": "act7_node_03",
-      "speakerId": "narrator",
-      "side": "CENTER_NARRATOR",
-      "text": "The pushback isn't theoretical—it's visceral. After a decade of silent hour-shaving, algorithmic speed-ups, and biometric surveillance, working people across every physical sector have reached their limit. The supply chain has ground to an absolute standstill.",
+      "speakerId": "adriana",
+      "side": "RIGHT",
+      "text": "When you treat human bodies like expendable mechanical cogs, this is what happens! The whole community is standing behind this strike!",
       "nextNodeId": "act7_node_04"
     },
     {
       "id": "act7_node_04",
+      "speakerId": "news_anchor",
+      "side": "RIGHT",
+      "text": "Good morning. Day four of the nationwide logistics work stoppage has halted regional freight distribution across nine states. Public polling reveals 74% bipartisan approval for statutory labor protections, biometric pacing bans, and mandatory working hour caps.",
+      "nextNodeId": "act7_node_05"
+    },
+    {
+      "id": "act7_node_05",
       "speakerId": "todd",
       "side": "LEFT",
-      "text": "They thought people would just take the squeeze forever. When you treat the human body like an operating expense to minimize, sooner or later the machine runs out of fuel.",
+      "text": "The tide is turning, folks. Next stop: the state capital.",
       "changeSceneId": "scene_act7_capitol_hearing"
     },
     {
       "id": "act7_hearing_01",
       "speakerId": "narrator",
       "side": "CENTER_NARRATOR",
-      "text": "Thursday morning. State Senate Committee Room 304. The room is packed with independent mechanics, trade unionists, and corporate lobbyists in three-thousand-dollar suits. Todd sits at the witness table before a bank of microphones, holding a heavy cast-aluminum automotive telemetry module.",
+      "text": "State Senate Committee Room 304. Rich mahogany paneling, gooseneck microphones, and packed spectator benches under warm chandelier lighting.",
       "nextNodeId": "act7_hearing_02"
     },
     {
       "id": "act7_hearing_02",
-      "speakerId": "todd",
-      "side": "LEFT",
-      "text": "Senators, this module costs forty dollars to manufacture. It sits inside every commuter vehicle built after 2028. The automaker encrypted the logic so that an independent garage cannot read a wheel-speed sensor fault without paying a recurring eighteen-hundred-dollar annual software seat license.",
+      "speakerId": "senator_vance",
+      "side": "RIGHT",
+      "text": "Mr. Todd, lead diagnostic technician at Pete & Todd's Auto Care. The automotive manufacturers association claims proprietary telemetry software locks are strictly necessary to protect vehicle cybersecurity. How do you respond?",
       "nextNodeId": "act7_hearing_03"
     },
     {
       "id": "act7_hearing_03",
-      "speakerId": "narrator",
-      "side": "CENTER_NARRATOR",
-      "text": "Todd taps the metal casing on the mahogany dais. The sound resonates through the silent chamber.",
+      "speakerId": "todd",
+      "side": "LEFT",
+      "text": "Senator Vance, with respect\u2014cybersecurity is an excuse for extortion. When an automaker encrypts a wheel-speed sensor so an independent shop can't bleed a customer's brakes without paying a four-hundred-dollar corporate subscription, that's not cybersecurity. That is a corporate shakedown of working-class families.",
       "nextNodeId": "act7_hearing_04"
     },
     {
       "id": "act7_hearing_04",
-      "speakerId": "todd",
-      "side": "LEFT",
-      "text": "A mother delivering groceries to pay rent doesn't have five hundred dollars to pay a dealership for an encrypted software handshake. When you strip the right to repair a machine, you strip the dignity of the person who owns it. Pass this legislation, or watch our transportation infrastructure rot.",
+      "speakerId": "pete",
+      "side": "RIGHT",
+      "text": "A working person who buys a machine owns that machine, Senator! And any honest mechanic has the right to fix it!",
       "nextNodeId": "act7_hearing_05"
     },
     {
       "id": "act7_hearing_05",
-      "speakerId": "narrator",
-      "side": "CENTER_NARRATOR",
-      "text": "Applause erupts from the gallery as the committee chairman gavels for order. For the first time in fifteen years, the regulatory tide is shifting away from corporate monopoly extraction.",
+      "speakerId": "senator_vance",
+      "side": "RIGHT",
+      "text": "The testimony of these independent technicians is compelling, and the evidence of anti-competitive lockouts is overwhelming. This committee will recommend the Right to Repair bill for immediate floor vote.",
       "changeSceneId": "scene_act7_unionhall_vote"
     },
     {
       "id": "act7_union_01",
       "speakerId": "narrator",
       "side": "CENTER_NARRATOR",
-      "text": "Friday evening inside the packed Machinists & Clerks Union Hall. Above the stage, a live television news feed flickers. The news anchor's voice booms over the speakers: 'In a historic bipartisan breakthrough, the Emergency Fair Labor and Automation Standards Act has passed both houses of Congress.'",
+      "text": "The regional Machinists and Clerks Union Hall is packed shoulder-to-shoulder with hundreds of working families watching a massive projection screen.",
       "nextNodeId": "act7_union_02"
     },
     {
       "id": "act7_union_02",
-      "speakerId": "marcus",
+      "speakerId": "news_anchor",
       "side": "RIGHT",
-      "text": "Todd! Adriana! Look at the crawl! Compute taxation on automated enterprise workflows, strict human-in-the-loop liability... and a federal thirty-two-hour standard workweek with wage protection!",
+      "text": "Breaking news from the Capitol: In a historic bipartisan 68-to-31 vote, Congress has enacted the Emergency Fair Hours and Right to Repair Act. The legislation codifies a federal 32-hour standard workweek, outlaws automated biometric pacing, and guarantees permanent independent diagnostic access for all consumer machinery.",
       "nextNodeId": "act7_union_03"
     },
     {
       "id": "act7_union_03",
-      "speakerId": "adriana",
+      "speakerId": "pete",
       "side": "RIGHT",
-      "text": "A four-day workweek. Thirty-two hours of work for forty hours of baseline pay. Companies have to hire real people back to cover the fifth day.",
+      "text": "Listen to that cheer! Todd, Adriana, Marcus\u2014we made them listen! The human worker isn't a spreadsheet variable!",
       "nextNodeId": "act7_union_04"
     },
     {
       "id": "act7_union_04",
-      "speakerId": "todd",
-      "side": "LEFT",
-      "text": "Just like Ford back in 1926. The machines got so fast they almost killed their own customer base. Society finally forced the brakes on.",
-      "nextNodeId": "act7_union_05"
-    },
-    {
-      "id": "act7_union_05",
-      "speakerId": "narrator",
-      "side": "CENTER_NARRATOR",
-      "text": "Cheers and embraces ripple across the hall. The breaking point has passed. The long institutional friction has yielded, opening the door to Act VIII: The 32nd Hour.",
-      "nextNodeId": "act7_finale"
-    },
-    {
-      "id": "act7_finale",
-      "speakerId": "narrator",
-      "side": "CENTER_NARRATOR",
-      "text": "End of Act VII: The Breaking Point & The Pushback. The legislative breakthrough is won. Ahead lies Act VIII: The 32nd Hour.",
+      "speakerId": "adriana",
+      "side": "RIGHT",
+      "text": "Thirty-two hours. Four days of honest work for five days of pay. Time returned to human beings.",
       "changeSceneId": "scene_act8_retail_schedule"
     },
     {
       "id": "act8_node_01",
       "speakerId": "narrator",
       "side": "CENTER_NARRATOR",
-      "text": "Year Seventeen. A crisp autumn morning at Oakridge Liquors. Adriana pins a freshly printed schedule to the corkboard. The four-day rotation is bold, clear, and fully compliant with federal labor law: four eight-hour days, thirty-two total hours per week, with full baseline compensation.",
+      "text": "Year Seventeen. Inside the newly renovated Oakridge Liquors breakroom. Adriana pins a crisp, cleanly formatted shift schedule to the corkboard.",
       "nextNodeId": "act8_node_02"
     },
     {
       "id": "act8_node_02",
-      "speakerId": "adriana",
+      "speakerId": "kendra",
       "side": "RIGHT",
-      "text": "Sam, Chloe... come look. You're both promoted to permanent full-rate department coordinators. Thirty-two hours a week, full health benefits, three-day weekends guaranteed. No more shaved minutes.",
+      "text": "Adriana... is this real? My name is on the schedule: 32 hours, full-time benefits, Friday through Sunday off?",
       "nextNodeId": "act8_node_03"
     },
     {
       "id": "act8_node_03",
-      "speakerId": "narrator",
-      "side": "CENTER_NARRATOR",
-      "text": "Because corporations could no longer work skeleton crews sixty hours under metric speed-ups, they were forced to hire. Foot traffic is steady, workers have real time to spend with their families, and customer smiles have returned to the aisles.",
+      "speakerId": "adriana",
+      "side": "RIGHT",
+      "text": "Real as rain, Kendra. With the 32-hour standard, corporate had to expand our permanent crew by twenty-five percent to maintain full floor coverage. You're permanently promoted, with healthcare and paid leave.",
+      "nextNodeId": "act8_node_04"
+    },
+    {
+      "id": "act8_node_04",
+      "speakerId": "kendra",
+      "side": "RIGHT",
+      "text": "I can finish my graduate degree without working myself to exhaustion. Thank you, Adriana.",
       "changeSceneId": "scene_act8_garage_apprentices"
     },
     {
       "id": "act8_garage_01",
       "speakerId": "narrator",
       "side": "CENTER_NARRATOR",
-      "text": "Saturday morning at the newly rechristened 'Pete & Todd's Auto Care.' Three bays hum with active work. Under the hood of a modern hybrid truck, Todd stands beside Maya, a twenty-year-old vocational apprentice holding an oscilloscope probe.",
+      "text": "Pete & Todd's Auto Care. The newly painted shop sign gleams over three humming bays. In Bay 1, Maya, a twenty-year-old vocational apprentice, holds an analog diagnostic probe under Todd's watchful eye.",
       "nextNodeId": "act8_garage_02"
     },
     {
       "id": "act8_garage_02",
-      "speakerId": "todd",
-      "side": "LEFT",
-      "text": "Look at the square wave on channel two, Maya. That's your Hall-effect sensor trigger. The automated shop scanner says 'replace entire transaxle.' But what does your waveform tell you?",
+      "speakerId": "maya",
+      "side": "RIGHT",
+      "text": "Todd, the computerized scan tool said zero error codes, but look at the waveform on the oscilloscope: the signal drops two millivolts right at top dead center.",
       "nextNodeId": "act8_garage_03"
     },
     {
       "id": "act8_garage_03",
-      "speakerId": "narrator",
-      "side": "CENTER_NARRATOR",
-      "text": "Maya leans in with intense focus, adjusting the time base on the scope: 'The wave drops voltage on the falling edge. It's just a corroded ground pin on the harness plug!'",
+      "speakerId": "todd",
+      "side": "LEFT",
+      "text": "Outstanding catch, Maya. Software only sees what someone programmed it to see; your oscilloscope reads the physical truth of the sensor. You just saved that customer a thousand-dollar ECM replacement.",
       "nextNodeId": "act8_garage_04"
     },
     {
       "id": "act8_garage_04",
-      "speakerId": "todd",
-      "side": "LEFT",
-      "text": "Bingo. That's a three-dollar brass terminal pin instead of an eight-thousand-dollar replacement. Never let an algorithm do your thinking for you. The machine has tolerances; a real technician has intuition.",
-      "nextNodeId": "act8_garage_05"
-    },
-    {
-      "id": "act8_garage_05",
-      "speakerId": "narrator",
-      "side": "CENTER_NARRATOR",
-      "text": "Pete, now retired from daily wrenching and managing front-office finances with Marcus, watches from the doorway with an affectionate smile. The generational bridge has been rebuilt.",
+      "speakerId": "pete",
+      "side": "RIGHT",
+      "text": "The generational bridge is rebuilt. Young hands learning the real craft. Can't automate that, can you?",
       "changeSceneId": "scene_act9_patio_finale"
     },
     {
       "id": "act9_node_01",
       "speakerId": "narrator",
       "side": "CENTER_NARRATOR",
-      "text": "Year Twenty. Friday, 3:30 PM. The warm afternoon sun bathes Todd and Adriana's backyard patio in amber light. It is Friday, but nobody is rushing through traffic. Across the nation, Friday is now part of the universal three-day weekend.",
+      "text": "Year Twenty. Friday afternoon at 3:15 PM\u2014the universal weekend. Warm golden sunlight bathes the back patio deck as gentle breezes rustle the mature maple trees.",
       "nextNodeId": "act9_node_02"
     },
     {
       "id": "act9_node_02",
-      "speakerId": "narrator",
-      "side": "CENTER_NARRATOR",
-      "text": "The grill sizzles with burgers. Lawn chairs are circled around the deck. Marcus, now thirty-nine and thriving as a senior data systems manager for the municipal water district, laughs as he hands an iced tea to Adriana's mother, who sits comfortably in her sun hat on the ramped deck.",
+      "speakerId": "marcus",
+      "side": "RIGHT",
+      "text": "Grid telemetry is running clean. I review the regional power distributions four days a week, automated systems handle the micro-load balancing, and at three o'clock on Friday, my terminal locks. No weekend calls, no panic.",
       "nextNodeId": "act9_node_03"
     },
     {
       "id": "act9_node_03",
-      "speakerId": "marcus",
+      "speakerId": "sam",
       "side": "RIGHT",
-      "text": "Twenty years, you guys. Remember that night in Year Zero when we sat right here and I bragged that coding tools would make us never work overtime?",
+      "text": "Four days of sharp auditing, three days of rest. Turns out corporate productivity actually went up when people stopped being hollowed out by 70-hour weeks.",
       "nextNodeId": "act9_node_04"
     },
     {
       "id": "act9_node_04",
-      "speakerId": "adriana",
+      "speakerId": "chloe",
       "side": "RIGHT",
-      "text": "And remember when corporate told me an algorithm could run my stockroom? It took fifteen years of fighting, but look at where we landed. Honest hours, real community, and time to actually live.",
+      "text": "Our hospital shifts are stable, our staffing is funded, and patient outcomes are the highest in twenty years. Human care requires human time.",
       "nextNodeId": "act9_node_05"
     },
     {
       "id": "act9_node_05",
-      "speakerId": "todd",
-      "side": "LEFT",
-      "text": "The world didn't end. And it didn't turn into a science-fiction fairytale. It took a hell of a lot of torque to break that frozen bolt loose, but once the pressure cracked, the rotation smoothed out.",
+      "speakerId": "news_anchor",
+      "side": "RIGHT",
+      "text": "Signing off for the Friday evening edition: Twenty years after the onset of the automation transition, national economic indicators show sustained equilibrium under the Human Baseline standard. Strong local wages, universal independent repair rights, and restored family hours anchor a resilient civic baseline.",
       "nextNodeId": "act9_node_06"
     },
     {
       "id": "act9_node_06",
-      "speakerId": "narrator",
-      "side": "CENTER_NARRATOR",
-      "text": "Todd wraps his arm around Adriana's shoulder as they look out over their neighborhood. Down the street, children ride bicycles, neighbors weed community gardens, and quiet breezes rustle through the maple trees.",
+      "speakerId": "todd",
+      "side": "LEFT",
+      "text": "We kept the engines running, Addie. Through every bump, every software lock, and every long night.",
       "nextNodeId": "act9_node_07"
     },
     {
       "id": "act9_node_07",
-      "speakerId": "narrator",
-      "side": "CENTER_NARRATOR",
-      "text": "Technology took over the rote, repetitive noise of civilization, but human hands, human care, and human persistence reclaimed the life that mattered. Humanity found its true baseline—and at long last, clocked out on its own terms.",
-      "nextNodeId": "act9_finale"
+      "speakerId": "adriana",
+      "side": "RIGHT",
+      "text": "And we made it to the other side with our hands steady, our community whole, and our dignity intact.",
+      "nextNodeId": "act9_node_08"
     },
     {
-      "id": "act9_finale",
+      "id": "act9_node_08",
       "speakerId": "narrator",
       "side": "CENTER_NARRATOR",
-      "text": "THE END. Thank you for experiencing The Human Baseline."
+      "text": "Laughter rises above the clinking glasses as the sun settles behind the autumn trees. The world did not end in chaos, nor did it freeze into an automated machine. Through persistent labor, mutual aid, and unyielding solidarity, they reclaimed their time\u2014and built the Human Baseline."
     }
   ]
 }
