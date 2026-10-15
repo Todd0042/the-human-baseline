@@ -1,11 +1,11 @@
 {
-  "_doc": "The Human Baseline - Master Narrative Dialogue Nodes Graph.",
+  "_doc": "The Human Baseline - Linear Narrative Dialogue Nodes Graph (No branching, pure storytelling).",
   "nodes": [
     {
       "id": "act1_node_01",
       "speakerId": "narrator",
       "side": "CENTER_NARRATOR",
-      "text": "Late Friday afternoon at Pete's Auto Care. The shop is filled with the steady rhythm of three active bays: the hiss of pneumatic lines, the low thrum of the air compressor in the back closet, and classic rock drifting from a grease-spotted radio on the workbench.",
+      "text": "Late Friday afternoon at Pete's Auto Care. The shop is filled with the steady rhythm of three active bays: the hiss of pneumatic lines, the low thrum of the air compressor, and classic rock drifting from a grease-spotted radio on the workbench.",
       "nextNodeId": "act1_node_02"
     },
     {
@@ -19,7 +19,7 @@
       "id": "act1_node_03",
       "speakerId": "narrator",
       "side": "CENTER_NARRATOR",
-      "text": "Pete, a veteran mechanic with silver in his beard and forty years of greasy knuckles, slides the calibrated wrench across the rolling cart. Across the bay, three customer invoices sit neatly in the pickup rack, each marked 'PAID - PICKUP BY 5:30.'",
+      "text": "Pete slides the calibrated wrench across the rolling cart. Across the bay, three customer invoices sit neatly in the pickup rack, each marked 'PAID - PICKUP BY 5:30.' In Year Zero, when an engine rolls into the bay, people have the money to fix it.",
       "nextNodeId": "act1_node_04"
     },
     {
@@ -27,37 +27,17 @@
       "speakerId": "todd",
       "side": "LEFT",
       "text": "Click. Perfect. She's lined up TDC. Another hundred thousand miles on this engine if they don't neglect their coolant flushes.",
-      "choices": [
-        {
-          "id": "choice_act1_todd_phone",
-          "text": "Check your phone to see how Adriana's afternoon delivery went at the annex.",
-          "voiceKeywords": ["check phone", "adriana", "call adriana", "text adriana", "delivery"],
-          "nextNodeId": "act1_node_05"
-        },
-        {
-          "id": "choice_act1_todd_pete",
-          "text": "Banter with Pete about the weekend rush and inventory costs.",
-          "voiceKeywords": ["pete", "talk to pete", "weekend", "parts", "inventory"],
-          "nextNodeId": "act1_node_06"
-        }
-      ]
+      "nextNodeId": "act1_node_05"
     },
     {
       "id": "act1_node_05",
       "speakerId": "todd",
       "side": "LEFT",
-      "text": "Text from Adriana: 'Truck arrived on time. Five pallets cleared, displays built, all four clerks showed up with energy. We're locking the registers at 7. Don't burn the burgers tonight.'",
-      "nextNodeId": "act1_node_07"
+      "text": "Phone buzzes on the tool chest. Text from Adriana: 'Truck arrived on time. Five pallets cleared, displays built, all four clerks showed up with energy. We're locking the registers at 7. Don't burn the burgers tonight.'",
+      "nextNodeId": "act1_node_06"
     },
     {
       "id": "act1_node_06",
-      "speakerId": "todd",
-      "side": "LEFT",
-      "text": "Pete's laughing. He tells me parts prices are holding steady and we're booked out two weeks solid. In Year Zero, when an engine rolls into the bay, people have the money to fix it.",
-      "nextNodeId": "act1_node_07"
-    },
-    {
-      "id": "act1_node_07",
       "speakerId": "narrator",
       "side": "CENTER_NARRATOR",
       "text": "Todd wipes his hands on a clean red shop rag, rolls down the bay door, and clocks out on the analog punch clock. Outside, the early autumn breeze is clean. Across town at Oakridge Liquors, Adriana is wrapping up her shift.",
@@ -138,15 +118,13 @@
       "speakerId": "narrator",
       "side": "CENTER_NARRATOR",
       "text": "Laughter ripples around the patio table as the stars begin to emerge over quiet rooftops. Glasses clink. The future feels linear, stable, and welcoming—unaware of the silent algorithmic tremors already preparing to ripple beneath the economy.",
-      "setFlagOnEnter": "flag_act1_completed",
       "nextNodeId": "act1_finale"
     },
     {
       "id": "act1_finale",
       "speakerId": "narrator",
       "side": "CENTER_NARRATOR",
-      "text": "End of Act I: The Warm Engine. This was the baseline: a world of steady hours, predictable ladders, and honest wages. The shift begins in Act II.",
-      "setFlagOnEnter": "game_completed"
+      "text": "End of Act I: The Warm Engine. This was the baseline: a world of steady hours, predictable ladders, and honest wages. The shift begins in Act II."
     }
   ]
 }

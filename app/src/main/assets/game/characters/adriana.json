@@ -6,57 +6,12 @@
   "title": "Department Manager",
   "portraitAsset": "portraits/template_hero.jpg",
   "spriteAsset": "sprites/hero_sprite.png",
-  "spriteId": "adriana",
   "themeColor": "#FF7043",
   "ttsPitch": 1.05,
   "samplePhrase": "If corporate thinks four pallets of bourbon unload themselves in twenty minutes, they can come hold the pallet jack.",
-  "preferredVoiceId": null,
-  "voiceAliases": [
-    "adriana",
-    "manager",
-    "ade"
-  ],
   "gender": "female",
   "allowedVoiceRegions": [
     "US",
     "CA"
-  ],
-  "loreClass": "Floor Manager",
-  "combat": {
-    "maxHp": 220,
-    "maxMp": 120,
-    "speed": 75,
-    "defense": 5,
-    "avatarTint": "#FF7043",
-    "startAtb": 0.45,
-    "spellIds": [
-      "manifest_audit"
-    ],
-    "growth": {
-      "maxHp": 12,
-      "maxMp": 8,
-      "speed": 2,
-      "defense": 1,
-      "potencyPct": 0.04
-    },
-    "spells": [
-      {
-        "id": "manifest_audit",
-        "name": "Manifest Audit",
-        "school": "DIVINE",
-        "basePower": 35,
-        "mpCost": 10,
-        "description": "Cross-reference discrepancies and restore operational order.",
-        "exampleChant": "Reviewing shipment discrepancies line by line!",
-        "aliases": ["audit", "order", "inventory"],
-        "graphics": {
-          "animationStyle": "BURST",
-          "primaryColor": "#FFB74D",
-          "secondaryColor": "#FF7043",
-          "soundEffect": "buff",
-          "screenShake": false
-        }
-      }
-    ]
-  }
+  ]
 }

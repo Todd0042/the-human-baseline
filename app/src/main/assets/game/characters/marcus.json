@@ -1,40 +1,16 @@
 {
-  "_doc": "Marcus - Junior Tech Worker and longtime friend of Todd and Adriana.",
+  "_doc": "Marcus - Junior Tech Worker and friend of Todd and Adriana.",
   "id": "marcus",
   "role": "npc",
   "name": "Marcus",
   "title": "Junior Developer",
   "portraitAsset": "portraits/template_hero.jpg",
   "spriteAsset": "sprites/hero_sprite.png",
-  "spriteId": "marcus",
   "themeColor": "#AB47BC",
   "ttsPitch": 1.0,
   "samplePhrase": "We just closed out our two-week sprint early. The automated scaffolding is doing all the boilerplate heavy lifting.",
-  "preferredVoiceId": null,
-  "voiceAliases": [
-    "marcus",
-    "dev"
-  ],
   "gender": "male",
   "allowedVoiceRegions": [
     "US"
-  ],
-  "loreClass": "Junior Engineer",
-  "combat": {
-    "maxHp": 180,
-    "maxMp": 160,
-    "speed": 60,
-    "defense": 4,
-    "avatarTint": "#AB47BC",
-    "startAtb": 0.4,
-    "spellIds": [],
-    "growth": {
-      "maxHp": 10,
-      "maxMp": 10,
-      "speed": 1,
-      "defense": 1,
-      "potencyPct": 0.03
-    },
-    "spells": []
-  }
+  ]
 }

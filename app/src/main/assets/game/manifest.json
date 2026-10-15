@@ -1,33 +1,9 @@
 {
-  "_doc": "Game manifest: top-level metadata the engine pulls at boot. Replace every field when building your own game.",
+  "_doc": "The Human Baseline - Visual Novel Story Manifest.",
   "gameTitle": "The Human Baseline",
   "gameSubtitle": "A Realistic Socio-Economic Visual Novel",
   "worldName": "The Rust & Glass Corridor",
   "initialSceneId": "scene_act1_garage",
   "initialNodeId": "act1_node_01",
-  "defaultEncounterId": "template_solo_battle",
-  "startingAchievementId": "BASELINE_BEGUN",
-  "victoryLine": "Job completed. The numbers balance out, and the machine turns cleanly.",
-  "defeatLine": "The pressure exceeded tolerances. Reset and recalibrate.",
-  "titleBackgroundAsset": "story/template_scene.jpg",
-  "defaultHeroName": "Todd",
-  "defaultHeroTitle": "Lead Diagnostic Technician",
-  "quickNames": ["Aethel", "Rowan", "Kaelen", "Elira", "Vaelen"],
-  "characterTitles": [
-    "The Awakened Invocator",
-    "The Flame-Woven",
-    "The Silent Breaker",
-    "The Star-Caller",
-    "The Oath-Bound"
-  ],
-  "creationEmbarkPrompt": "BEGIN JOURNEY ➔",
-  "creationVoiceKeywords": [
-    "awaken", "embark", "begin", "start", "enter", "let us begin", "ready",
-    "venture", "let's go", "begin journey", "start game", "play", "confirm", "forward", "onward"
-  ],
-  "defaultHeroPortrait": "portraits/template_hero.jpg",
-  "tutorialCompletionText": "All companions assembled. Resonance mechanics understood. You are prepared to enter the world of Logos.",
-  "voicePermissionTitle": "HANDS-FREE VOICE CONTROL",
-  "voicePermissionSubtitle": "Template Hands-Free Voice RPG",
-  "voicePermissionPrompt": "Hands-free voice commands, screenless pocket mode, and tactile controls."
+  "titleBackgroundAsset": "story/template_scene.jpg"
 }
