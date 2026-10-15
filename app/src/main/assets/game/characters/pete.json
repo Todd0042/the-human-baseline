@@ -5,6 +5,7 @@
   "name": "Pete",
   "title": "Shop Owner & Master Tech",
   "portraitAsset": "portraits/portrait_pete.jpg",
+  "spriteAsset": "sprites/pete_sprite.png",
   "themeColor": "#8D6E63",
   "ttsPitch": 0.85,
   "samplePhrase": "If they can't lock us out of the bolts, Todd, they'll lock us out of the software. That's why we keep the old meters handy.",
