@@ -4,7 +4,7 @@
   "role": "npc",
   "name": "Pete",
   "title": "Shop Owner & Master Tech",
-  "portraitAsset": "portraits/template_hero.jpg",
+  "portraitAsset": "portraits/portrait_pete.jpg",
   "spriteAsset": "sprites/hero_sprite.png",
   "themeColor": "#8D6E63",
   "ttsPitch": 0.85,
