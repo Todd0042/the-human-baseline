@@ -4,7 +4,7 @@
   "role": "npc",
   "name": "Senator Vance",
   "title": "Commerce Committee Chair",
-  "portraitAsset": "portraits/template_narrator.jpg",
+  "portraitAsset": "portraits/portrait_senator_vance.jpg",
   "spriteAsset": "sprites/hero_sprite.png",
   "themeColor": "#37474F",
   "ttsPitch": 0.88,
