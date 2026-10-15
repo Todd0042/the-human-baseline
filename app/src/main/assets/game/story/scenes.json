@@ -153,6 +153,57 @@
       "milestoneSummary": "Todd bypasses a proprietary dealer software paywall using an open-source OBD-II pin bridge to fix Marcus's car off-the-books.",
       "milestoneIcon": "🔌",
       "defaultObjective": "Diagnose Marcus's rough idle and bypass the dealer software paywall."
+    },
+    {
+      "id": "scene_act4_garage_quiet",
+      "name": "Pete's Auto Care - Wednesday Morning",
+      "chapterTitle": "Act IV: The Commuter Drain (Years 5–6)",
+      "backgroundAsset": "story/template_scene.jpg",
+      "initialNodeId": "act4_node_01",
+      "ambientDescription": "Only one hydraulic lift is elevated. Two bays stand idle and clean as vehicle miles traveled drop across the county.",
+      "musicAsset": "audio/music/bgm_exploration.ogg",
+      "chapterIndex": 9,
+      "actNumber": 4,
+      "actTitle": "Act IV: The Commuter Drain",
+      "milestoneTitle": "Idle Lifts",
+      "milestoneLocation": "Shop Floor",
+      "milestoneSummary": "Vehicle miles traveled drop 25% as former commuters work gig shifts or stay home; preventative maintenance intervals stretch out.",
+      "milestoneIcon": "🛑",
+      "defaultObjective": "Discuss shop volume with Pete and inspect a customer's grinding brakes."
+    },
+    {
+      "id": "scene_act4_garage_triage",
+      "name": "Pete's Auto Care - Lift 1",
+      "chapterTitle": "Act IV: The Triage Customer",
+      "backgroundAsset": "story/template_scene.jpg",
+      "initialNodeId": "act4_triage_01",
+      "ambientDescription": "A worn silver crossover sits on Lift 1 with metal-on-metal brake rotors. Elena, a gig worker, waits anxiously by the service desk.",
+      "musicAsset": "audio/music/bgm_exploration.ogg",
+      "chapterIndex": 10,
+      "actNumber": 4,
+      "actTitle": "Act IV: The Commuter Drain",
+      "milestoneTitle": "Safe Rotors",
+      "milestoneLocation": "Bay 1",
+      "milestoneSummary": "Todd negotiates parts and waives diagnostic fees so a struggling gig-delivery mother can keep driving safely.",
+      "milestoneIcon": "🔩",
+      "defaultObjective": "Perform brake job triage for Elena's delivery vehicle."
+    },
+    {
+      "id": "scene_act4_retail_shrink",
+      "name": "Oakridge Liquors - Front Register & Self-Checkout",
+      "chapterTitle": "Act IV: The Shrinkage Surge",
+      "backgroundAsset": "story/template_scene_alt.jpg",
+      "initialNodeId": "act4_retail_01",
+      "ambientDescription": "Unstaffed self-checkout kiosks flash red override lights while plexiglass security cabinets lock away standard spirits.",
+      "musicAsset": "audio/music/bgm_exploration.ogg",
+      "chapterIndex": 11,
+      "actNumber": 4,
+      "actTitle": "Act IV: The Commuter Drain",
+      "milestoneTitle": "The Automated Bottleneck",
+      "milestoneLocation": "Retail Front Grid",
+      "milestoneSummary": "Automated self-checkout triggers record product shrinkage, leading corporate to lock basic goods behind glass cases while blaming floor staff.",
+      "milestoneIcon": "🔒",
+      "defaultObjective": "Manage frustrated shoppers and unlock high-theft inventory cases."
     }
   ]
 }

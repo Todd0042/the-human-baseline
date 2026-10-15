@@ -397,7 +397,133 @@
       "id": "act3_finale",
       "speakerId": "narrator",
       "side": "CENTER_NARRATOR",
-      "text": "End of Act III: The Severed Ladder. The junior corporate rungs have shattered. Next lies Act IV: The Commuter Drain."
+      "text": "End of Act III: The Severed Ladder. The junior corporate rungs have shattered. Next lies Act IV: The Commuter Drain.",
+      "changeSceneId": "scene_act4_garage_quiet"
+    },
+    {
+      "id": "act4_node_01",
+      "speakerId": "narrator",
+      "side": "CENTER_NARRATOR",
+      "text": "Year Five. Wednesday, 10:00 AM at Pete's Auto Care. The shop is unnervingly quiet. Bay 2 and Bay 3 stand empty, their concrete floors freshly mopped and dry. The daily roar of highway traffic along the commercial bypass has subdued into a sparse hum.",
+      "nextNodeId": "act4_node_02"
+    },
+    {
+      "id": "act4_node_02",
+      "speakerId": "todd",
+      "side": "LEFT",
+      "text": "Only three cars on the board today, Pete. Two oil changes and a tire patch. We used to have eight vehicles stacked up outside by nine in the morning.",
+      "nextNodeId": "act4_node_03"
+    },
+    {
+      "id": "act4_node_03",
+      "speakerId": "narrator",
+      "side": "CENTER_NARRATOR",
+      "text": "Pete leans against the service counter, reviewing the monthly car counts. When the office towers downtown emptied and middle-management jobs were absorbed by cloud software, suburban Vehicle Miles Traveled collapsed by 26%. Cars sit idle in driveways. Oil change intervals stretch from four months to fourteen.",
+      "nextNodeId": "act4_node_04"
+    },
+    {
+      "id": "act4_node_04",
+      "speakerId": "todd",
+      "side": "LEFT",
+      "text": "People aren't driving forty miles a day into the city anymore. And when they do need work, they're driving on bald tires and ignoring brake squeals because groceries and rent eat everything.",
+      "changeSceneId": "scene_act4_garage_triage"
+    },
+    {
+      "id": "act4_triage_01",
+      "speakerId": "narrator",
+      "side": "CENTER_NARRATOR",
+      "text": "A screeching grinding sound echoes off the pavement outside as an older compact crossover pulls into Bay 1. Elena, a 38-year-old mother working sixteen-hour days between two package delivery apps, steps out wincing.",
+      "nextNodeId": "act4_triage_02"
+    },
+    {
+      "id": "act4_triage_02",
+      "speakerId": "todd",
+      "side": "LEFT",
+      "text": "Elena, step back for a second. Let me pull the front driver wheel. I heard that rotor from two blocks away.",
+      "nextNodeId": "act4_triage_03"
+    },
+    {
+      "id": "act4_triage_03",
+      "speakerId": "narrator",
+      "side": "CENTER_NARRATOR",
+      "text": "Todd pulls the caliper. The friction material is completely gone; the steel brake backing plate has gouged deep, jagged trenches into the cast iron rotor. Metal shavings glisten on the shop floor.",
+      "nextNodeId": "act4_triage_04"
+    },
+    {
+      "id": "act4_triage_04",
+      "speakerId": "todd",
+      "side": "LEFT",
+      "text": "Elena, the dealership or a franchise chain would quote you seven hundred dollars to replace all four corners with dealer OEM parts.",
+      "nextNodeId": "act4_triage_05"
+    },
+    {
+      "id": "act4_triage_05",
+      "speakerId": "narrator",
+      "side": "CENTER_NARRATOR",
+      "text": "Elena's voice shakes: 'Todd, please. If this car doesn't pass inspection by Friday, the delivery app deactivates my account. I have eighty-five dollars in checking until my direct deposit hits Sunday night.'",
+      "nextNodeId": "act4_triage_06"
+    },
+    {
+      "id": "act4_triage_06",
+      "speakerId": "todd",
+      "side": "LEFT",
+      "text": "Listen to me. I've got two resurfaced commercial rotors on the back shelf that fit this hub, and a clean set of ceramic pads Pete wholesale-ordered last week. You pay me fifty bucks for the pads today. I'm waiving the labor. You keep driving, and you keep feeding your kids.",
+      "nextNodeId": "act4_triage_07"
+    },
+    {
+      "id": "act4_triage_07",
+      "speakerId": "narrator",
+      "side": "CENTER_NARRATOR",
+      "text": "Elena wipes her eyes as Todd's impact wrench zips the lug nuts back on. The trade is surviving not on corporate volume, but on community trust and mutual preservation. Across town, Adriana is battling the corporate retail response.",
+      "changeSceneId": "scene_act4_retail_shrink"
+    },
+    {
+      "id": "act4_retail_01",
+      "speakerId": "narrator",
+      "side": "CENTER_NARRATOR",
+      "text": "Friday, 5:30 PM at Oakridge Liquors. The four traditional cashier lanes have been ripped out, replaced by six automated self-checkout kiosks under blinding overhead cameras. Four of the six kiosks are frozen with blinking red overhead lights: 'ATTENDANT ASSISTANCE REQUIRED.'",
+      "nextNodeId": "act4_retail_02"
+    },
+    {
+      "id": "act4_retail_02",
+      "speakerId": "adriana",
+      "side": "RIGHT",
+      "text": "Key override on kiosk three. Scanning ID on kiosk five. Folks, I apologize for the wait, I am the only floor manager authorized to clear age-verification lockouts right now.",
+      "nextNodeId": "act4_retail_03"
+    },
+    {
+      "id": "act4_retail_03",
+      "speakerId": "narrator",
+      "side": "CENTER_NARRATOR",
+      "text": "Corporate promised the self-checkout grid would save 25% on store labor. Instead, it created chaos. Desperation-driven shoplifting skyrocketed; bottles of mid-tier tequila and whiskey walked out unnoticed during peak rush hours.",
+      "nextNodeId": "act4_retail_04"
+    },
+    {
+      "id": "act4_retail_04",
+      "speakerId": "adriana",
+      "side": "RIGHT",
+      "text": "Corporate's solution wasn't to hire cashiers back. Their solution was to order sixty plexiglass lock-boxes. Now even twenty-dollar vodka is locked behind keyed glass. Every single customer has to ring a buzzer and wait for me to unlock a five-dollar item.",
+      "nextNodeId": "act4_retail_05"
+    },
+    {
+      "id": "act4_retail_05",
+      "speakerId": "narrator",
+      "side": "CENTER_NARRATOR",
+      "text": "Shoppers grumble and abandon carts in the aisles. The friction of unstaffed automation has made shopping a frustrating ordeal, yet corporate district managers issue memos blaming store staff for declining customer satisfaction scores.",
+      "nextNodeId": "act4_retail_06"
+    },
+    {
+      "id": "act4_retail_06",
+      "speakerId": "adriana",
+      "side": "RIGHT",
+      "text": "They want the profit of a machine, but the accountability of a human. As long as I'm holding these keys, they're not breaking my floor crew.",
+      "nextNodeId": "act4_finale"
+    },
+    {
+      "id": "act4_finale",
+      "speakerId": "narrator",
+      "side": "CENTER_NARRATOR",
+      "text": "End of Act IV: The Commuter Drain. Mechanical volume has dropped and storefront friction has tightened. Ahead lies Act V: The Middle-Age Squeeze."
     }
   ]
 }
