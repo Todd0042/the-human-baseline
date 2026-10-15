@@ -4,7 +4,7 @@
   "role": "npc",
   "name": "Chloe",
   "title": "Registered Nurse",
-  "portraitAsset": "portraits/template_hero.jpg",
+  "portraitAsset": "portraits/portrait_chloe.jpg",
   "spriteAsset": "sprites/hero_sprite.png",
   "themeColor": "#26A69A",
   "ttsPitch": 1.10,
