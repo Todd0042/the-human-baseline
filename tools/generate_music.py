@@ -193,6 +193,77 @@ class SynthEngine:
         sig = np.tanh(wave * 1.2) * env * velocity
         return np.column_stack([sig, sig])
 
+    def render_heartbeat_pulse(self, duration=1.0, velocity=0.35, interval=0.28):
+        """Authentic biological chest heartbeat sound (lub-dub).
+        Deep, warm, low-frequency acoustic chest cavity thud with natural damping.
+        """
+        n_samples = int(self.sr * duration)
+        out = np.zeros(n_samples)
+        
+        # S1 (lub): deep, rounded ventricular contraction
+        len1 = int(self.sr * 0.18)
+        t1 = np.linspace(0, 0.18, len1, endpoint=False)
+        f1 = 56.0 * (1.12 - 0.32 * (t1 / 0.18))
+        sine1 = np.sin(2 * np.pi * f1 * t1)
+        env1 = (1.0 - np.exp(-t1 * 100.0)) * np.exp(-t1 * 18.0)
+        noise1 = np.random.normal(0, 0.25, len1) * env1
+        
+        b, a = signal.butter(2, 95.0 / (self.sr / 2.0), btype='low')
+        s1 = signal.lfilter(b, a, sine1 * env1 * 0.9 + noise1 * 0.2)
+        out[:len1] += s1 * 0.9
+        
+        # S2 (dub): crisper semilunar valve closure at +0.28s
+        offset = int(self.sr * interval)
+        len2 = int(self.sr * 0.14)
+        if offset + len2 < n_samples:
+            t2 = np.linspace(0, 0.14, len2, endpoint=False)
+            f2 = 68.0 * (1.15 - 0.28 * (t2 / 0.14))
+            sine2 = np.sin(2 * np.pi * f2 * t2)
+            env2 = (1.0 - np.exp(-t2 * 120.0)) * np.exp(-t2 * 24.0)
+            noise2 = np.random.normal(0, 0.20, len2) * env2
+            s2 = signal.lfilter(b, a, sine2 * env2 * 0.85 + noise2 * 0.18)
+            out[offset:offset+len2] += s2 * 0.70
+            
+        scaled = out * velocity
+        # Gentle stereo width (slightly left-biased like anatomical heart position)
+        pan = -0.15
+        pan_l = math.cos((pan + 1.0) * math.pi / 4.0)
+        pan_r = math.sin((pan + 1.0) * math.pi / 4.0)
+        return np.column_stack([scaled * pan_l, scaled * pan_r])
+
+    def render_heartbeat_base_note(self, freq, duration, velocity=0.55, interval=0.28):
+        """Musical base note keyed to the chord fundamental, articulated with
+        the heartbeat rhythm (lub-dub pulse followed by warm harmonic sustain).
+        """
+        n_samples = int(self.sr * duration)
+        t = np.linspace(0, duration, n_samples, endpoint=False)
+        out = np.zeros(n_samples)
+        
+        # S1 base impulse
+        len1 = int(self.sr * min(duration, 0.45))
+        t1 = np.linspace(0, min(duration, 0.45), len1, endpoint=False)
+        env1 = (1.0 - np.exp(-t1 * 60.0)) * np.exp(-t1 * 3.5)
+        wave1 = np.sin(2 * np.pi * freq * t1) * 0.8 + np.sin(2 * np.pi * 2.0 * freq * t1) * 0.2
+        out[:len1] += wave1 * env1 * 0.85
+        
+        # S2 base impulse at +interval
+        offset = int(self.sr * interval)
+        if offset < n_samples:
+            rem_dur = duration - interval
+            len2 = int(self.sr * rem_dur)
+            t2 = np.linspace(0, rem_dur, len2, endpoint=False)
+            env2 = (1.0 - np.exp(-t2 * 70.0)) * np.exp(-t2 * 2.0)
+            wave2 = np.sin(2 * np.pi * freq * t2) * 0.85 + np.sin(2 * np.pi * 2.0 * freq * t2) * 0.15
+            out[offset:offset+len2] += wave2 * env2 * 0.65
+            
+        # Subtle sub-bass body sustain
+        body_env = (1.0 - np.exp(-t * 20.0)) * np.exp(-t * 1.2) * 0.35
+        body_wave = np.sin(2 * np.pi * (freq * 0.5) * t)
+        out += body_wave * body_env
+        
+        sig = np.tanh(out * 1.1) * velocity
+        return np.column_stack([sig, sig])
+
 def add_clip(target_track, clip, start_sample):
     """Mix a stereo clip into the target track buffer."""
     clip_len = len(clip)
@@ -651,6 +722,90 @@ def compose_act9_human_baseline(synth, duration=48.0):
         curr_time += chord_dur
     return master
 
+def compose_title_human_baseline(synth, duration=48.0):
+    """Title Theme: The Human Baseline
+    Poignant, warm, resilient. Anchored by a resting heartbeat pulse (~60 BPM)
+    functioning as both the organic rhythmic foundation and the musical base note.
+    """
+    bpm = 60.0  # 1 beat per second = human resting heart rate
+    beat_dur = 60.0 / bpm
+    total_samples = int(SAMPLE_RATE * duration)
+    master = np.zeros((total_samples, 2))
+    
+    # 12 bars (4 seconds per bar at 60 BPM) = 48.0s
+    progression = [
+        {"chord": ["D3", "A3", "F#4", "C#5", "E5"], "root": "D2", "bars": 2},
+        {"chord": ["B2", "F#3", "D4", "A4", "C#5"],  "root": "B1", "bars": 2},
+        {"chord": ["G2", "D3", "B3", "F#4", "D5"],   "root": "G1", "bars": 2},
+        {"chord": ["A2", "E3", "A3", "D4", "B4"],    "root": "A1", "bars": 2},
+        {"chord": ["F#2", "C#3", "A3", "E4", "C#5"], "root": "F#1", "bars": 2},
+        {"chord": ["G2", "B3", "D4", "F#4", "A4"],   "root": "D2", "bars": 2},
+    ]
+    
+    # 1. Layer the underlying biological heartbeat pulse continuously throughout
+    # Resting heart rate: exactly every 1.0 second (60 BPM)
+    num_beats = int(duration / beat_dur)
+    for b in range(num_beats):
+        t_beat = b * beat_dur
+        # Dynamic variation: slightly stronger on downbeats (b % 4 == 0 or 2), softer on offbeats
+        if b % 4 == 0:
+            v_hb = 0.38
+        elif b % 2 == 0:
+            v_hb = 0.32
+        else:
+            v_hb = 0.26
+        hb = synth.render_heartbeat_pulse(duration=1.0, velocity=v_hb, interval=0.28)
+        add_clip(master, hb, int(t_beat * SAMPLE_RATE))
+        
+    # 2. Render each chord section
+    curr_time = 0.0
+    for section in progression:
+        chord_names = section["chord"]
+        root_name = section["root"]
+        bars = section["bars"]
+        sec_dur = bars * 4.0 * beat_dur
+        
+        chord_freqs = [note_to_freq(n) for n in chord_names]
+        root_freq = note_to_freq(root_name)
+        
+        # Warm analog pad swell across the section
+        pad = synth.render_pad(chord_freqs, sec_dur, velocity=0.38, cutoff=1100.0)
+        add_clip(master, pad, int(curr_time * SAMPLE_RATE))
+        
+        # Heartbeat Base Note: triggers on beat 1 and beat 3 of each bar
+        for bar in range(bars):
+            t_bar = curr_time + bar * 4.0 * beat_dur
+            # Beat 1 (root note)
+            b1 = synth.render_heartbeat_base_note(root_freq, 2.0 * beat_dur, velocity=0.58)
+            add_clip(master, b1, int(t_bar * SAMPLE_RATE))
+            # Beat 3 (fifth or root)
+            fifth_freq = root_freq * 1.5
+            b3 = synth.render_heartbeat_base_note(fifth_freq if bar % 2 == 1 else root_freq, 2.0 * beat_dur, velocity=0.48)
+            add_clip(master, b3, int((t_bar + 2.0 * beat_dur) * SAMPLE_RATE))
+            
+            # Rhodes tine chords on beat 1 & 3
+            rh1 = synth.render_rhodes(chord_freqs[2], 2.8, velocity=0.42, pan=-0.2)
+            add_clip(master, rh1, int(t_bar * SAMPLE_RATE))
+            rh2 = synth.render_rhodes(chord_freqs[3], 2.4, velocity=0.36, pan=0.2)
+            add_clip(master, rh2, int((t_bar + 2.0 * beat_dur) * SAMPLE_RATE))
+            
+            # Acoustic picking pattern (8 fingerpicked notes per bar, 0.5s per note)
+            picking_pattern = [0, 2, 1, 3, 2, 4, 3, 1]
+            for step, pick_idx in enumerate(picking_pattern):
+                t_pick = t_bar + step * 0.5 * beat_dur
+                if t_pick >= duration:
+                    break
+                f_pick = chord_freqs[pick_idx % len(chord_freqs)]
+                # Humanize velocity slightly
+                v_pick = 0.44 + 0.08 * math.sin(step * 1.2)
+                pan_pick = -0.35 if step % 2 == 0 else 0.35
+                plk = synth.render_pluck(f_pick, 1.4, velocity=v_pick, pan=pan_pick)
+                add_clip(master, plk, int(t_pick * SAMPLE_RATE))
+                
+        curr_time += sec_dur
+        
+    return master
+
 # ==============================================================================
 # MAIN GENERATOR
 # ==============================================================================
@@ -663,26 +818,32 @@ def main():
     
     synth = SynthEngine(SAMPLE_RATE)
     
-    acts = [
-        ("bgm_act1_warm_engine.ogg", compose_act1_warm_engine),
-        ("bgm_act2_first_tremors.ogg", compose_act2_first_tremors),
-        ("bgm_act3_severed_ladder.ogg", compose_act3_severed_ladder),
-        ("bgm_act4_commuter_drain.ogg", compose_act4_commuter_drain),
-        ("bgm_act5_middle_age_squeeze.ogg", compose_act5_middle_age_squeeze),
-        ("bgm_act6_caregiving_crucible.ogg", compose_act6_caregiving_crucible),
-        ("bgm_act7_breaking_point.ogg", compose_act7_breaking_point),
-        ("bgm_act8_thirty_second_hour.ogg", compose_act8_thirty_second_hour),
-        ("bgm_act9_human_baseline.ogg", compose_act9_human_baseline),
+    tracks = [
+        ("bgm_title.ogg", compose_title_human_baseline, 48.0),
+        ("bgm_act1_warm_engine.ogg", compose_act1_warm_engine, 46.0),
+        ("bgm_act2_first_tremors.ogg", compose_act2_first_tremors, 46.0),
+        ("bgm_act3_severed_ladder.ogg", compose_act3_severed_ladder, 46.0),
+        ("bgm_act4_commuter_drain.ogg", compose_act4_commuter_drain, 46.0),
+        ("bgm_act5_middle_age_squeeze.ogg", compose_act5_middle_age_squeeze, 46.0),
+        ("bgm_act6_caregiving_crucible.ogg", compose_act6_caregiving_crucible, 46.0),
+        ("bgm_act7_breaking_point.ogg", compose_act7_breaking_point, 46.0),
+        ("bgm_act8_thirty_second_hour.ogg", compose_act8_thirty_second_hour, 46.0),
+        ("bgm_act9_human_baseline.ogg", compose_act9_human_baseline, 46.0),
     ]
     
-    print(f"Generating 9 Act Soundtracks into {music_dir}...")
-    for filename, composer_fn in acts:
+    # Filter if arguments passed
+    if len(sys.argv) > 1:
+        wanted = sys.argv[1:]
+        tracks = [t for t in tracks if any(w in t[0] for w in wanted)]
+        
+    print(f"Generating Soundtrack into {music_dir}...")
+    for filename, composer_fn, duration in tracks:
         out_path = os.path.join(music_dir, filename)
-        print(f"Synthesizing {filename}...")
-        raw_audio = composer_fn(synth, duration=46.0)
+        print(f"Synthesizing {filename} ({duration:.1f}s)...")
+        raw_audio = composer_fn(synth, duration=duration)
         render_track_to_ogg(raw_audio, out_path, synth)
         
-    print("\nAll 9 Act Soundtracks generated successfully!")
+    print("\nSoundtrack generated successfully!")
 
 if __name__ == "__main__":
     main()
