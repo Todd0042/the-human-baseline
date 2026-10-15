@@ -1,8 +1,8 @@
 {
   "_doc": "Game manifest: top-level metadata the engine pulls at boot. Replace every field when building your own game.",
-  "gameTitle": "Template Adventure",
-  "gameSubtitle": "A VoiceRPG Engine Starter Game",
-  "worldName": "Aethelgard",
+  "gameTitle": "The Human Baseline",
+  "gameSubtitle": "A Realistic Socio-Economic Visual Novel",
+  "worldName": "The Rust & Glass Corridor",
   "initialSceneId": "scene_proving_grounds",
   "initialNodeId": "template_intro",
   "defaultEncounterId": "template_solo_battle",
