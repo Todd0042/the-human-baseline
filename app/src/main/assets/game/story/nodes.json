@@ -1,176 +1,151 @@
 {
-  "_doc": "TEMPLATE STORY GRAPH. Nodes reference speakers by speakerId (characters/*.json). Demonstrates every engine story feature: linear narration, character dialogue, choice hubs with voiceKeywords + completionFlag elimination, combat triggers (triggerBattleEncounterId + nextNodeId post-battle continuation), scene changes (changeSceneId), party resting (healPartyOnEnter: half|full), hub auto-redirect when all flags are set (hubCompletion), and the engine-convention 'game_completed' flag that ends a playthrough.",
+  "_doc": "The Human Baseline - Master Narrative Dialogue Nodes Graph.",
   "nodes": [
     {
-      "id": "template_intro",
+      "id": "act1_node_01",
       "speakerId": "narrator",
       "side": "CENTER_NARRATOR",
-      "text": "Deep beneath the sanctuary, the stone floor hums with a forgotten frequency. This is the Proving Grounds, where every voice that enters is tested. Speak aloud to advance, or say 'Options' at any time.",
-      "nextNodeId": "template_hero_greeting"
+      "text": "Late Friday afternoon at Pete's Auto Care. The shop is filled with the steady rhythm of three active bays: the hiss of pneumatic lines, the low thrum of the air compressor in the back closet, and classic rock drifting from a grease-spotted radio on the workbench.",
+      "nextNodeId": "act1_node_02"
     },
     {
-      "id": "template_hero_greeting",
-      "speakerId": "hero",
+      "id": "act1_node_02",
+      "speakerId": "todd",
       "side": "LEFT",
-      "text": "So this is where the trials begin. My voice is both blade and shield here. Let us see what this sanctuary has to teach.",
-      "nextNodeId": "template_choice_hub"
+      "text": "Hand me that three-eighths torque wrench, Pete. Setting tension on this timing belt tensioner pulley. Forty-two foot-pounds, exactly where she wants to sit.",
+      "nextNodeId": "act1_node_03"
     },
     {
-      "id": "template_choice_hub",
+      "id": "act1_node_03",
       "speakerId": "narrator",
       "side": "CENTER_NARRATOR",
-      "text": "The chamber awaits your command. Speak a choice aloud, or tap it on the screen. Completed tasks are removed automatically.",
+      "text": "Pete, a veteran mechanic with silver in his beard and forty years of greasy knuckles, slides the calibrated wrench across the rolling cart. Across the bay, three customer invoices sit neatly in the pickup rack, each marked 'PAID - PICKUP BY 5:30.'",
+      "nextNodeId": "act1_node_04"
+    },
+    {
+      "id": "act1_node_04",
+      "speakerId": "todd",
+      "side": "LEFT",
+      "text": "Click. Perfect. She's lined up TDC. Another hundred thousand miles on this engine if they don't neglect their coolant flushes.",
       "choices": [
         {
-          "id": "choice_history",
-          "text": "Ask about the history of the Proving Grounds.",
-          "voiceKeywords": ["history", "grounds", "lore", "past", "ancient"],
-          "nextNodeId": "template_branch_history",
-          "completionFlag": "flag_template_history_read"
+          "id": "choice_act1_todd_phone",
+          "text": "Check your phone to see how Adriana's afternoon delivery went at the annex.",
+          "voiceKeywords": ["check phone", "adriana", "call adriana", "text adriana", "delivery"],
+          "nextNodeId": "act1_node_05"
         },
         {
-          "id": "choice_counsel",
-          "text": "Receive tactical counsel for the trials ahead.",
-          "voiceKeywords": ["counsel", "advice", "tactical", "blessing", "help"],
-          "nextNodeId": "template_branch_counsel",
-          "completionFlag": "flag_template_counsel_received"
-        },
-        {
-          "id": "choice_solo_battle",
-          "text": "Begin the Single-Enemy Combat Trial.",
-          "voiceKeywords": ["single", "solo", "one enemy", "drone", "first trial", "battle", "fight"],
-          "nextNodeId": "template_trigger_solo_combat"
-        },
-        {
-          "id": "choice_trio_battle",
-          "text": "Begin the Squad Combat Trial against three drones.",
-          "voiceKeywords": ["squad", "trio", "three enemies", "group", "second trial"],
-          "nextNodeId": "template_trigger_trio_combat"
-        },
-        {
-          "id": "choice_echo_hall",
-          "text": "Enter the Echo Hall for the final guardian trial.",
-          "voiceKeywords": ["echo hall", "hall", "guardian", "final", "enter", "proceed"],
-          "nextNodeId": "template_to_echo_hall"
+          "id": "choice_act1_todd_pete",
+          "text": "Banter with Pete about the weekend rush and inventory costs.",
+          "voiceKeywords": ["pete", "talk to pete", "weekend", "parts", "inventory"],
+          "nextNodeId": "act1_node_06"
         }
       ]
     },
     {
-      "id": "template_branch_history",
-      "speakerId": "narrator",
-      "side": "CENTER_NARRATOR",
-      "text": "Centuries ago, the first architects of this engine discovered that acoustic clarity directly amplifies force of will. Every crisp syllable resonates stronger than a mumbled one. That is the secret of the Proving Grounds.",
-      "setFlagOnEnter": "flag_template_history_read",
-      "nextNodeId": "template_choice_hub"
-    },
-    {
-      "id": "template_branch_counsel",
-      "speakerId": "narrator",
-      "side": "CENTER_NARRATOR",
-      "text": "Remember: vivid, elaborate incantations score higher resonance and strike harder. Say 'Attune' to recover mana for free, 'Defend' to halve incoming damage, and 'Status' for a full situation report.",
-      "setFlagOnEnter": "flag_template_counsel_received",
-      "nextNodeId": "template_choice_hub"
-    },
-    {
-      "id": "template_trigger_solo_combat",
-      "speakerId": "narrator",
-      "side": "CENTER_NARRATOR",
-      "text": "A single training drone hums to life, gears spinning as it locks onto your voice signature!",
-      "triggerBattleEncounterId": "template_solo_battle",
-      "nextNodeId": "template_post_victory"
-    },
-    {
-      "id": "template_trigger_trio_combat",
-      "speakerId": "narrator",
-      "side": "CENTER_NARRATOR",
-      "text": "Three automated drones deploy in synchronized combat formation! Say 'Enemies' at any time to scan the field.",
-      "triggerBattleEncounterId": "template_trio_battle",
-      "nextNodeId": "template_post_victory"
-    },
-    {
-      "id": "template_post_victory",
-      "speakerId": "hero",
+      "id": "act1_node_05",
+      "speakerId": "todd",
       "side": "LEFT",
-      "text": "Outstanding. My incantations were resolute and my timing flawless. The Proving Grounds yield to my voice.",
-      "nextNodeId": "template_conclusion"
+      "text": "Text from Adriana: 'Truck arrived on time. Five pallets cleared, displays built, all four clerks showed up with energy. We're locking the registers at 7. Don't burn the burgers tonight.'",
+      "nextNodeId": "act1_node_07"
     },
     {
-      "id": "template_conclusion",
-      "speakerId": "narrator",
-      "side": "CENTER_NARRATOR",
-      "text": "The trial is complete. The hub awaits: run another trial, or enter the Echo Hall when you are ready for the guardian.",
-      "nextNodeId": "template_choice_hub"
-    },
-    {
-      "id": "template_to_echo_hall",
-      "speakerId": "narrator",
-      "side": "CENTER_NARRATOR",
-      "text": "The far doors grind open. Beyond them, the Echo Hall stretches into darkness, its walls mirrored and listening.",
-      "changeSceneId": "scene_echo_hall",
-      "nextNodeId": "hall_intro"
-    },
-    {
-      "id": "hall_intro",
-      "speakerId": "narrator",
-      "side": "CENTER_NARRATOR",
-      "text": "Every footstep returns twice from the polished stone. At the far end of the hall, a colossal guardian stirs on its plinth.",
-      "nextNodeId": "hall_hub"
-    },
-    {
-      "id": "hall_hub",
-      "speakerId": "narrator",
-      "side": "CENTER_NARRATOR",
-      "text": "The guardian has not yet risen. What is your command?",
-      "hubCompletion": {
-        "requiredFlags": ["hall_rest_complete", "hall_boss_complete"],
-        "redirectToNodeId": "hall_conclusion"
-      },
-      "choices": [
-        {
-          "id": "choice_rest",
-          "text": "Rest in the alcove and restore the party.",
-          "voiceKeywords": ["rest", "sleep", "restore", "recover", "alcove", "heal"],
-          "nextNodeId": "hall_rest",
-          "completionFlag": "hall_rest_complete"
-        },
-        {
-          "id": "choice_boss",
-          "text": "Awaken the Proving Guardian and begin the final trial.",
-          "voiceKeywords": ["guardian", "boss", "awaken", "final", "trial", "fight", "battle"],
-          "nextNodeId": "hall_trigger_boss"
-        }
-      ]
-    },
-    {
-      "id": "hall_rest",
-      "speakerId": "narrator",
-      "side": "CENTER_NARRATOR",
-      "text": "You breathe slow and steady in the quiet alcove. Wounds close, mana returns, and the party rises refreshed.",
-      "setFlagOnEnter": "hall_rest_complete",
-      "healPartyOnEnter": "full",
-      "nextNodeId": "hall_hub"
-    },
-    {
-      "id": "hall_trigger_boss",
-      "speakerId": "narrator",
-      "side": "CENTER_NARRATOR",
-      "text": "The Proving Guardian rises, stone plates grinding over a blazing core. Its wardens fan out across the arena!",
-      "triggerBattleEncounterId": "template_boss_battle",
-      "nextNodeId": "hall_victory"
-    },
-    {
-      "id": "hall_victory",
-      "speakerId": "hero",
+      "id": "act1_node_06",
+      "speakerId": "todd",
       "side": "LEFT",
-      "text": "It is finished. Even the guardian's overload could not silence me. This sanctuary has nothing left to test.",
-      "setFlagOnEnter": "hall_boss_complete",
-      "nextNodeId": "hall_hub"
+      "text": "Pete's laughing. He tells me parts prices are holding steady and we're booked out two weeks solid. In Year Zero, when an engine rolls into the bay, people have the money to fix it.",
+      "nextNodeId": "act1_node_07"
     },
     {
-      "id": "hall_conclusion",
+      "id": "act1_node_07",
       "speakerId": "narrator",
       "side": "CENTER_NARRATOR",
-      "text": "CONGRATULATIONS! You have completed the template campaign: every mechanic, every trial, and the guardian itself were conquered by your voice. Copy these data files, replace them with your own world, and your game begins. Thank you for playing!",
+      "text": "Todd wipes his hands on a clean red shop rag, rolls down the bay door, and clocks out on the analog punch clock. Outside, the early autumn breeze is clean. Across town at Oakridge Liquors, Adriana is wrapping up her shift.",
+      "changeSceneId": "scene_act1_retail"
+    },
+    {
+      "id": "act1_retail_01",
+      "speakerId": "narrator",
+      "side": "CENTER_NARRATOR",
+      "text": "Inside the bright, orderly aisles of Oakridge Liquors, the shelves are neatly fronted and faced. Warm amber bottles of Kentucky bourbon gleam under recessed halogen lights. Two young college students, Sam and Chloe, are chatting cheerfully behind register one.",
+      "nextNodeId": "act1_retail_02"
+    },
+    {
+      "id": "act1_retail_02",
+      "speakerId": "adriana",
+      "side": "RIGHT",
+      "text": "Great job clearing the delivery skids today, you two. Take your full thirty-minute lunch breaks—no rushing. The weekend promotional endcap looks sharp.",
+      "nextNodeId": "act1_retail_03"
+    },
+    {
+      "id": "act1_retail_03",
+      "speakerId": "narrator",
+      "side": "CENTER_NARRATOR",
+      "text": "There are no automated cameras counting Chloe's keystrokes. No algorithm shaving twelve minutes from Sam's timecard to appease an executive dashboard. Labor hours are managed with human trust, common sense, and mutual respect.",
+      "nextNodeId": "act1_retail_04"
+    },
+    {
+      "id": "act1_retail_04",
+      "speakerId": "adriana",
+      "side": "RIGHT",
+      "text": "Drawer count balances down to the penny. Alarm set, doors locked. Time to head home for the cookout.",
+      "changeSceneId": "scene_act1_cookout"
+    },
+    {
+      "id": "act1_cookout_01",
+      "speakerId": "narrator",
+      "side": "CENTER_NARRATOR",
+      "text": "Twilight settles over Todd and Adriana's suburban patio. The charcoal kettle grill fills the backyard with the aroma of caramelized beef, toasted brioche buns, and charred peppers. Ice clinks in a cooler beside the deck table.",
+      "nextNodeId": "act1_cookout_02"
+    },
+    {
+      "id": "act1_cookout_02",
+      "speakerId": "marcus",
+      "side": "RIGHT",
+      "text": "Guys, I'm telling you, our senior vice president dropped by our standup today. He said if we hit our Q4 deliverables, the entire junior engineering cohort is getting bumped up to full mid-level salaries. Full health benefits, four percent 401(k) match, the works!",
+      "nextNodeId": "act1_cookout_03"
+    },
+    {
+      "id": "act1_cookout_03",
+      "speakerId": "todd",
+      "side": "LEFT",
+      "text": "That's huge, Marcus. You busted your tail on that degree, and it's paying off. Drink to that.",
+      "nextNodeId": "act1_cookout_04"
+    },
+    {
+      "id": "act1_cookout_04",
+      "speakerId": "adriana",
+      "side": "RIGHT",
+      "text": "Just don't start buying imported scotch until the contract is signed in ink, Marcus. I see guys in my store celebrate early all the time.",
+      "nextNodeId": "act1_cookout_05"
+    },
+    {
+      "id": "act1_cookout_05",
+      "speakerId": "marcus",
+      "side": "RIGHT",
+      "text": "Haha, deal! Though our lead architect did mention they're testing out some new automated syntax assistants next month. Says it's going to make us so productive we might never have to work overtime again.",
+      "nextNodeId": "act1_cookout_06"
+    },
+    {
+      "id": "act1_cookout_06",
+      "speakerId": "todd",
+      "side": "LEFT",
+      "text": "Careful with tools that promise to do the thinking for you. In the shop, an automated diagnostic scanner is only as smart as the technician holding the test probe.",
+      "nextNodeId": "act1_cookout_07"
+    },
+    {
+      "id": "act1_cookout_07",
+      "speakerId": "narrator",
+      "side": "CENTER_NARRATOR",
+      "text": "Laughter ripples around the patio table as the stars begin to emerge over quiet rooftops. Glasses clink. The future feels linear, stable, and welcoming—unaware of the silent algorithmic tremors already preparing to ripple beneath the economy.",
+      "setFlagOnEnter": "flag_act1_completed",
+      "nextNodeId": "act1_finale"
+    },
+    {
+      "id": "act1_finale",
+      "speakerId": "narrator",
+      "side": "CENTER_NARRATOR",
+      "text": "End of Act I: The Warm Engine. This was the baseline: a world of steady hours, predictable ladders, and honest wages. The shift begins in Act II.",
       "setFlagOnEnter": "game_completed"
     }
   ]

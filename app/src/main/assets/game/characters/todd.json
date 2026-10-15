@@ -1,0 +1,80 @@
+{
+  "_doc": "Todd - Lead Diagnostic Automotive Technician. The protagonist of The Human Baseline.",
+  "id": "todd",
+  "role": "hero",
+  "name": "Todd",
+  "title": "Lead Diagnostic Technician",
+  "portraitAsset": "portraits/template_hero.jpg",
+  "spriteAsset": "sprites/hero_sprite.png",
+  "spriteId": "todd",
+  "themeColor": "#29B6F6",
+  "ttsPitch": 0.95,
+  "samplePhrase": "Listen to the engine. Metal doesn't lie; you just have to know how to read the tolerances.",
+  "preferredVoiceId": null,
+  "voiceAliases": [
+    "todd",
+    "mechanic",
+    "tech"
+  ],
+  "gender": "male",
+  "allowedVoiceRegions": [
+    "US",
+    "CA"
+  ],
+  "loreClass": "Diagnostic Technician",
+  "combat": {
+    "maxHp": 250,
+    "maxMp": 100,
+    "speed": 65,
+    "defense": 8,
+    "avatarTint": "#29B6F6",
+    "startAtb": 0.5,
+    "spellIds": [
+      "precision_torque",
+      "diagnostic_scan"
+    ],
+    "growth": {
+      "maxHp": 15,
+      "maxMp": 5,
+      "speed": 1,
+      "defense": 2,
+      "potencyPct": 0.03
+    },
+    "spells": [
+      {
+        "id": "precision_torque",
+        "name": "Precision Torque",
+        "school": "PHYSICAL",
+        "basePower": 45,
+        "mpCost": 0,
+        "description": "A calculated, high-leverage mechanical strike with a breaker bar.",
+        "exampleChant": "Breakaway torque applied directly to the seized joint!",
+        "aliases": ["torque", "wrench", "strike", "breaker bar"],
+        "graphics": {
+          "animationStyle": "SLASH",
+          "primaryColor": "#29B6F6",
+          "secondaryColor": "#ECEFF1",
+          "soundEffect": "hit_slash",
+          "screenShake": false
+        }
+      },
+      {
+        "id": "diagnostic_scan",
+        "name": "Diagnostic Scan",
+        "school": "ARCANE",
+        "basePower": 20,
+        "mpCost": 15,
+        "description": "Analyze signal noise and pinpoint vulnerabilities.",
+        "exampleChant": "Probing waveform on primary circuit line!",
+        "aliases": ["scan", "diagnose", "probe", "read"],
+        "graphics": {
+          "animationStyle": "BURST",
+          "primaryColor": "#00E676",
+          "secondaryColor": "#29B6F6",
+          "soundEffect": "buff",
+          "screenShake": false
+        }
+      }
+    ]
+  }
+}
