@@ -5,6 +5,7 @@
   "name": "Elena",
   "title": "Delivery Courier",
   "portraitAsset": "portraits/portrait_elena.jpg",
+  "spriteAsset": "sprites/elena_sprite.png",
   "themeColor": "#7E57C2",
   "ttsPitch": 1.02,
   "samplePhrase": "If this car doesn't pass inspection today, my account drops out of tier-one dispatch. I've got two kids depending on these night runs.",
