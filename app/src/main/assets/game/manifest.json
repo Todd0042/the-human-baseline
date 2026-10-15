@@ -5,5 +5,5 @@
   "worldName": "The Rust & Glass Corridor",
   "initialSceneId": "scene_act1_garage",
   "initialNodeId": "act1_node_01",
-  "titleBackgroundAsset": "story/template_scene.jpg"
+  "titleBackgroundAsset": "story/title_background.jpg"
 }
