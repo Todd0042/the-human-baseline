@@ -4,7 +4,7 @@
   "role": "npc",
   "name": "Sam",
   "title": "Corporate Auditor",
-  "portraitAsset": "portraits/template_hero.jpg",
+  "portraitAsset": "portraits/portrait_sam.jpg",
   "spriteAsset": "sprites/hero_sprite.png",
   "themeColor": "#5C6BC0",
   "ttsPitch": 0.98,
