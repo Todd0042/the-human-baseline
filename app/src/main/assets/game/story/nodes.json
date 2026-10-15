@@ -257,7 +257,147 @@
       "id": "act2_finale",
       "speakerId": "narrator",
       "side": "CENTER_NARRATOR",
-      "text": "End of Act II: The First Tremors. The efficiency algorithms have taken root. Ahead lies Act III: The Severed Ladder."
+      "text": "End of Act II: The First Tremors. The efficiency algorithms have taken root. Ahead lies Act III: The Severed Ladder.",
+      "changeSceneId": "scene_act3_patio_afternoon"
+    },
+    {
+      "id": "act3_node_01",
+      "speakerId": "narrator",
+      "side": "CENTER_NARRATOR",
+      "text": "Two years later. Sunday afternoon on the back patio. Marcus sits in a fold-out lawn chair, staring down at a blank laptop screen with dark circles under his eyes. A stack of printed resume drafts rests weighted down by an empty mug.",
+      "nextNodeId": "act3_node_02"
+    },
+    {
+      "id": "act3_node_02",
+      "speakerId": "todd",
+      "side": "LEFT",
+      "text": "Drink some water, Marcus. You've been staring at that portal for three hours straight.",
+      "nextNodeId": "act3_node_03"
+    },
+    {
+      "id": "act3_node_03",
+      "speakerId": "marcus",
+      "side": "RIGHT",
+      "text": "Four hundred and eighteen, Todd. That's the count. Four hundred and eighteen applications submitted over five months. Junior developer, QA tester, IT support, technical documentation—everything. Two screening calls, and then an automated rejection email forty-eight hours later.",
+      "nextNodeId": "act3_node_04"
+    },
+    {
+      "id": "act3_node_04",
+      "speakerId": "narrator",
+      "side": "CENTER_NARRATOR",
+      "text": "Marcus wasn't laid off because he failed. His firm had thirty engineers; with generative software scaffolding, eight senior architects now do the output of thirty. The junior tier wasn't trimmed—it was systematically erased.",
+      "nextNodeId": "act3_node_05"
+    },
+    {
+      "id": "act3_node_05",
+      "speakerId": "todd",
+      "side": "LEFT",
+      "text": "The student loans don't pause while the algorithms optimize, do they?",
+      "nextNodeId": "act3_node_06"
+    },
+    {
+      "id": "act3_node_06",
+      "speakerId": "marcus",
+      "side": "RIGHT",
+      "text": "Seven hundred and forty dollars a month. Every single month. My emergency fund runs out in thirty days. If I don't land something that pays hourly by the first of next month, I have to give up my apartment and move into my parents' basement.",
+      "changeSceneId": "scene_act3_retail_hiring"
+    },
+    {
+      "id": "act3_retail_01",
+      "speakerId": "narrator",
+      "side": "CENTER_NARRATOR",
+      "text": "Monday morning inside Adriana's tiny back office at Oakridge Liquors. The metal desk is overflowing with paper job applications. A corporate hiring directive sits on her clipboard.",
+      "nextNodeId": "act3_retail_02"
+    },
+    {
+      "id": "act3_retail_02",
+      "speakerId": "adriana",
+      "side": "RIGHT",
+      "text": "Look at this stack. One part-time stocking position. Sixteen hours a week at fifteen dollars an hour. Forty-two applications in forty-eight hours.",
+      "nextNodeId": "act3_retail_03"
+    },
+    {
+      "id": "act3_retail_03",
+      "speakerId": "narrator",
+      "side": "CENTER_NARRATOR",
+      "text": "Adriana flips through the pages. Two years ago, these applications came from local community college kids looking for spending cash. Today, she's holding resumes from a 29-year-old former commercial copywriter, a 34-year-old corporate paralegal, and a junior accountant whose firm automated audit reviews.",
+      "nextNodeId": "act3_retail_04"
+    },
+    {
+      "id": "act3_retail_04",
+      "speakerId": "adriana",
+      "side": "RIGHT",
+      "text": "They all say the same thing in the cover letter: 'Fast learner, reliable, physically capable, willing to take any shifts.' People with master's degrees asking if they can please unload Miller Lite cases on Saturday nights.",
+      "nextNodeId": "act3_retail_05"
+    },
+    {
+      "id": "act3_retail_05",
+      "speakerId": "narrator",
+      "side": "CENTER_NARRATOR",
+      "text": "The desk-job economy has begun spilling directly into physical retail, not out of passion, but out of sheer survival desperation to service debt and buy groceries.",
+      "changeSceneId": "scene_act3_garage_lockout"
+    },
+    {
+      "id": "act3_garage_01",
+      "speakerId": "narrator",
+      "side": "CENTER_NARRATOR",
+      "text": "Tuesday afternoon at Pete's Auto Care. Marcus's compact hatchback sits in Bay 3 with its hood propped. The engine idles with a rough, shuddering shake, and the instrument cluster glows with an urgent amber 'SERVICE REQUIRED' alert.",
+      "nextNodeId": "act3_garage_02"
+    },
+    {
+      "id": "act3_garage_02",
+      "speakerId": "marcus",
+      "side": "RIGHT",
+      "text": "I took it by the dealership on my way here, Todd. The service advisor told me they couldn't even tell me what the code meant without charging a three-hundred-and-eighty-dollar diagnostic cloud gateway access fee. I don't have three hundred and eighty dollars.",
+      "nextNodeId": "act3_garage_03"
+    },
+    {
+      "id": "act3_garage_03",
+      "speakerId": "todd",
+      "side": "LEFT",
+      "text": "That's their new trick. They locked the CAN-bus architecture behind an encrypted telematics gateway. They want independent garages locked out so customers are forced to pay corporate subscription rates to clear a sensor fault.",
+      "nextNodeId": "act3_garage_04"
+    },
+    {
+      "id": "act3_garage_04",
+      "speakerId": "narrator",
+      "side": "CENTER_NARRATOR",
+      "text": "Todd reaches into his rolling tool cart and pulls out a custom OBD-II breakout harness he soldered himself, paired with an open-source oscilloscope tablet running community right-to-repair firmware.",
+      "nextNodeId": "act3_garage_05"
+    },
+    {
+      "id": "act3_garage_05",
+      "speakerId": "todd",
+      "side": "LEFT",
+      "text": "Pins 6 and 14 probed directly. Bypassing their cloud paywall. There she is: Bank 1 upstream O2 sensor heater circuit open. It's not a dead engine, Marcus. It's a sixty-dollar Bosch sensor.",
+      "nextNodeId": "act3_garage_06"
+    },
+    {
+      "id": "act3_garage_06",
+      "speakerId": "marcus",
+      "side": "RIGHT",
+      "text": "Man... Todd, thank you. Seriously. Without this car, I can't even drive to do gig deliveries if things fall through.",
+      "nextNodeId": "act3_garage_07"
+    },
+    {
+      "id": "act3_garage_07",
+      "speakerId": "todd",
+      "side": "LEFT",
+      "text": "Pay me for the part whenever you land your next gig, Marcus. We're keeping this car on the road. The machines only lock us out if we let them.",
+      "nextNodeId": "act3_garage_08"
+    },
+    {
+      "id": "act3_garage_08",
+      "speakerId": "narrator",
+      "side": "CENTER_NARRATOR",
+      "text": "Todd ratchets the new oxygen sensor into the exhaust manifold with a clean, satisfying turn of his wrench. The check engine light goes dark. The engine purrs with steady, honest compression.",
+      "nextNodeId": "act3_finale"
+    },
+    {
+      "id": "act3_finale",
+      "speakerId": "narrator",
+      "side": "CENTER_NARRATOR",
+      "text": "End of Act III: The Severed Ladder. The junior corporate rungs have shattered. Next lies Act IV: The Commuter Drain."
     }
   ]
 }

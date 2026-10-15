@@ -102,6 +102,57 @@
       "milestoneSummary": "Todd and Adriana cross-reference their days, recognizing that while their jobs are safe, the broader economic ground is shifting.",
       "milestoneIcon": "☕",
       "defaultObjective": "Review the month's expenses and discuss the workplace shifts over evening tea."
+    },
+    {
+      "id": "scene_act3_patio_afternoon",
+      "name": "Todd & Adriana's Patio - Sunday Afternoon",
+      "chapterTitle": "Act III: The Severed Ladder (Years 3–4)",
+      "backgroundAsset": "story/template_scene.jpg",
+      "initialNodeId": "act3_node_01",
+      "ambientDescription": "Dry leaves skitter across the deck. Marcus sits at the patio table staring blankly into a lukewarm can of soda, looking exhausted.",
+      "musicAsset": "audio/music/bgm_exploration.ogg",
+      "chapterIndex": 6,
+      "actNumber": 3,
+      "actTitle": "Act III: The Severed Ladder",
+      "milestoneTitle": "The Layoff Call",
+      "milestoneLocation": "Home Patio",
+      "milestoneSummary": "Marcus is laid off after senior developers absorb junior workloads using automated code tools; hundreds of job applications lead to automated rejections.",
+      "milestoneIcon": "💻",
+      "defaultObjective": "Talk with Marcus about the layoff and his prospects."
+    },
+    {
+      "id": "scene_act3_retail_hiring",
+      "name": "Oakridge Liquors - Department Office",
+      "chapterTitle": "Act III: The Overqualified Influx",
+      "backgroundAsset": "story/template_scene_alt.jpg",
+      "initialNodeId": "act3_retail_01",
+      "ambientDescription": "Adriana's cramped desk is covered in printed resumes—not from teenagers, but from experienced desk workers with four-year degrees.",
+      "musicAsset": "audio/music/bgm_exploration.ogg",
+      "chapterIndex": 7,
+      "actNumber": 3,
+      "actTitle": "Act III: The Severed Ladder",
+      "milestoneTitle": "The Application Flood",
+      "milestoneLocation": "Annex Office",
+      "milestoneSummary": "A single 16-hour part-time stocker posting attracts 42 applicants, including former copywriters, paralegals, and financial analysts.",
+      "milestoneIcon": "📄",
+      "defaultObjective": "Review the overwhelming application stack for the part-time shelf stocker position."
+    },
+    {
+      "id": "scene_act3_garage_lockout",
+      "name": "Pete's Auto Care - Diagnostic Station",
+      "chapterTitle": "Act III: The Software Paywall",
+      "backgroundAsset": "story/template_scene.jpg",
+      "initialNodeId": "act3_garage_01",
+      "ambientDescription": "Marcus's car idles roughly in Bay 3 with an amber check engine light. A manufacturer dealer tablet demands a $400 cloud license to read the ECM fault code.",
+      "musicAsset": "audio/music/bgm_exploration.ogg",
+      "chapterIndex": 8,
+      "actNumber": 3,
+      "actTitle": "Act III: The Severed Ladder",
+      "milestoneTitle": "The Proprietary Wall",
+      "milestoneLocation": "Diagnostic Bay",
+      "milestoneSummary": "Todd bypasses a proprietary dealer software paywall using an open-source OBD-II pin bridge to fix Marcus's car off-the-books.",
+      "milestoneIcon": "🔌",
+      "defaultObjective": "Diagnose Marcus's rough idle and bypass the dealer software paywall."
     }
   ]
 }
