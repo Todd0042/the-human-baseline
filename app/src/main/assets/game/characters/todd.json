@@ -4,7 +4,7 @@
   "role": "hero",
   "name": "Todd",
   "title": "Lead Diagnostic Technician",
-  "portraitAsset": "portraits/template_hero.jpg",
+  "portraitAsset": "portraits/portrait_todd.jpg",
   "spriteAsset": "sprites/hero_sprite.png",
   "themeColor": "#29B6F6",
   "ttsPitch": 0.95,

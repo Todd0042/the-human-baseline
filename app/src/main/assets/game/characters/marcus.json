@@ -4,7 +4,7 @@
   "role": "npc",
   "name": "Marcus",
   "title": "Junior Developer",
-  "portraitAsset": "portraits/template_hero.jpg",
+  "portraitAsset": "portraits/portrait_marcus.jpg",
   "spriteAsset": "sprites/hero_sprite.png",
   "themeColor": "#AB47BC",
   "ttsPitch": 1.0,
