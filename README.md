@@ -9,7 +9,7 @@
 # 🔧 The Human Baseline: An Audio-First Narrative of Working Life
 
 [![Version](https://img.shields.io/badge/Version-1.5.1-ff2a85.svg)](https://github.com/Todd0042/the-human-baseline/releases)
-[![License: PolyForm Noncommercial](https://img.shields.io/badge/License-PolyForm%20Noncommercial%201.0.0-00f0ff.svg)](LICENSE)
+[![License: PolyForm Noncommercial 1.0.0](https://img.shields.io/badge/License-PolyForm%20Noncommercial%201.0.0-00f0ff.svg)](LICENSE)
 [![Platform: Android 8.0+](https://img.shields.io/badge/Platform-Android%208.0%2B%20(API%2026%2B)-3DDC84.svg?logo=android&logoColor=white)](https://developer.android.com)
 [![16 KB Page Size](https://img.shields.io/badge/16%20KB-Compatible-success.svg)](https://developer.android.com/16kb-page-size)
 [![Kotlin](https://img.shields.io/badge/Kotlin-2.0.21-7F52FF.svg?logo=kotlin&logoColor=white)](https://kotlinlang.org)
@@ -137,7 +137,7 @@ adb install -r the-human-baseline-v1.5.1.apk
 
 ## 1. System Architecture & Visual Novel Engine Core
 
-*The Human Baseline* is built upon the open-source **[Visual Novel Engine](https://github.com/Todd0042/visualnovel-engine)** (`com.voicerpg.engine`), an ultra-lean, content-agnostic Android framework designed for voice-narrated visual novels:
+*The Human Baseline* is built upon the source-available **[Visual Novel Engine](https://github.com/Todd0042/visualnovel-engine)** (`com.voicerpg.engine`), an ultra-lean, content-agnostic Android framework designed for voice-narrated visual novels:
 
 ```
 +-----------------------------------------------------------------------+
@@ -298,7 +298,7 @@ Verification includes:
 ---
 
 <p align="center">
-  If you appreciate The Human Baseline, consider supporting open-source development:<br/><br/>
+  If you appreciate The Human Baseline, consider supporting its development:<br/><br/>
   <a href="https://ko-fi.com/todd0042" target="_blank">
     <img src="https://img.shields.io/badge/☕_Support_on_Ko--fi-F16061?style=for-the-badge&logo=ko-fi&logoColor=white" alt="Support on Ko-fi">
   </a>
