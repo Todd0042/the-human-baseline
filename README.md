@@ -294,6 +294,7 @@ Verification includes:
 
 - **Original Narrative Work**: All characters, scripts, dialogue, and narrative arcs in *The Human Baseline* are original creative works.
 - **PolyForm Noncommercial 1.0.0**: Free for personal, recreational, educational, and hobbyist reading. For commercial inquiries, contact **[Todd.0042.git@gmail.com](mailto:Todd.0042.git@gmail.com)**.
+- **Media License**: the images, artwork and audio made for this project (paths listed in [LICENSE-MEDIA](LICENSE-MEDIA)) are © Todd0042 under **[CC BY-NC 4.0](LICENSE-MEDIA)**: free to share and adapt with credit for non-commercial purposes; commercial use requires permission.
 
 ---
 
